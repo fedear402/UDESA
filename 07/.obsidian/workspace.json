@@ -1,0 +1,306 @@
+{
+  "main": {
+    "id": "9e50645af8a6ab18",
+    "type": "split",
+    "children": [
+      {
+        "id": "70412f18247d37a9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a97f101910f0b6bf",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "MICROECONOMIA-2/TEORICAS/PPTs/U1.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "U1"
+            }
+          },
+          {
+            "id": "3b84c13f3a40be4b",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "MICROECONOMIA-2/TEXTOS/Munoz-Garcia, Toro-Gonzalez - Strategy and Game Theory.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Munoz-Garcia, Toro-Gonzalez - Strategy and Game Theory"
+            }
+          },
+          {
+            "id": "760a68d0bab74808",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "MICROECONOMIA-2/TEORICAS/PPTs/U1.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "U1"
+            }
+          },
+          {
+            "id": "c1731ea47afd9de4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MICROECONOMIA-2/GUIAS/GUIAS-RESOL/GUIA 3.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "GUIA 3"
+            }
+          },
+          {
+            "id": "0cd9b4462444409f",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "MICROECONOMIA-2/TEXTOS/Watson - Strategy.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Watson - Strategy"
+            }
+          },
+          {
+            "id": "d8d22835920cf7ed",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MACROECONOMIA-2/NOTAS/PARTE1/Search.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "1ee904a1631361a5",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "MICROECONOMIA-2/PARCIALITO/PARCIALITO-1/Batalla-Lopez-Parcialito1.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Batalla-Lopez-Parcialito1"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ac48862a813599f0",
+    "type": "split",
+    "children": [
+      {
+        "id": "c9c3c82d11e512a8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "635d033f0e23c25d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "72e4ed71fd656c56",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "70dbc684130aa194",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 461.50312423706055
+  },
+  "right": {
+    "id": "98f88121e8386b0e",
+    "type": "split",
+    "children": [
+      {
+        "id": "7f23d78ea4a9dab9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "05b84eb68849f721",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "MACROECONOMIA-2/GUIAS/1.SOLOW/GUIA 1.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for GUIA 1"
+            }
+          },
+          {
+            "id": "31af4d658ffeb885",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "MACROECONOMIA-2/GUIAS/1.SOLOW/GUIA 1.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from GUIA 1"
+            }
+          },
+          {
+            "id": "edcefbb01e0cf85a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "e29ac7cc59bac8a8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "MACROECONOMIA-2/GUIAS/1.SOLOW/GUIA 1.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of GUIA 1"
+            }
+          },
+          {
+            "id": "9c3c3df46d272f11",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 248.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "zk-prefixer:Create new unique note": false,
+      "obsidian-kanban:Create new board": false,
+      "omnisearch:Omnisearch": false
+    }
+  },
+  "active": "c1731ea47afd9de4",
+  "lastOpenFiles": [
+    "MICROECONOMIA-2/PARCIALITO/PARCIALITO-1/Batalla-Lopez-Parcialito1.pdf",
+    "MICROECONOMIA-2/PARCIALITO/PARCIALITO-2/Batalla_Lopez_Parcialito2-.pdf",
+    "MICROECONOMIA-2/PARCIALITO/PARCIALITO-2/2024_parcialito 2 (1).pdf",
+    "MICROECONOMIA-2/PARCIALITO/PARCIALITO-2/Parcialito 2.md",
+    "MICROECONOMIA-2/PARCIALITO/PARCIALITO-1/PARCIALITO.md",
+    "MICROECONOMIA-2/PARCIALITO/PARCIALITO-1/2024_parcialito 1.pdf",
+    "MICROECONOMIA-2/TEXTOS/Watson - Strategy.pdf",
+    "MICROECONOMIA-2/GUIAS/GUIAS-RESOL/GUIA 3.md",
+    "MICROECONOMIA-2/GUIAS/GUIAS-RESOL/GUIA 4.md",
+    "MICROECONOMIA-2/GUIAS/GUIAS-RESOL/GUIA 0.md",
+    "MICROECONOMIA-2/GUIAS/GUIAS-RESOL/PARCIALES.md",
+    "MICROECONOMIA-2/GUIAS/GUIAS-RESOL/GUIA 6.md",
+    "MICROECONOMIA-2/GUIAS/GUIAS-RESOL/TODAS LAS GUIAS.md",
+    "MICROECONOMIA-2/GUIAS/GUIAS-RESOL/GUIA 7.md",
+    "MICROECONOMIA-2/GUIAS/GUIAS-RESOL/GUIA 5.md",
+    "MICROECONOMIA-2/GUIAS/GUIAS-RESOL/GUIA 2.md",
+    "MICROECONOMIA-2/GUIAS/GUIAS-RESOL/GUIA 1.md",
+    "MACROECONOMIA-2/NOTAS/PARTE1/Search.md",
+    "MACROECONOMIA-2/NOTAS/PARTE1/Diamond-Mortensen-Pissarides.md",
+    "MACROECONOMIA-2/NOTAS/PARTE1/Overlapping Generations.md",
+    "MACROECONOMIA-2/NOTAS/PARTE1/Ramsey.md",
+    "MICROECONOMIA-2/TEXTOS/Munoz-Garcia, Toro-Gonzalez - Strategy and Game Theory.pdf",
+    "MICROECONOMIA-2/TEORICAS/PPTs/U1.pdf",
+    "MICROECONOMIA-2/NOTAS/Bimatrix Game.md",
+    "MICROECONOMIA-2/NOTAS/PARTE1/Stackelberg.md",
+    "MICROECONOMIA-2/NOTAS/PARTE1/Simplex.md",
+    "MICROECONOMIA-2/NOTAS/PARTE1/Set de información.md",
+    "MICROECONOMIA-2/NOTAS/PARTE1/Perfección en subjuegos.md",
+    "MICROECONOMIA-2/NOTAS/PARTE1/Pago esperado.md",
+    "MICROECONOMIA-2/NOTAS/PARTE1/Mejor Respuesta.md",
+    "MICROECONOMIA-2/NOTAS/PARTE1/Infinitos sets de informacion.md",
+    "MICROECONOMIA-2/NOTAS/PARTE1/Incertidumbre estratégica.md",
+    "MACROECONOMIA-2/GUIAS/3.DESEMPLEO/Problem_Set_3__Unemployment_.pdf",
+    "MACROECONOMIA-2/TEORICAS/2.Ramsey_Dorfman.pdf",
+    "MACROECONOMIA-2/TEXTOS/PARTE1/Ramsey/Hamiltonians.pdf",
+    "MACROECONOMIA-2/TEXTOS/PARTE1/Ramsey/Jones AK Model.pdf",
+    "PRONOSTICOS-FINANCIEROS/TP-FINAL/irf-elect.png",
+    "PRONOSTICOS-FINANCIEROS/TP-FINAL/ce-elect.png",
+    "PRONOSTICOS-FINANCIEROS/TP-FINAL/cuatro.png",
+    "PRONOSTICOS-FINANCIEROS/TP-FINAL/todas.png",
+    "BIG-DATA/TUTORIALES/E337-BD-TPS-G1/TP4/desempleo.png",
+    "BIG-DATA/TUTORIALES/E337-BD-TPS-G1/TP4/regresion_cuadratica.png",
+    "BIG-DATA/TUTORIALES/E337-BD-TPS-G1/TP4/agua.png",
+    "BIG-DATA/TUTORIALES/E337-BD-TPS-G1/TP4/nivel_ed.png",
+    "BIG-DATA/TUTORIALES/E337-BD-TPS-G1/TP4/histograma_subsidio_filtrado.png",
+    "BIG-DATA/TUTORIALES/E337-BD-TPS-G1/TP4/histograma_hacinamiento.png",
+    "Untitled.canvas"
+  ]
+}

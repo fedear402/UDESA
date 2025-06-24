@@ -1,0 +1,118 @@
+Starting Dynare (version 6.3).
+Calling Dynare with arguments: none
+Preprocessing time: 0h00m00s.
+
+
+Residuals of the static equations:
+Equation number  1: resource constraint                             :       0.000000
+Equation number  2: Marginal productivity of labor                  :       0.000000
+Equation number  3: Choice of debt                                  :       0.000000
+Equation number  4: Choice of capital                               :       0.000000
+Equation number  5: Choice of imports                               :       0.000000
+Equation number  6: Production Function                             :       0.000000
+Equation number  7: Evolution of capital                            :       0.000000
+Equation number  8: Definition of current account as a ratio of gdp :       0.000000
+Equation number  9: Definition of trade balance as a ratio of gdp   :       0.000000
+Equation number 10: Stochastic process for produtivity              :       0.000000
+Equation number 11: Stochastic process for price                    :       0.000000
+
+
+
+STEADY-STATE RESULTS:
+
+y   		 -1.99519
+c   		 -3.03782
+k   		 -1.16851
+h   		 -1.87571
+a   		 0
+p   		 0
+m   		 -3.60463
+ii  		 -3.4711
+d   		 0.7442
+tby 		 0.418903
+cay 		 0
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+          0.1956          -0.1956                0
+            0.42             0.42                0
+             0.9              0.9                0
+               1                1                0
+           1.041            1.041                0
+           5.318            5.318                0
+       7.086e+08        7.086e+08                0
+       8.049e+16        8.049e+16                0
+       2.722e+26       -2.722e+26                0
+
+There are 5 eigenvalue(s) larger than 1 in modulus for 5 forward-looking variable(s)
+The rank condition is verified.
+
+
+MODEL SUMMARY
+
+  Number of variables:         11
+  Number of stochastic shocks: 2
+  Number of state variables:   4
+  Number of jumpers:           5
+  Number of static variables:  4
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables         u_a       u_p
+u_a          0.000000  0.000000
+u_p          0.000000  1.000000
+
+POLICY AND TRANSITION FUNCTIONS
+                                   y               c              ii               h             tby               p
+Constant                   -1.995193       -3.037824       -3.471099       -1.875713        0.418903               0
+p(-1)                      -0.382895       -0.504598      -12.550459       -0.263158        2.824061        0.900000
+d(-1)                              0       -0.846415       -0.197424               0        0.343509               0
+k(-1)                       0.680702        0.899980      -10.894180        0.467836        2.568386               0
+a(-1)                       0.893421        0.913727       12.334243        0.614035       -2.622204               0
+u_a                         0.027441        0.028064        0.378837        0.018860       -0.080539               0
+u_p                        -0.004254       -0.005607       -0.139450       -0.002924        0.031378        0.010000
+
+
+THEORETICAL MOMENTS
+VARIABLE         MEAN  STD. DEV.   VARIANCE
+y             -1.9952     0.0279     0.0008
+c             -3.0378     0.2268     0.0514
+ii            -3.4711     0.1423     0.0202
+h             -1.8757     0.0192     0.0004
+tby            0.4189     0.0849     0.0072
+p              0.0000     0.0229     0.0005
+
+
+
+VARIANCE DECOMPOSITION (in percent)
+          u_a     u_p
+y        0.00  100.00
+c        0.00  100.00
+ii       0.00  100.00
+h        0.00  100.00
+tby      0.00  100.00
+p        0.00  100.00
+
+
+
+MATRIX OF CORRELATIONS
+Variables          y        c       ii        h      tby        p
+y             1.0000   0.2496   0.0737   1.0000  -0.0724  -0.9494
+c             0.2496   1.0000   0.0441   0.2496  -0.9104  -0.1405
+ii            0.0737   0.0441   1.0000   0.0737  -0.4102  -0.3642
+h             1.0000   0.2496   0.0737   1.0000  -0.0724  -0.9494
+tby          -0.0724  -0.9104  -0.4102  -0.0724   1.0000   0.0906
+p            -0.9494  -0.1405  -0.3642  -0.9494   0.0906   1.0000
+
+
+
+COEFFICIENTS OF AUTOCORRELATION
+Order           1        2        3        4        5
+y          0.9256   0.8298   0.7492   0.6755   0.6095
+c          0.9989   0.9972   0.9958   0.9945   0.9934
+ii        -0.1942   0.0393  -0.0064   0.0026   0.0008
+h          0.9256   0.8298   0.7492   0.6755   0.6095
+tby        0.8139   0.8512   0.8446   0.8466   0.8468
+p          0.9000   0.8100   0.7290   0.6561   0.5905
+Total computing time : 0h00m00s
+Note: warning(s) encountered in MATLAB/Octave code

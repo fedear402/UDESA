@@ -1,0 +1,224 @@
+{\rtf1\ansi\deff0 {\fonttbl{\f0\fnil Garamond;}}
+{\info {\author .}{\company .}{\title .}}
+\deflang1033\plain\fs20
+{\footer\pard\qc\plain\f0\fs20\chpgn\par}
+{
+{\b\qc\line  }{\par}
+\fs20 {Akaike's information criterion and Bayesian information criterion}\line
+{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs \cellx1500
+\fs20\pard\intbl\ql { Model }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs \cellx2700
+\fs20\pard\intbl\ql { Obs}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs \cellx3900
+\fs20\pard\intbl\ql { ll(null)}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs \cellx5100
+\fs20\pard\intbl\ql { ll(model)}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs \cellx6300
+\fs20\pard\intbl\ql { df}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs \cellx7500
+\fs20\pard\intbl\ql { AIC}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs \cellx8700
+\fs20\pard\intbl\ql { BIC}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {lags_1 }\cell
+\cellx2700
+\fs20\pard\intbl\ql {225}\cell
+\cellx3900
+\fs20\pard\intbl\ql {  677.712}\cell
+\cellx5100
+\fs20\pard\intbl\ql {  738.465}\cell
+\cellx6300
+\fs20\pard\intbl\ql {2}\cell
+\cellx7500
+\fs20\pard\intbl\ql {-1472.930}\cell
+\cellx8700
+\fs20\pard\intbl\ql {-1466.098}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {lags_2 }\cell
+\cellx2700
+\fs20\pard\intbl\ql {225}\cell
+\cellx3900
+\fs20\pard\intbl\ql {  677.712}\cell
+\cellx5100
+\fs20\pard\intbl\ql {  738.471}\cell
+\cellx6300
+\fs20\pard\intbl\ql {3}\cell
+\cellx7500
+\fs20\pard\intbl\ql {-1470.943}\cell
+\cellx8700
+\fs20\pard\intbl\ql {-1460.695}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {lags_3 }\cell
+\cellx2700
+\fs20\pard\intbl\ql {225}\cell
+\cellx3900
+\fs20\pard\intbl\ql {  677.712}\cell
+\cellx5100
+\fs20\pard\intbl\ql {  740.618}\cell
+\cellx6300
+\fs20\pard\intbl\ql {4}\cell
+\cellx7500
+\fs20\pard\intbl\ql {-1473.236}\cell
+\cellx8700
+\fs20\pard\intbl\ql {-1459.571}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {lags_4 }\cell
+\cellx2700
+\fs20\pard\intbl\ql {225}\cell
+\cellx3900
+\fs20\pard\intbl\ql {  677.712}\cell
+\cellx5100
+\fs20\pard\intbl\ql {  741.199}\cell
+\cellx6300
+\fs20\pard\intbl\ql {5}\cell
+\cellx7500
+\fs20\pard\intbl\ql {-1472.397}\cell
+\cellx8700
+\fs20\pard\intbl\ql {-1455.317}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {lags_5 }\cell
+\cellx2700
+\fs20\pard\intbl\ql {225}\cell
+\cellx3900
+\fs20\pard\intbl\ql {  677.712}\cell
+\cellx5100
+\fs20\pard\intbl\ql {  741.276}\cell
+\cellx6300
+\fs20\pard\intbl\ql {6}\cell
+\cellx7500
+\fs20\pard\intbl\ql {-1470.551}\cell
+\cellx8700
+\fs20\pard\intbl\ql {-1450.055}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {lags_6 }\cell
+\cellx2700
+\fs20\pard\intbl\ql {225}\cell
+\cellx3900
+\fs20\pard\intbl\ql {  677.712}\cell
+\cellx5100
+\fs20\pard\intbl\ql {  741.294}\cell
+\cellx6300
+\fs20\pard\intbl\ql {7}\cell
+\cellx7500
+\fs20\pard\intbl\ql {-1468.587}\cell
+\cellx8700
+\fs20\pard\intbl\ql {-1444.675}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {lags_7 }\cell
+\cellx2700
+\fs20\pard\intbl\ql {225}\cell
+\cellx3900
+\fs20\pard\intbl\ql {  677.712}\cell
+\cellx5100
+\fs20\pard\intbl\ql {  741.548}\cell
+\cellx6300
+\fs20\pard\intbl\ql {8}\cell
+\cellx7500
+\fs20\pard\intbl\ql {-1467.097}\cell
+\cellx8700
+\fs20\pard\intbl\ql {-1439.768}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {lags_8 }\cell
+\cellx2700
+\fs20\pard\intbl\ql {225}\cell
+\cellx3900
+\fs20\pard\intbl\ql {  677.712}\cell
+\cellx5100
+\fs20\pard\intbl\ql {  741.878}\cell
+\cellx6300
+\fs20\pard\intbl\ql {9}\cell
+\cellx7500
+\fs20\pard\intbl\ql {-1465.756}\cell
+\cellx8700
+\fs20\pard\intbl\ql {-1435.011}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {lags_9 }\cell
+\cellx2700
+\fs20\pard\intbl\ql {225}\cell
+\cellx3900
+\fs20\pard\intbl\ql {  677.712}\cell
+\cellx5100
+\fs20\pard\intbl\ql {  742.508}\cell
+\cellx6300
+\fs20\pard\intbl\ql {10}\cell
+\cellx7500
+\fs20\pard\intbl\ql {-1465.016}\cell
+\cellx8700
+\fs20\pard\intbl\ql {-1430.855}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {lags_10 }\cell
+\cellx2700
+\fs20\pard\intbl\ql {225}\cell
+\cellx3900
+\fs20\pard\intbl\ql {  677.712}\cell
+\cellx5100
+\fs20\pard\intbl\ql {  742.508}\cell
+\cellx6300
+\fs20\pard\intbl\ql {11}\cell
+\cellx7500
+\fs20\pard\intbl\ql {-1463.017}\cell
+\cellx8700
+\fs20\pard\intbl\ql {-1425.440}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {lags_11 }\cell
+\cellx2700
+\fs20\pard\intbl\ql {225}\cell
+\cellx3900
+\fs20\pard\intbl\ql {  677.712}\cell
+\cellx5100
+\fs20\pard\intbl\ql {  742.524}\cell
+\cellx6300
+\fs20\pard\intbl\ql {12}\cell
+\cellx7500
+\fs20\pard\intbl\ql {-1461.048}\cell
+\cellx8700
+\fs20\pard\intbl\ql {-1420.055}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {lags_12 }\cell
+\cellx2700
+\fs20\pard\intbl\ql {225}\cell
+\cellx3900
+\fs20\pard\intbl\ql {  677.712}\cell
+\cellx5100
+\fs20\pard\intbl\ql {  742.594}\cell
+\cellx6300
+\fs20\pard\intbl\ql {13}\cell
+\cellx7500
+\fs20\pard\intbl\ql {-1459.188}\cell
+\cellx8700
+\fs20\pard\intbl\ql {-1414.778}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx8700\cell
+\row}
+\fs20 {               Note: N=Obs used in calculating BIC; see [R] BIC note.}\line
+
+
+\writepositionforappend
+}}

@@ -1,0 +1,288 @@
+{
+  "edges": [
+    {
+      "fromNode": "31830afbf77e550b",
+      "fromSide": "right",
+      "id": "2d3db1f59cb8ec13",
+      "styleAttributes": {
+      },
+      "toNode": "33dfc7a59ae20876",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "5975e132331fe972",
+      "fromSide": "bottom",
+      "id": "53d4e001b65667ff",
+      "styleAttributes": {
+      },
+      "toNode": "d979d58a17d1e3bd",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "d979d58a17d1e3bd",
+      "fromSide": "right",
+      "id": "cbd8cddc03671c4f",
+      "styleAttributes": {
+      },
+      "toNode": "6bc19832e68b6bd2",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "d979d58a17d1e3bd",
+      "fromSide": "right",
+      "id": "b214b09fdbd420e1",
+      "styleAttributes": {
+      },
+      "toNode": "1c569b8131dd0dac",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "5975e132331fe972",
+      "fromSide": "bottom",
+      "id": "466b8920ca9c485e",
+      "styleAttributes": {
+      },
+      "toNode": "b1a2752afc6fee98",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "3b456ed775a3a843",
+      "fromSide": "right",
+      "id": "f1d76fa103c9f8eb",
+      "styleAttributes": {
+      },
+      "toNode": "d979d58a17d1e3bd",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "3b456ed775a3a843",
+      "fromSide": "right",
+      "id": "50821d28ffbf1517",
+      "styleAttributes": {
+      },
+      "toNode": "b1a2752afc6fee98",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "31830afbf77e550b",
+      "fromSide": "left",
+      "id": "a98919fe93ced36f",
+      "styleAttributes": {
+      },
+      "toNode": "5975e132331fe972",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "31830afbf77e550b",
+      "fromSide": "bottom",
+      "id": "ec7768ec26e925b8",
+      "styleAttributes": {
+      },
+      "toNode": "3f6974c438f81ada",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "31830afbf77e550b",
+      "fromSide": "top",
+      "id": "f29342761dc3c1f4",
+      "styleAttributes": {
+      },
+      "toNode": "e0cca5137bf1d138",
+      "toSide": "bottom"
+    }
+  ],
+  "metadata": {
+    "frontmatter": {
+    },
+    "version": "1.0-1.0"
+  },
+  "nodes": [
+    {
+      "color": "2",
+      "height": 60,
+      "id": "31830afbf77e550b",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "GROWTH",
+      "type": "text",
+      "width": 220,
+      "x": -1620,
+      "y": -1040
+    },
+    {
+      "height": 60,
+      "id": "3f6974c438f81ada",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "OLG",
+      "type": "text",
+      "width": 207,
+      "x": -1613,
+      "y": -860
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "94028f081565ff23",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "CONSUMO",
+      "type": "text",
+      "width": 220,
+      "x": -2040,
+      "y": -1360
+    },
+    {
+      "height": 60,
+      "id": "e0cca5137bf1d138",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "SOLOW",
+      "type": "text",
+      "width": 207,
+      "x": -1613,
+      "y": -1180
+    },
+    {
+      "height": 100,
+      "id": "33dfc7a59ae20876",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "ENDOGENOUS GROWTH",
+      "type": "text",
+      "width": 207,
+      "x": -1200,
+      "y": -1060
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "d979d58a17d1e3bd",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "RBC",
+      "type": "text",
+      "width": 220,
+      "x": -1613,
+      "y": -550
+    },
+    {
+      "height": 80,
+      "id": "1c569b8131dd0dac",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "FRICCIONES FINANCIERAS",
+      "type": "text",
+      "width": 220,
+      "x": -1237,
+      "y": -520
+    },
+    {
+      "height": 60,
+      "id": "6bc19832e68b6bd2",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "DNWR",
+      "type": "text",
+      "width": 220,
+      "x": -1237,
+      "y": -650
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "b1a2752afc6fee98",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "NEW KEYNESIAN",
+      "type": "text",
+      "width": 220,
+      "x": -1613,
+      "y": -310
+    },
+    {
+      "height": 60,
+      "id": "d098b2149586cb49",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "POLITICA FISCAL",
+      "type": "text",
+      "width": 220,
+      "x": -1880,
+      "y": 80
+    },
+    {
+      "height": 100,
+      "id": "87bf627d707a784a",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "POLITICA MONETARIA",
+      "type": "text",
+      "width": 220,
+      "x": -1180,
+      "y": 60
+    },
+    {
+      "height": 60,
+      "id": "3b456ed775a3a843",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "TNT",
+      "type": "text",
+      "width": 207,
+      "x": -2040,
+      "y": -440
+    },
+    {
+      "height": 60,
+      "id": "5975e132331fe972",
+      "styleAttributes": {
+        "border": null,
+        "textAlign": "center"
+      },
+      "text": "RAMSEY",
+      "type": "text",
+      "width": 207,
+      "x": -2040,
+      "y": -1040
+    },
+    {
+      "color": "2",
+      "height": 100,
+      "id": "70164445889a7710",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "SISTEMAS DINAMICOS",
+      "type": "text",
+      "width": 220,
+      "x": -2040,
+      "y": -1660
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "8e692c816f674fb8",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "DESEMPLEO",
+      "type": "text",
+      "width": 220,
+      "x": -2040,
+      "y": -1500
+    }
+  ]
+}

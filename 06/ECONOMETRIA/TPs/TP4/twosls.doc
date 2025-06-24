@@ -1,0 +1,22 @@
+{\rtf1\fs24
+\trowd\trgaph75\trleft-75\intbl\trqc\clbrdrt\brdrs\cellx1872\clbrdrt\brdrs\cellx3168\clbrdrt\brdrs\cellx4464\clbrdrt\brdrs\cellx5760\clbrdrt\brdrs\cellx7056
+\ql \cell\qc (1)\cell\qc (2)\cell\qc (3)\cell\qc (4)\cell\row
+\trowd\trgaph75\trleft-75\trqc\cellx1872\cellx3168\cellx4464\cellx5760\cellx7056
+\trowd\trgaph75\trleft-75\trqc\clbrdrb\brdrs\cellx1872\clbrdrb\brdrs\cellx3168\clbrdrb\brdrs\cellx4464\clbrdrb\brdrs\cellx5760\clbrdrb\brdrs\cellx7056
+\ql VARIABLES\cell\qc inflat\cell\qc inflat\cell\qc inflat\cell\qc inflat\cell\row
+\trowd\trgaph75\trleft-75\trqc\cellx1872\cellx3168\cellx4464\cellx5760\cellx7056
+\ql \cell\qc \cell\qc \cell\qc \cell\qc \cell\row
+\ql output\cell\qc -2.679\cell\qc -2.540\cell\qc -1.037\cell\qc -4.120\cell\row
+\ql \cell\qc (1.737)\cell\qc (4.390)\cell\qc (0.685)\cell\qc (28.45)\cell\row
+\ql money\cell\qc 1.026***\cell\qc 1.027***\cell\qc 1.038***\cell\qc 1.015***\cell\row
+\ql \cell\qc (0.0158)\cell\qc (0.0330)\cell\qc (0.0103)\cell\qc (0.205)\cell\row
+\ql Constant\cell\qc 3.029\cell\qc 2.585\cell\qc -2.240\cell\qc 7.658\cell\row
+\ql \cell\qc (5.610)\cell\qc (14.11)\cell\qc (2.271)\cell\qc (91.34)\cell\row
+\ql \cell\qc \cell\qc \cell\qc \cell\qc \cell\row
+\ql Observations\cell\qc 76\cell\qc 76\cell\qc 76\cell\qc 76\cell\row
+\trowd\trgaph75\trleft-75\trqc\trbrdrb\brdrs\clbrdrb\brdrs\cellx1872\clbrdrb\brdrs\cellx3168\clbrdrb\brdrs\cellx4464\clbrdrb\brdrs\cellx5760\clbrdrb\brdrs\cellx7056
+\ql R-squared\cell\qc 0.994\cell\qc 0.994\cell\qc 0.994\cell\qc 0.988\cell\row
+\pard\qc
+Standard errors in parentheses\par
+*** p<0.01, ** p<0.05, * p<0.1\par
+}

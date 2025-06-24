@@ -1,0 +1,20 @@
+En San Juan se encontraron importantes reservas de cobre y oro. Además se prevee un auge en el precio los recursos en los próximos años (Venter, 2025). Es una oportunidad para planear cómo la provincia podría aprovechar de la mejor manera los ingresos futuros por regalías sobre la actividad.
+
+La comercialización comenzará dentro de 10 años, aproximadamente (paper), ya que son proyectos que requieren grandes inversiones de infraestructura antes de comenzar la extracción. Este trabajo presenta algunos diseños de fondos soberanos para administrar esos flujos futuros de ingresos, basados en las experiencias de otros países.
+
+Algunas decisiones de política que deberá tomar el ejecutivo son: 
+- Cuál es el objetivo del gasto: la estabilizacion macroeconomica del sendero fiscal (como Chile o Noruega), la distribución directa del ingreso provincial (como Alaska) o una mezcla de ambos.
+- Qué proporcion del ingreso de un periodo destinar al fondo y cuál ustilizar para financiar al estado.
+- La composicion de la cartera de inversión del fondo.
+
+Vamos presentar las ventajas da cada alternativa y simular los posibles resultados de cada estrategia.
+
+---
+
+La estrategia de Chile, analizada en Céspedes & Velasco, establece reglas fiscales basadas en la distinción entre shocks permanentes y transitorios del precio del cobre. Un comité independiente estima cada año cuánto del alza (o caída) es pasajero y cuánto duradero: la parte permanente puede financiar gasto; la transitoria se ahorra. Este esquema ha limitado la prociclicidad del presupuesto y evitado tentaciones de sobre‑gasto en los años buenos, aunque descansa en una sociedad capaz de respetar la pericia técnica por encima de la política coyuntural.
+
+Noruega ofrece un modelo distinto para un recurso también volátil: el petróleo del mar del Norte. Tras sufrir crisis recurrentes cuando gastaba los picos de ingreso, el país decidió canalizar prácticamente la totalidad de las rentas al Government Pension Fund Global, invertido en un portafolio mundial de acciones y bonos. El presupuesto sólo recibe el rendimiento real esperado —en torno al 3% anual— preservando así el valor del principal y suavizando el ciclo económico interno. Desde un punto de vista teórico, este comportamiento se aparta del consumo intertemporal óptimo de Ramsey: ante la incertidumbre del precio del crudo, el ahorro precautorio (a la Caballero) empuja a retener riqueza en exceso y a financiar el gasto público sólo con los frutos de la inversión financiera.
+
+Para San Juan se abren, entonces, al menos dos grandes sendas. La primera replica el esquema chileno: fondo de estabilización que filtra la volatilidad de los precios y permite cierto anticipo de gasto cuando la mina todavía no produce. La segunda se acerca al paradigma noruego: capitalizar las regalías en activos globales y transferir únicamente la rentabilidad real. Esta transferencia puede canalizarse al presupuesto (modelo noruego) o directamente a los hogares, emulando el Alaska Permanent Fund, donde cada 31 de diciembre los residentes reciben un cheque que materializa su participación en la riqueza común. Esta vía, además de blindar el fondo frente a presiones políticas, refuerza la legitimidad social del proyecto minero.
+
+San Juan debería (i) proyectar los flujos de regalías a lo largo de la vida útil de la mina, (ii) simular distintos regímenes de ahorro‑gasto —desde la regla chilena hasta el esquema noruego‑alaskano, incorporando grados crecientes de ahorro precautorio— y (iii) estimar, bajo cada escenario, cuánto recibiría un sanjuanino típico dentro de 10‑15 años. Estas simulaciones permitirán al gobernador comparar alternativas, balancear estabilidad macro, equidad intergeneracional y legitimidad política, y decidir qué modelo de fondo soberano se ajusta mejor a las aspiraciones de la provincia.

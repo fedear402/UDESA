@@ -1,0 +1,12 @@
+{
+  "textFontFamily": "Linux Libertine,Palatino,Linux Libertine Display,CMU Serif",
+  "accentColor": "#36ceec",
+  "cssTheme": "",
+  "baseFontSizeAction": true,
+  "baseFontSize": 19,
+  "theme": "obsidian",
+  "enabledCssSnippets": [
+    "headers"
+  ],
+  "translucency": false
+}

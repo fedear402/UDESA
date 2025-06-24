@@ -1,0 +1,2 @@
+Problema de coordinación.
+En los casos en los que la [[Estrat racionalizables|racionalizabilidad]] no lleva a un único perfil de estrategias. La racionalizabilidad solo implica que los jugadores actúen acorde a la racionalidad (no consideran estrategias dominadas (desde la perspectiva del otro) en sus creencias de lo que va a hacer el otro). En los demás casos, cada uno puede asignar cualquier probabilidad a estrategias no dominadas y no va a saber si es lo que realmente haría el otro jugador.

@@ -1,0 +1,53 @@
+body {
+--h1-color:#7eff75; 
+--h2-color: #f6f929;
+--h3-color: #0a80a3;
+--h4-color: #168118;
+--h5-color: #75a0ea;
+--h6-color: #0a80a3;
+}
+
+
+.theme-dark .pdfViewer {
+    filter: invert(0.9);
+}
+/* h1 */
+.empty-state-title, 
+.markdown-preview-view h1,
+.HyperMD-header-1, 
+.cm-header-1 {
+    font-size: 40pt;
+}
+
+/* h2 */
+.markdown-preview-view h2,
+.HyperMD-header-2,
+.cm-header-2 {
+    font-size: 30pt;
+}
+
+/* h3 */
+.markdown-preview-view h3,
+.HyperMD-header-3,
+.cm-header-3 {
+    font-size: 24pt;
+}
+
+
+/* h4 */
+.markdown-preview-view h4,
+.HyperMD-header-4,
+.cm-header-4 {
+    font-size: 20pt;
+}
+
+/* h5 */
+.markdown-preview-view h5,
+.HyperMD-header-5,
+.cm-header-5 {
+    font-size: 20pt;
+}
+
+body {
+  --file-line-width:1700px
+}

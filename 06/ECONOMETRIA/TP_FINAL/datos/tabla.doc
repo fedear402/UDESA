@@ -1,0 +1,32 @@
+{\rtf1\fs24
+\trowd\trgaph75\trleft-75\intbl\trqc\clbrdrt\brdrs\cellx2016\clbrdrt\brdrs\cellx3312\clbrdrt\brdrs\cellx4896\clbrdrt\brdrs\cellx6480\clbrdrt\brdrs\cellx8064\clbrdrt\brdrs\cellx9792\clbrdrt\brdrs\cellx11376\clbrdrt\brdrs\cellx12960
+\ql \cell\qc (1)\cell\qc (2)\cell\qc (3)\cell\qc (4)\cell\qc (5)\cell\qc (6)\cell\qc (7)\cell\row
+\trowd\trgaph75\trleft-75\trqc\cellx2016\cellx3312\cellx4896\cellx6480\cellx8064\cellx9792\cellx11376\cellx12960
+\trowd\trgaph75\trleft-75\trqc\clbrdrb\brdrs\cellx2016\clbrdrb\brdrs\cellx3312\clbrdrb\brdrs\cellx4896\clbrdrb\brdrs\cellx6480\clbrdrb\brdrs\cellx8064\clbrdrb\brdrs\cellx9792\clbrdrb\brdrs\cellx11376\clbrdrb\brdrs\cellx12960
+\ql VARIABLES\cell\qc empresas\cell\qc empresas\cell\qc empresas\cell\qc pj\cell\qc autonomia\cell\qc empresas\cell\qc empresas\cell\row
+\trowd\trgaph75\trleft-75\trqc\cellx2016\cellx3312\cellx4896\cellx6480\cellx8064\cellx9792\cellx11376\cellx12960
+\ql \cell\qc \cell\qc \cell\qc \cell\qc \cell\qc \cell\qc \cell\qc \cell\row
+\ql pj\cell\qc 12.48\cell\qc -31.15**\cell\qc -23.35*\cell\qc \cell\qc -0.00219\cell\qc -23.19**\cell\qc -31.03**\cell\row
+\ql \cell\qc (21.85)\cell\qc (15.00)\cell\qc (11.95)\cell\qc \cell\qc (0.00156)\cell\qc (11.63)\cell\qc (14.08)\cell\row
+\ql densidad\cell\qc \cell\qc 0.233*\cell\qc 0.113\cell\qc 0.000833\cell\qc 3.36e-05***\cell\qc 0.110\cell\qc 0.204*\cell\row
+\ql \cell\qc \cell\qc (0.118)\cell\qc (0.104)\cell\qc (0.000649)\cell\qc (9.22e-06)\cell\qc (0.104)\cell\qc (0.118)\cell\row
+\ql nbi_pob\cell\qc \cell\qc -8,981**\cell\qc -12,000***\cell\qc 108.5***\cell\qc 0.845\cell\qc -12,191***\cell\qc -10,845***\cell\row
+\ql \cell\qc \cell\qc (3,808)\cell\qc (3,521)\cell\qc (27.94)\cell\qc (0.630)\cell\qc (3,572)\cell\qc (3,906)\cell\row
+\ql pob\cell\qc \cell\qc 0.00594***\cell\qc 0.00559***\cell\qc 6.63e-06**\cell\qc 9.65e-08\cell\qc 0.00552***\cell\qc 0.00598***\cell\row
+\ql \cell\qc \cell\qc (0.00201)\cell\qc (0.00157)\cell\qc (3.26e-06)\cell\qc (1.42e-07)\cell\qc (0.00155)\cell\qc (0.00196)\cell\row
+\ql autonomia\cell\qc \cell\qc \cell\qc 3,572***\cell\qc -8.712\cell\qc \cell\qc 3,499***\cell\qc \cell\row
+\ql \cell\qc \cell\qc \cell\qc (763.4)\cell\qc (5.750)\cell\qc \cell\qc (780.5)\cell\qc \cell\row
+\ql dif_sal_avg\cell\qc \cell\qc \cell\qc \cell\qc \cell\qc \cell\qc 0.0105\cell\qc 0.00579\cell\row
+\ql \cell\qc \cell\qc \cell\qc \cell\qc \cell\qc \cell\qc (0.00903)\cell\qc (0.00890)\cell\row
+\ql delitos_x_hab\cell\qc \cell\qc \cell\qc \cell\qc \cell\qc \cell\qc -3.528\cell\qc -16.70***\cell\row
+\ql \cell\qc \cell\qc \cell\qc \cell\qc \cell\qc \cell\qc (4.058)\cell\qc (5.324)\cell\row
+\ql Constant\cell\qc 1,045**\cell\qc 1,629***\cell\qc 441.7\cell\qc 14.16***\cell\qc 0.332***\cell\qc 554.1\cell\qc 2,414***\cell\row
+\ql \cell\qc (510.0)\cell\qc (407.6)\cell\qc (278.2)\cell\qc (2.223)\cell\qc (0.0403)\cell\qc (431.2)\cell\qc (570.3)\cell\row
+\ql \cell\qc \cell\qc \cell\qc \cell\qc \cell\qc \cell\qc \cell\qc \cell\row
+\ql Observations\cell\qc 133\cell\qc 133\cell\qc 133\cell\qc 133\cell\qc 133\cell\qc 133\cell\qc 133\cell\row
+\trowd\trgaph75\trleft-75\trqc\trbrdrb\brdrs\clbrdrb\brdrs\cellx2016\clbrdrb\brdrs\cellx3312\clbrdrb\brdrs\cellx4896\clbrdrb\brdrs\cellx6480\clbrdrb\brdrs\cellx8064\clbrdrb\brdrs\cellx9792\clbrdrb\brdrs\cellx11376\clbrdrb\brdrs\cellx12960
+\ql R-squared\cell\qc 0.005\cell\qc 0.681\cell\qc 0.758\cell\qc 0.198\cell\qc 0.250\cell\qc 0.762\cell\qc 0.699\cell\row
+\pard\qc
+Robust standard errors in parentheses\par
+*** p<0.01, ** p<0.05, * p<0.1\par
+}

@@ -1,0 +1,1 @@
+Un perfil de estrategias es un equilibrio de Nash perfecto en subjuegos si es un equilibrio de Nash en cada subjuego del juego.

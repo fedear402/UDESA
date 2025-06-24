@@ -1,0 +1,7 @@
+La clave ahi es que los jugadores tienen una preferencia por algun candidato, pero no necesariamente tienen que votar a ese candidato. Su estrategia es a quién votar, pero pueden preferir a cualquiera de los dos.
+
+La preferencia de la mayoría es que gane A: entonces, cuando todos los que prefieren a A lo votan a A, gana A y B pierde.En esa situación, los que preferian a B, que son minoría, les da igual a quién votar, porque pierden igual. 
+
+En general, para ver dominancia y analizar estos juegos, tenes que pararte en algun jugador y ver qué pasa cuando cambia de estrategia, **dado lo que hacen los demas**. Por eso va a haber equilibrios donde todos votan a B. Aunque hay una mayoría que prefiere a A, y ellos estarian mejor si gana A, cada uno individualmente, viendo que todos los demas votan a B, no pueden tener efecto sobre el resultado de la elección -> los que prefieren a A estan indiferentes entre sus estrategias de votar a A o B, porque igual siguen perdiendo -> es una mejor respuesta.
+
+Despues en el c hay que darse cuenta que si la votación es por 1 solo voto, ahí alguno sí puede tener efecto sobre el resultado de la eleccion y no va a estar indiferente. Pero despues, si alguno gana por más de 2 votos, ninguno, viendo lo que hacen los demas, puede cambiar la direccion de la eleccion, entonces estan indiferentes

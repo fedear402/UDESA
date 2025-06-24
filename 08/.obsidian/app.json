@@ -1,0 +1,13 @@
+{
+  "readableLineLength": false,
+  "pdfExportSettings": {
+    "includeName": false,
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 75
+  },
+  "newFileLocation": "current",
+  "alwaysUpdateLinks": true,
+  "autoPairBrackets": false
+}

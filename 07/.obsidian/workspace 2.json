@@ -1,0 +1,216 @@
+{
+  "main": {
+    "id": "9e50645af8a6ab18",
+    "type": "split",
+    "children": [
+      {
+        "id": "cadaa6d18fd57e29",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "afa7db582859f2e4",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "PRONOSTICOS-FINANCIEROS/TEORICAS/C9.pdf"
+              }
+            }
+          },
+          {
+            "id": "c46ef95ffa3ecc6f",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "BIG-DATA/BIBLIOGRAFIA/LIBROS/ISLP.pdf"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ac48862a813599f0",
+    "type": "split",
+    "children": [
+      {
+        "id": "c9c3c82d11e512a8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "635d033f0e23c25d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "72e4ed71fd656c56",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "70dbc684130aa194",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "98f88121e8386b0e",
+    "type": "split",
+    "children": [
+      {
+        "id": "7f23d78ea4a9dab9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "05b84eb68849f721",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "31af4d658ffeb885",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "edcefbb01e0cf85a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "e29ac7cc59bac8a8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          },
+          {
+            "id": "9c3c3df46d272f11",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 248.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "zk-prefixer:Create new unique note": false,
+      "obsidian-kanban:Create new board": false,
+      "omnisearch:Omnisearch": false
+    }
+  },
+  "active": "635d033f0e23c25d",
+  "lastOpenFiles": [
+    "BIG-DATA/BIBLIOGRAFIA/LIBROS/ISLP.pdf",
+    "PRONOSTICOS-FINANCIEROS/TEORICAS/C9.pdf",
+    "BIG-DATA/TUTORIALES/CLASES/T13/Tutorial13.ipynb",
+    "BIG-DATA/TUTORIALES/CLASES/Tutorial13.ipynb",
+    "BIG-DATA/TUTORIALES/CLASES/T13",
+    "BIG-DATA/TUTORIALES/CLASES/untitled folder",
+    "MACROECONOMIA-2/TEORICAS/8.CC_Produccion_UdeSA.pdf",
+    "MACROECONOMIA-2/TEXTOS/PARTE2/SGUW_International_Macroeconomics_2022.pdf",
+    "MACROECONOMIA-2/TEORICAS/7.Enfoque_intertemporal_CC.pdf",
+    "PRONOSTICOS-FINANCIEROS/TEORICAS/C14.pdf",
+    "PRONOSTICOS-FINANCIEROS/TEORICAS/C7.pdf",
+    "PRONOSTICOS-FINANCIEROS/NOTAS/0-PRONO-MAIN.md",
+    "PRONOSTICOS-FINANCIEROS/GUIAS-EXAMENES/EXPOSICION/Expo.md",
+    "MACROECONOMIA-2/NOTAS/PARTE2/Sustainability.md",
+    "braces.md",
+    "MACROECONOMIA-2/NOTAS/PARTE2/Exercises.md",
+    "MACROECONOMIA-2/NOTAS/PARTE2/CC-CF.md",
+    "MACROECONOMIA-2/NOTAS/PARTE2/NIIP.md",
+    "MACROECONOMIA-2/NOTAS/PARTE1/Diamond-Mortensen-Pissarides.md",
+    "MACROECONOMIA-2/NOTAS/PARTE2/TB-CA eg.md",
+    "MICROECONOMIA-2/PARCIALITO/PARCIALITO-2/Parcialito 2.md",
+    "MICROECONOMIA-2/NOTAS/MISC/tikz/codes.md",
+    "MICROECONOMIA-2/GUIAS/GUIAS-RESOL/GUIA 6.md",
+    "MICROECONOMIA-2/GUIAS/GUIAS-RESOL/GUIA 7.md",
+    "MICROECONOMIA-2/PARCIALITO/PARCIALITO-1/PARCIALITO.md",
+    "MACROECONOMIA-2/GUIAS/PARCIALES/PARCIALES.md",
+    "MACROECONOMIA-2/TPs/TP3/TP3.md",
+    "MICROECONOMIA-2/GUIAS/GUIAS-RESOL/GUIA 5.md",
+    "MACROECONOMIA-2/TPs/TP3/super.png",
+    "TODO.md",
+    "0-TODO.md",
+    "0-.md",
+    "BIG-DATA/POSTS-SEMANALES/09-Ensamble.md",
+    "BIG-DATA/POSTS-SEMANALES/08-Splines.md",
+    "BIG-DATA/POSTS-SEMANALES/0-FORMATO.md",
+    "BIG-DATA/EXPOSICION/Mullaly.md",
+    "MACROECONOMIA-2/TPs/TP3/DMP-salario-b=02.png",
+    "MACROECONOMIA-2/TPs/TP3/DMP-salario-b=0075.png",
+    "MACROECONOMIA-2/TPs/TP3/DMP-empleo-equilibrio-b=0075.png",
+    "MACROECONOMIA-2/TPs/TP3/DMP-empleo-equilibrio-b=02.png",
+    "MACROECONOMIA-2/TPs/TP3/DMP-salario-b=01.png",
+    "MACROECONOMIA-2/TPs/TP3/DMP-empleo-equilibrio-b=001.png",
+    "MACROECONOMIA-2/TPs/TP3/DMP-empleo-equilibrio-b=005.png",
+    "MACROECONOMIA-2/TPs/TP3/DMP-empleo-equilibrio-b=01.png",
+    "MACROECONOMIA-2/TPs/TP3/DMP-salario.png",
+    "MACROECONOMIA-2/TPs/TP3/TP3/lib/python3.12/site-packages/numpy/random/LICENSE.md",
+    "Untitled.canvas"
+  ]
+}

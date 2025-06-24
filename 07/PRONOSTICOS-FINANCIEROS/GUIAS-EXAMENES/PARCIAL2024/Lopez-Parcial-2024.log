@@ -1,0 +1,477 @@
+----------------------------------------------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/federicolopez/Library/CloudStorage/OneDrive-Personal/Documents/UDESA/07/PRONOSTICOS/GUIAS-EXAMENES/PARCIAL2024
+> /Lopez-Parcial-2024.log
+  log type:  text
+ opened on:  28 Apr 2024, 20:31:24
+
+. set more off
+
+. // Ejercicio 2
+. use aluminium.dta, clear
+
+. 
+. *************** a)
+. tsline alum_price, name(alum_price)
+
+. 
+. *************** b)
+. gen log_price = log(alum_price)
+
+. 
+. dfgls log_price 
+ 
+DF-GLS for log_price                                     Number of obs =   228
+Maxlag = 14 chosen by Schwert criterion
+ 
+               DF-GLS tau      1% Critical       5% Critical      10% Critical
+  [lags]     Test Statistic        Value             Value             Value
+------------------------------------------------------------------------------
+    14           -2.370           -3.480            -2.813            -2.534
+    13           -2.269           -3.480            -2.823            -2.543
+    12           -2.235           -3.480            -2.833            -2.552
+    11           -2.433           -3.480            -2.842            -2.560
+    10           -2.450           -3.480            -2.851            -2.569
+    9            -2.395           -3.480            -2.860            -2.577
+    8            -2.329           -3.480            -2.868            -2.585
+    7            -2.445           -3.480            -2.877            -2.592
+    6            -2.578           -3.480            -2.885            -2.599
+    5            -2.993           -3.480            -2.892            -2.606
+    4            -3.079           -3.480            -2.899            -2.613
+    3            -2.876           -3.480            -2.906            -2.619
+    2            -2.681           -3.480            -2.913            -2.625
+    1            -2.583           -3.480            -2.919            -2.630
+ 
+Opt Lag (Ng-Perron seq t) =  6 with RMSE   .048119
+Min SC   =  -5.98486 at lag  1 with RMSE  .0489849
+Min MAIC = -5.963795 at lag  1 with RMSE  .0489849
+
+. // Criterio SC recomienda 1 lag en el ADF de log_price con tendencia
+. 
+. dfuller log_price, lags(1) trend regress 
+
+Augmented Dickey-Fuller test for unit root         Number of obs   =       241
+
+                               ---------- Interpolated Dickey-Fuller ---------
+                  Test         1% Critical       5% Critical      10% Critical
+               Statistic           Value             Value             Value
+------------------------------------------------------------------------------
+ Z(t)             -2.974            -3.993            -3.431            -3.131
+------------------------------------------------------------------------------
+MacKinnon approximate p-value for Z(t) = 0.1395
+
+------------------------------------------------------------------------------
+D.log_price  |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+   log_price |
+         L1. |  -.0491961   .0165428    -2.97   0.003    -.0817859   -.0166063
+         LD. |     .32585   .0611613     5.33   0.000     .2053607    .4463392
+      _trend |  -6.43e-06   .0000451    -0.14   0.887    -.0000952    .0000823
+       _cons |   .3766038   .1262946     2.98   0.003     .1278005    .6254072
+------------------------------------------------------------------------------
+
+. // Este test ADF sugiere que trend no es significativa
+. 
+. dfgls log_price, notrend
+ 
+DF-GLS for log_price                                     Number of obs =   228
+Maxlag = 14 chosen by Schwert criterion
+ 
+               DF-GLS mu       1% Critical       5% Critical      10% Critical
+  [lags]     Test Statistic        Value             Value             Value
+------------------------------------------------------------------------------
+    14           -1.592           -2.581            -1.958            -1.648
+    13           -1.512           -2.581            -1.964            -1.653
+    12           -1.490           -2.581            -1.969            -1.658
+    11           -1.664           -2.581            -1.975            -1.663
+    10           -1.688           -2.581            -1.980            -1.668
+    9            -1.653           -2.581            -1.985            -1.673
+    8            -1.608           -2.581            -1.990            -1.677
+    7            -1.712           -2.581            -1.995            -1.682
+    6            -1.829           -2.581            -2.000            -1.686
+    5            -2.177           -2.581            -2.004            -1.690
+    4            -2.265           -2.581            -2.009            -1.694
+    3            -2.119           -2.581            -2.013            -1.698
+    2            -1.974           -2.581            -2.017            -1.702
+    1            -1.905           -2.581            -2.021            -1.705
+ 
+Opt Lag (Ng-Perron seq t) =  6 with RMSE  .0484704
+Min SC   = -5.971772 at lag  1 with RMSE  .0493065
+Min MAIC = -5.978145 at lag  1 with RMSE  .0493065
+
+. // Criterio SC recomienda 1 lag en el ADF de log_price sin tendencia
+. 
+. dfuller log_price, lags(1) regress 
+
+Augmented Dickey-Fuller test for unit root         Number of obs   =       241
+
+                               ---------- Interpolated Dickey-Fuller ---------
+                  Test         1% Critical       5% Critical      10% Critical
+               Statistic           Value             Value             Value
+------------------------------------------------------------------------------
+ Z(t)             -2.979            -3.463            -2.881            -2.571
+------------------------------------------------------------------------------
+MacKinnon approximate p-value for Z(t) = 0.0369
+
+------------------------------------------------------------------------------
+ D.log_price |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+   log_price |
+         L1. |  -.0491873   .0165086    -2.98   0.003     -.081709   -.0166656
+         LD. |   .3260608   .0610175     5.34   0.000     .2058575    .4462641
+             |
+       _cons |   .3757523   .1258935     2.98   0.003     .1277444    .6237602
+------------------------------------------------------------------------------
+
+. // ADF sin trend. a nivel 5% podriamos rechazar la H0 (no estacionariedad)
+. // porque el estadístico nos da menor que el valor critico a ese nivel
+. // -2.881 >  -2.979
+. // Entonce es I(0)
+. 
+. *************** c)
+. gen log_r = log(D.alum_price / L.alum_price)
+(115 missing values generated)
+
+. // generamos la variable de retornos logaritmicos
+. 
+. su log_r, detail
+
+                            log_r
+-------------------------------------------------------------
+      Percentiles      Smallest
+ 1%    -6.390263      -6.943044
+ 5%    -5.423625      -6.390263
+10%     -5.22297      -6.372292       Obs                 128
+25%    -3.927234      -5.668993       Sum of Wgt.         128
+
+50%    -3.421481                      Mean          -3.582556
+                        Largest       Std. Dev.      .9776449
+75%    -2.873164      -2.133625
+90%    -2.537896      -2.132556       Variance       .9557895
+95%    -2.389174      -1.998657       Skewness      -.9954262
+99%    -1.998657       -1.83665       Kurtosis       3.871859
+
+. // obtenemos la asimetria y curtosis
+. // Skewness      -.9954262
+. // Kurtosis       3.871859
+. 
+. disp 128/6*( -0.9954262^2+ 3.871859^2/4)
+58.814927
+
+. // manualmente nos da 58.81, mayor al valor crítico de 6
+. // se rechaza H0 de normalidad
+. 
+. qnorm log_r, name(qq)
+
+. 
+. // Ejercicio 3
+. 
+. ac log_price, name(ac)
+
+. pac log_price, name(pac)
+
+. 
+. //Guesses: AR(1), AR(2) y ARMA(1,1)
+. arima log_price, arima(1,0,0) 
+
+(setting optimization to BHHH)
+Iteration 0:   log likelihood =  376.24726  
+Iteration 1:   log likelihood =  376.57787  
+Iteration 2:   log likelihood =  376.57942  
+Iteration 3:   log likelihood =  376.57948  
+Iteration 4:   log likelihood =  376.57948  
+(switching optimization to BFGS)
+Iteration 5:   log likelihood =  376.57948  
+
+ARIMA regression
+
+Sample:  2004m1 - 2024m3                        Number of obs     =        243
+                                                Wald chi2(1)      =    3895.82
+Log likelihood =  376.5795                      Prob > chi2       =     0.0000
+
+------------------------------------------------------------------------------
+             |                 OPG
+   log_price |      Coef.   Std. Err.      z    P>|z|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+log_price    |
+       _cons |   7.609589   .0816098    93.24   0.000     7.449637    7.769541
+-------------+----------------------------------------------------------------
+ARMA         |
+          ar |
+         L1. |   .9631203   .0154305    62.42   0.000      .932877    .9933636
+-------------+----------------------------------------------------------------
+      /sigma |   .0510953   .0018129    28.18   0.000      .047542    .0546485
+------------------------------------------------------------------------------
+Note: The test of the variance against zero is one sided, and the two-sided
+      confidence interval is truncated at zero.
+
+. estat ic
+
+Akaike's information criterion and Bayesian information criterion
+
+-----------------------------------------------------------------------------
+       Model |        Obs  ll(null)  ll(model)      df         AIC        BIC
+-------------+---------------------------------------------------------------
+           . |        243         .   376.5795       3    -747.159  -736.6798
+-----------------------------------------------------------------------------
+               Note: N=Obs used in calculating BIC; see [R] BIC note.
+
+. 
+. arima log_price, arima(2,0,0) 
+
+(setting optimization to BHHH)
+Iteration 0:   log likelihood =  390.24966  
+Iteration 1:   log likelihood =  390.26429  
+Iteration 2:   log likelihood =  390.26472  
+Iteration 3:   log likelihood =  390.26475  
+Iteration 4:   log likelihood =  390.26476  
+(switching optimization to BFGS)
+Iteration 5:   log likelihood =  390.26476  
+
+ARIMA regression
+
+Sample:  2004m1 - 2024m3                        Number of obs     =        243
+                                                Wald chi2(2)      =    4119.78
+Log likelihood =  390.2648                      Prob > chi2       =     0.0000
+
+------------------------------------------------------------------------------
+             |                 OPG
+   log_price |      Coef.   Std. Err.      z    P>|z|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+log_price    |
+       _cons |   7.615242   .0626599   121.53   0.000     7.492431    7.738053
+-------------+----------------------------------------------------------------
+ARMA         |
+          ar |
+         L1. |   1.278332   .0474284    26.95   0.000     1.185374     1.37129
+         L2. |   -.326628   .0479535    -6.81   0.000    -.4206151   -.2326409
+-------------+----------------------------------------------------------------
+      /sigma |   .0482735   .0018948    25.48   0.000     .0445598    .0519873
+------------------------------------------------------------------------------
+Note: The test of the variance against zero is one sided, and the two-sided
+      confidence interval is truncated at zero.
+
+. estat ic
+
+Akaike's information criterion and Bayesian information criterion
+
+-----------------------------------------------------------------------------
+       Model |        Obs  ll(null)  ll(model)      df         AIC        BIC
+-------------+---------------------------------------------------------------
+           . |        243         .   390.2648       4   -772.5295  -758.5573
+-----------------------------------------------------------------------------
+               Note: N=Obs used in calculating BIC; see [R] BIC note.
+
+. 
+. arima log_price, arima(1,0,1) 
+
+(setting optimization to BHHH)
+Iteration 0:   log likelihood =  387.25362  
+Iteration 1:   log likelihood =  387.86764  
+Iteration 2:   log likelihood =  387.87309  
+Iteration 3:   log likelihood =   387.8734  
+Iteration 4:   log likelihood =  387.87342  
+(switching optimization to BFGS)
+Iteration 5:   log likelihood =  387.87342  
+Iteration 6:   log likelihood =  387.87342  
+
+ARIMA regression
+
+Sample:  2004m1 - 2024m3                        Number of obs     =        243
+                                                Wald chi2(2)      =    2565.15
+Log likelihood =  387.8734                      Prob > chi2       =     0.0000
+
+------------------------------------------------------------------------------
+             |                 OPG
+   log_price |      Coef.   Std. Err.      z    P>|z|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+log_price    |
+       _cons |   7.612933   .0704155   108.11   0.000     7.474921    7.750945
+-------------+----------------------------------------------------------------
+ARMA         |
+          ar |
+         L1. |   .9454425   .0199578    47.37   0.000      .906326    .9845591
+             |
+          ma |
+         L1. |   .2878905   .0605289     4.76   0.000     .1692561    .4065249
+-------------+----------------------------------------------------------------
+      /sigma |   .0487568     .00186    26.21   0.000     .0451113    .0524024
+------------------------------------------------------------------------------
+Note: The test of the variance against zero is one sided, and the two-sided
+      confidence interval is truncated at zero.
+
+. estat ic
+
+Akaike's information criterion and Bayesian information criterion
+
+-----------------------------------------------------------------------------
+       Model |        Obs  ll(null)  ll(model)      df         AIC        BIC
+-------------+---------------------------------------------------------------
+           . |        243         .   387.8734       4   -767.7468  -753.7746
+-----------------------------------------------------------------------------
+               Note: N=Obs used in calculating BIC; see [R] BIC note.
+
+. 
+. arima log_price, arima(2,0,1) 
+
+(setting optimization to BHHH)
+Iteration 0:   log likelihood =  390.58013  
+Iteration 1:   log likelihood =  391.49489  
+Iteration 2:   log likelihood =  391.77363  
+Iteration 3:   log likelihood =  391.81483  
+Iteration 4:   log likelihood =  391.81819  
+(switching optimization to BFGS)
+Iteration 5:   log likelihood =  391.81872  
+Iteration 6:   log likelihood =  391.81882  
+Iteration 7:   log likelihood =  391.81883  
+
+ARIMA regression
+
+Sample:  2004m1 - 2024m3                        Number of obs     =        243
+                                                Wald chi2(3)      =   11222.79
+Log likelihood =  391.8188                      Prob > chi2       =     0.0000
+
+------------------------------------------------------------------------------
+             |                 OPG
+   log_price |      Coef.   Std. Err.      z    P>|z|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+log_price    |
+       _cons |   7.617925    .052599   144.83   0.000     7.514833    7.721017
+-------------+----------------------------------------------------------------
+ARMA         |
+          ar |
+         L1. |   1.636405   .1148135    14.25   0.000     1.411374    1.861435
+         L2. |  -.6708661   .1092409    -6.14   0.000    -.8849743   -.4567579
+             |
+          ma |
+         L1. |  -.4187438   .1494755    -2.80   0.005    -.7117103   -.1257772
+-------------+----------------------------------------------------------------
+      /sigma |   .0479618   .0018965    25.29   0.000     .0442448    .0516789
+------------------------------------------------------------------------------
+Note: The test of the variance against zero is one sided, and the two-sided
+      confidence interval is truncated at zero.
+
+. estat ic
+
+Akaike's information criterion and Bayesian information criterion
+
+-----------------------------------------------------------------------------
+       Model |        Obs  ll(null)  ll(model)      df         AIC        BIC
+-------------+---------------------------------------------------------------
+           . |        243         .   391.8188       5   -773.6377  -756.1723
+-----------------------------------------------------------------------------
+               Note: N=Obs used in calculating BIC; see [R] BIC note.
+
+. 
+. arima log_price, arima(1,0,2) 
+
+(setting optimization to BHHH)
+Iteration 0:   log likelihood =  389.13685  
+Iteration 1:   log likelihood =  389.56104  
+Iteration 2:   log likelihood =  389.57784  
+Iteration 3:   log likelihood =  389.57936  
+Iteration 4:   log likelihood =  389.57953  
+(switching optimization to BFGS)
+Iteration 5:   log likelihood =  389.57956  
+Iteration 6:   log likelihood =  389.57956  
+
+ARIMA regression
+
+Sample:  2004m1 - 2024m3                        Number of obs     =        243
+                                                Wald chi2(3)      =    2181.74
+Log likelihood =  389.5796                      Prob > chi2       =     0.0000
+
+------------------------------------------------------------------------------
+             |                 OPG
+   log_price |      Coef.   Std. Err.      z    P>|z|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+log_price    |
+       _cons |    7.61459   .0661117   115.18   0.000     7.485013    7.744166
+-------------+----------------------------------------------------------------
+ARMA         |
+          ar |
+         L1. |   .9340759     .02364    39.51   0.000     .8877422    .9804095
+             |
+          ma |
+         L1. |   .3189413   .0598877     5.33   0.000     .2015635    .4363191
+         L2. |   .1157172   .0498501     2.32   0.020     .0180127    .2134216
+-------------+----------------------------------------------------------------
+      /sigma |   .0484127   .0018717    25.87   0.000     .0447442    .0520812
+------------------------------------------------------------------------------
+Note: The test of the variance against zero is one sided, and the two-sided
+      confidence interval is truncated at zero.
+
+. estat ic
+
+Akaike's information criterion and Bayesian information criterion
+
+-----------------------------------------------------------------------------
+       Model |        Obs  ll(null)  ll(model)      df         AIC        BIC
+-------------+---------------------------------------------------------------
+           . |        243         .   389.5796       5   -769.1591  -751.6938
+-----------------------------------------------------------------------------
+               Note: N=Obs used in calculating BIC; see [R] BIC note.
+
+. 
+. arima log_price, arima(2,0,2) 
+
+(setting optimization to BHHH)
+Iteration 0:   log likelihood =  390.48789  
+Iteration 1:   log likelihood =   391.1913  
+Iteration 2:   log likelihood =  391.87818  
+Iteration 3:   log likelihood =  392.16756  
+Iteration 4:   log likelihood =  392.21631  
+(switching optimization to BFGS)
+Iteration 5:   log likelihood =  392.22584  
+Iteration 6:   log likelihood =  392.22745  
+Iteration 7:   log likelihood =  392.22754  
+Iteration 8:   log likelihood =  392.22758  
+Iteration 9:   log likelihood =  392.22759  
+
+ARIMA regression
+
+Sample:  2004m1 - 2024m3                        Number of obs     =        243
+                                                Wald chi2(4)      =   17011.32
+Log likelihood =  392.2276                      Prob > chi2       =     0.0000
+
+------------------------------------------------------------------------------
+             |                 OPG
+   log_price |      Coef.   Std. Err.      z    P>|z|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+log_price    |
+       _cons |   7.618311   .0513604   148.33   0.000     7.517647    7.718976
+-------------+----------------------------------------------------------------
+ARMA         |
+          ar |
+         L1. |   1.709913    .175213     9.76   0.000     1.366502    2.053325
+         L2. |  -.7380144   .1637892    -4.51   0.000    -1.059035   -.4169935
+             |
+          ma |
+         L1. |  -.4671258   .1847726    -2.53   0.011    -.8292734   -.1049782
+         L2. |  -.0754619   .1003315    -0.75   0.452     -.272108    .1211841
+-------------+----------------------------------------------------------------
+      /sigma |   .0478806   .0018993    25.21   0.000     .0441581    .0516032
+------------------------------------------------------------------------------
+Note: The test of the variance against zero is one sided, and the two-sided
+      confidence interval is truncated at zero.
+
+. estat ic
+
+Akaike's information criterion and Bayesian information criterion
+
+-----------------------------------------------------------------------------
+       Model |        Obs  ll(null)  ll(model)      df         AIC        BIC
+-------------+---------------------------------------------------------------
+           . |        243         .   392.2276       6   -772.4552  -751.4968
+-----------------------------------------------------------------------------
+               Note: N=Obs used in calculating BIC; see [R] BIC note.
+
+. 
+end of do-file
+
+. save "/Users/federicolopez/Library/CloudStorage/OneDrive-Personal/Documents/UDESA/07/PRONOSTICOS/GUIAS-EXAMENES/PARCIAL2024/alum
+> inium.dta", replace
+file /Users/federicolopez/Library/CloudStorage/OneDrive-Personal/Documents/UDESA/07/PRONOSTICOS/GUIAS-EXAMENES/PARCIAL2024/alumini
+> um.dta saved
+
+. exit, clear

@@ -1,0 +1,18 @@
+{
+  "promptDelete": false,
+  "readableLineLength": false,
+  "attachmentFolderPath": "0-misc",
+  "newFileLocation": "current",
+  "alwaysUpdateLinks": true,
+  "autoPairMarkdown": false,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 80
+  },
+  "autoPairBrackets": false,
+  "smartIndentList": false,
+  "showIndentGuide": false
+}

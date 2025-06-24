@@ -1,0 +1,1 @@
+- Racionalidad: al evaluar los movimientos óptimos de algún jugador se deben evaluar partiendo desde cualquier punto de la progresión del juego. Cada jugador debe formular creencias sobre lo 

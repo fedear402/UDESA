@@ -1,0 +1,242 @@
+{
+  "main": {
+    "id": "cabafdd2b05a5cc1",
+    "type": "split",
+    "children": [
+      {
+        "id": "6e2f7510b2a30b59",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cac384fae642c237",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2a3a99109ce941f5",
+    "type": "split",
+    "children": [
+      {
+        "id": "c945a4240bad85fd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ad481d16924ab7ea",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "4cec0925133dff22",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#Firmas",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "827b266bb7d16844",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "d50dc6b948f8cb84",
+            "type": "leaf",
+            "state": {
+              "type": "file-tree-view",
+              "state": {},
+              "icon": "sheets-in-box",
+              "title": "File Tree"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 259.50418853759766
+  },
+  "right": {
+    "id": "ddbe56180fb1556d",
+    "type": "split",
+    "children": [
+      {
+        "id": "afeda0fe2341dd72",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "78cc451b400b2ba9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "00000001-JUEGOS/TAU-Otoño2024/Guias de ejercicios/Guía 4.pdf",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Guía 4"
+            }
+          },
+          {
+            "id": "d8ace75bf8810713",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "00000001-JUEGOS/TAU-Otoño2024/Guias de ejercicios/Guía 4.pdf",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Guía 4"
+            }
+          },
+          {
+            "id": "b19de93607923084",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "aae9e2e81e436c3d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "00000001-JUEGOS/TAU-Otoño2024/Guias de ejercicios/Guía 4.pdf",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Guía 4"
+            }
+          },
+          {
+            "id": "289726f695a49bb3",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 483.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "file-tree-alternative:File Tree Alternative Plugin": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
+    }
+  },
+  "active": "cac384fae642c237",
+  "lastOpenFiles": [
+    "2-MODELOS/TEORICAS/3.1 variational methods introduction.pdf",
+    "0-JUEGOS/TAU-Otoño2024/APUNTES/Ejercicio15-Guia5.md",
+    "0-JUEGOS/TAU-Otoño2024/GUIAS/Guía 5.pdf",
+    "0-JUEGOS/TAU-Otoño2024/APUNTES/Ejercicio8-Guia5.md",
+    "2-MODELOS/TEORICAS/3.3 recursive stochastic equations.pdf",
+    "0-JUEGOS/TAU-Otoño2024/GUIAS/Guía 3.pdf",
+    "2-MODELOS/TEORICAS/2.1 OLG.pdf",
+    "2-MODELOS/TEORICAS/2.2 Recursive.pdf",
+    "2-MODELOS/TEORICAS/3.2 Euler equation.pdf",
+    "0-JUEGOS/TAU-Otoño2024/GUIAS/Guía 4.pdf",
+    "2-MODELOS/TEORICAS/md/2.2 Recursive.md",
+    "2-MODELOS/TEORICAS/md/2.1 OLG.md",
+    "2-MODELOS/TEORICAS/md/1. Solow.md",
+    "2-MODELOS/TEORICAS/md",
+    "2-MODELOS/TEORICAS/untitled folder",
+    "2-MODELOS/TRABAJOS/02-OLG/02.md",
+    "2-COMERCIO/APUNTES/C1.19.06.md",
+    "0-JUEGOS/TAU-Otoño2024/APUNTES/Ejercicio9-Guia4.md",
+    "0-JUEGOS/TAU-Otoño2024/APUNTES/Ejercicio7-Guia5.md",
+    "1-MACRO/APUNTES/C10.28.04 - Neo Keyensianos.md",
+    "1-MACRO/APUNTES/C12.12.05 - Monetaria.md",
+    "0-JUEGOS/TAU-Otoño2024/APUNTES/Ejercicio13-Guia4.md",
+    "0-JUEGOS/TAU-Otoño2024/APUNTES/Ejercicio12-Guia4.md",
+    "0-JUEGOS/0-MICROECONOMIA-2/GUIAS/GUIAS-RESOL/GUIA 6.md",
+    "0-JUEGOS/0-MICROECONOMIA-2/GUIAS/GUIAS-RESOL/GUIA 5.md",
+    "0-JUEGOS/0-MICROECONOMIA-2/GUIAS/GUIAS-RESOL/GUIA 4.md",
+    "0-JUEGOS/0-MICROECONOMIA-2/GUIAS/GUIAS-RESOL/GUIA 3.md",
+    "2-MODELOS/TEORICAS/2.1 OLG.md",
+    "2-MODELOS/APUNTES/C2.17.06.md",
+    "2-MODELOS/TEORICAS/2.2 Recursive.md",
+    "2-MODELOS/TEORICAS/1. Solow.md",
+    "2-MODELOS/TRABAJOS/01-Solow/01.png",
+    "2-MODELOS/TRABAJOS/01-Solow/01-original.md",
+    "2-MODELOS/TRABAJOS/01-Solow/01-cc2.md",
+    "2-MODELOS/TRABAJOS/01-Solow/01-cc.md",
+    "2-MODELOS/TRABAJOS/01/01.png",
+    "2-MODELOS/TRABAJOS/01/01-original.md",
+    "2-MODELOS/TRABAJOS/01.png",
+    "00000000/00-misc/Pasted image 20250527231328.png",
+    "00000000/00-misc/Pasted image 20250527230604.png",
+    "00000000/00-misc/Pasted image 20250526160913.png",
+    "00000000/00-misc/Pasted image 20250526155021.png",
+    "1.MACRO/APUNTES/MACRO.canvas",
+    "00000000/00-misc/Pasted image 20250525200913.png",
+    "00000000/00-misc/Pasted image 20250525172439.png",
+    "00000000/00-misc/Pasted image 20250525133249.png",
+    "MACRO/APUNTES/MACRO.canvas",
+    "MACRO/APUNTES-2/MACRO.canvas"
+  ]
+}

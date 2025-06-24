@@ -1,0 +1,695 @@
+{
+    "La invención de la democracia. Una historia de la modernidad occidental": {
+        "id": "H203",
+        "periodo": "Indistinto",
+        "modulo": "(EL) Electivas de Historia (1)",
+        "title": "(H203) La invención de la democracia. Una historia de la modernidad occidental",
+        "resumen": "La materia propone un acercamiento a la historia de Occidente en el largo plazo a través de la trayectoria de una idea que podemos considerar fundante de esa historia: la idea de la democracia. Un mecanismo utilizado para la renovación de los elencos gobernantes, un conjunto de instituciones políticas que van más allá del mecanismo electoral, un modelo de sociedad basado en la igualdad de condiciones, un ideal ético que consagra los principios de autonomía individual, deliberación racional, y pluralismo; la idea democrática generó a lo largo del tiempo distintas definiciones y a su vez fue implementada, modificada y adaptada de distintas maneras en distintos lugares y momentos.",
+        "ultima_cursada": "Semestre 2 - 2021",
+        "profesores": "Zimmermann, Eduardo Alberto  Ojeda Silva, Nahuel Hernán",
+        "nota": "10",
+        "correlativas": [
+            ""
+        ]
+    },
+    "Literatura Comparada": {
+        "id": "H205",
+        "periodo": "Indistinto",
+        "modulo": "(EL) Electiva Literatura (1)",
+        "title": "(H205) Literatura Comparada",
+        "resumen": "Este curso es una introducción al estudio de la literatura desde una perspectiva comparada e interdisciplinaria, pensado principalmente para estudiantes universitarios que se inician en la vida académica. El objetivo principal del curso es estudiar, a través de la lectura de textos literarios provenientes de diversas épocas y culturas, los modos en los que el lenguaje y la literatura han provisto de instrumentos y herramientas de comprensión, reflexión y exploración del mundo.",
+        "ultima_cursada": "Semestre 1 - 2021",
+        "profesores": "Kanoore Edul, Cynthia Alia",
+        "nota": "9",
+        "correlativas": [
+            ""
+        ]
+    },
+    "Fundamentos de Administración": {
+        "id": "A016",
+        "periodo": "Indistinto",
+        "modulo": "(EL) AdministraciónFundamentos de Adm. (1)",
+        "title": "(A016) Fundamentos de Administración",
+        "resumen": "Los objetivos generales de la materia se sintetizan en los siguientes cuatro puntos:\r\n•\tIntroducir a los alumnos y alumnas en el conocimiento de las herramientas conceptuales y metodológicas básicas del Management, desde una visión amplia del fenómeno organizativo, en diferentes ámbitos institucionales. \r\n•\tDesarrollar actitudes y aptitudes básicas no solo para la lectura crítica de la bibliografía y el estudio de las organizaciones, sino también para la toma de decisiones en situaciones pedagógicas reales de gestión\r\n•\tFamiliarizarlos con el lenguaje y la práctica de la gestión, para desarrollar su capacidad de diálogo y colaboración con los expertos de la disciplina",
+        "ultima_cursada": "Semestre 2 - 2021",
+        "profesores": "Darmohraj, Adrian Marcelo",
+        "nota": "9",
+        "correlativas": [
+            ""
+        ]
+    },
+    "Matemática I": {
+        "id": "C030",
+        "periodo": "Indistinto",
+        "modulo": "(OB) ObligatoriasEconomiafinanzas (27)",
+        "title": "(C030) Matemática I",
+        "resumen": "Que el alumno logre pensar y utilizar la matemática correctamente, como un lenguaje. Que, como fruto de su madurez matemática, el alumno logre resolver situaciones nuevas con herramientas conocidas. Para esto:\r\n- Desarrollaremos rigurosamente los temas de Cálculo para funciones de una variable incluidos en el programa, motivando a los alumnos con aplicaciones concretas.\r\n- Destacaremos la estructura de los enunciados matemáticos que nos permiten modelizar situaciones similares bajo un mismo esquema. De esta manera, se conducirá al alumno a que exprese en forma analítica problemas que se presentan en situaciones reales, teniendo muchas veces como referencia aplicaciones a diferentes disciplinas.\r\n- Mostraremos las ventajas y limitaciones de los métodos matemáticos. De esta manera, el alumno irá acostumbrándose a analizar los supuestos de las teorías utilizadas y a interpretar los resultados matemáticos obtenidos.\r\n- Estimularemos la adquisición de habilidades para realizar cálculos con sus respectivas interpretaciones geométricas y para resolver problemas relacionados con los temas vistos.",
+        "ultima_cursada": "Semestre 1 - 2022",
+        "profesores": "Moreno, Veronica",
+        "nota": "6",
+        "correlativas": [
+            "C029 Introducción al Razonamiento Matemático"
+        ]
+    },
+    "Introducción al Pensamiento Computacional": {
+        "id": "I110",
+        "periodo": "Indistinto",
+        "modulo": "(OB) Modulo Pensamiento Computacional (1)",
+        "title": "(I110) Introducción al Pensamiento Computacional",
+        "resumen": "",
+        "ultima_cursada": "",
+        "profesores": "",
+        "nota": "SIN NOTA",
+        "correlativas": [
+            ""
+        ]
+    },
+    "Introducción al Razonamiento Matemático": {
+        "id": "C029",
+        "periodo": "Indistinto",
+        "modulo": "(OB) ObligatoriasEconomiafinanzas (27)",
+        "title": "(C029) Introducción al Razonamiento Matemático",
+        "resumen": "",
+        "ultima_cursada": "Semestre 2 - 2021",
+        "profesores": "Perez, Mariana Valeria",
+        "nota": "7",
+        "correlativas": [
+            ""
+        ]
+    },
+    "Finanzas I": {
+        "id": "A354",
+        "periodo": "Indistinto",
+        "modulo": "(OB) ObligatoriasEconomiafinanzas (27)",
+        "title": "(A354) Finanzas I",
+        "resumen": "Se pretende lograr que:\r\n         a)  los alumnos incorporen conceptos esenciales vinculados con la disciplina financiera, como el concepto de valor y su relación con el tiempo, así como fundamentos de Finanzas Corporativas.\r\n         b) el participante tenga una visión general de los métodos matemáticos que se aplican a la resolución de distintos problemas financieros.\r\n         c) adquiera habilidades básicas en el manejo, proceso y análisis de información financiera utilizada en la toma de decisiones.\r\n         d) consiga un conocimiento instrumental básico que le permita poder desempeñarse adecuadamente ante los requerimientos matemático-financieros que le planteará, una vez graduado, el desempeño de su profesión.\r\n         e) los alumnos aprendan a utilizar una planilla de cálculos a efectos de realizar cálculos financieros.\r\n         f) los estudiantes puedan cursar con éxito Finanzas II, materia en la que se hace uso de conceptos introducidos en esta materia.",
+        "ultima_cursada": "Semestre 2 - 2022",
+        "profesores": "Fernandez Molero, Diego",
+        "nota": "5",
+        "correlativas": [
+            "C029 Introducción al Razonamiento Matemático"
+        ]
+    },
+    "Economía I": {
+        "id": "E010",
+        "periodo": "Indistinto",
+        "modulo": "(OB) ObligatoriasEconomiafinanzas (27)",
+        "title": "(E010) Economía I",
+        "resumen": "El programa de este curso está diseñado para proporcionar a los estudiantes una perspectiva sobre debates y controversias relacionadas al crecimiento económico de occidente en el largo plazo. El curso se apoya en el trabajo previo de los estudiantes en economía mediante la aplicación de conocimientos teóricos básicos y herramientas empíricas a los principales temas históricos, e intenta al mismo tiempo motivar la relevancia de conceptos, ideas e instrumentos que se van a profundizar más adelante en su formación.",
+        "ultima_cursada": "Semestre 1 - 2021",
+        "profesores": "Murphy, Tomas Eric",
+        "nota": "7",
+        "correlativas": [
+            ""
+        ]
+    },
+    "Derechos Fundamentales": {
+        "id": "H063",
+        "periodo": "2do semestre",
+        "modulo": "(EL) Electiva del Ciclo de Fundamentos (1)",
+        "title": "(H063) Derechos Fundamentales",
+        "resumen": "",
+        "ultima_cursada": "Semestre 1 - 2021",
+        "profesores": "Ramírez Calvo, Ricardo",
+        "nota": "9",
+        "correlativas": [
+            ""
+        ]
+    },
+    "Arte Moderno y Contemporáneo Internacional, Siglo XX y XXI": {
+        "id": "H039",
+        "periodo": "Indistinto",
+        "modulo": "(EL) Electiva de Arte (1)",
+        "title": "(H039) Arte Moderno y Contemporáneo Internacional, Siglo XX y XXI",
+        "resumen": "El objetivo de la materia es introducir algunos aspectos del desarrollo histórico del arte moderno y contemporáneo y los contextos en que se producen. Se buscará desarrollar la capacidad de análisis crítico de los movimientos artísticos, la producción teórica, las exposiciones, las instituciones culturales, etc., que permita abordar los procesos históricos desde diversas perspectivas.",
+        "ultima_cursada": "Semestre 1 - 2021",
+        "profesores": "Guerra, Diego Fernando",
+        "nota": "8",
+        "correlativas": [
+            ""
+        ]
+    },
+    "Filosofía": {
+        "id": "H010",
+        "periodo": "Indistinto",
+        "modulo": "(EL) Electivas Filosofía 2019 (1)",
+        "title": "(H010) Filosofía",
+        "resumen": "El curso busca proporcionar a los estudiantes herramientas que permitan enriquecer sus niveles de análisis, comprensión y discusión, y apuntalar su formación teórica a partir de una apropiación del léxico conceptual de la filosofía en ciertos momentos clave de su desarrollo. Bajo este propósito general se especifican los siguientes objetivos: que los estudiantes se familiaricen con el vocabulario técnico y el aparato doctrinario de las diversas posiciones filosóficas; que sean capaces de establecer relaciones entre las diferentes corrientes filosóficas y los contextos históricos en los que surgieron y operaron; que realicen una lectura comprensiva y una elaboración filosófica de los textos, desarrollando una disposición activa en la lectura de los materiales bibliográficos; que se predispongan favorablemente a la discusión conjunta y al debate de ideas; que ejerciten y perfeccionen técnicas de estudio y hábitos de trabajo intelectual; que consoliden y refinen sus habilidades en el abordaje analítico e interpretativo de las fuentes y de la bibliografía complementaria; que apunten a consolidar un estilo de argumentación propio tanto en intervenciones orales como en producciones escritas.",
+        "ultima_cursada": "Semestre 2 - 2021",
+        "profesores": "Livov Alonso, Gabriel Rodrigo  DAscenzo, Martin Horacio",
+        "nota": "6",
+        "correlativas": [
+            ""
+        ]
+    },
+    "Escritura y Oratoria": {
+        "id": "H209",
+        "periodo": "Indistinto",
+        "modulo": "(OB) ObligatoriasEconomiafinanzas (27)",
+        "title": "(H209) Escritura y Oratoria",
+        "resumen": "Esta materia tiene como objetivo principal capacitar a los estudiantes que se inician en los estudios universitarios en la redacción y puesta en discurso oral de diversos tipos de textos que circulan en el ámbito de la universidad (cartas, currículum vitae, resúmenes, respuestas de examen, monografías). Por ello, se insistirá en los aspectos discursivos, textuales y normativos relacionados con el uso de la lengua escrita y oral en los géneros académicos universitarios. En primer lugar, se intentará, entonces, que los estudiantes identifiquen e interpreten las características lingüístico-discursivas propias del discurso académico universitario En segundo lugar, se aspira a que los estudiantes adquieran las competencias necesarias que les permitan redactar, reescribir y presentar oralmente en forma coherente, cohesiva y adecuada una amplia gama de textos académicos.",
+        "ultima_cursada": "Semestre 1 - 2021",
+        "profesores": "Garcia Negroni, Maria Marta",
+        "nota": "8",
+        "correlativas": [
+            ""
+        ]
+    },
+    "Matemática II": {
+        "id": "C031",
+        "periodo": "Indistinto",
+        "modulo": "(OB) Obligatoria Mate II Economia (1)",
+        "title": "(C031) Matemática II",
+        "resumen": "Objetivos de aprendizaje: Enseñar a pensar y a utilizar la matemática correctamente:\r\n- Transmitiendo al alumno el lenguaje preciso de la matemática y la necesidad de su utilización en las ciencias cuantificables.\r\n- Desarrollando rigurosamente los temas del Cálculo incluidos en el programa, motivándolos con aplicaciones concretas de las teorías de la Economía y la Administración.\r\n- Destacando la generalidad de los enunciados matemáticos y logrando que el alumno exprese en forma matemática problemas que se presentan en la vida real y en otras disciplinas científicas.\r\n- Mostrando las ventajas y limitaciones de las aplicaciones de la matemática, acostumbrando al alumno a analizar los supuestos de las teorías utilizadas y a interpretar siempre los resultados matemáticos obtenidos",
+        "ultima_cursada": "Semestre 2 - 2022",
+        "profesores": "Heineken, Sigrid Bettina",
+        "nota": "8",
+        "correlativas": [
+            "C030 Matemática I"
+        ]
+    },
+    "Finanzas II": {
+        "id": "A454",
+        "periodo": "Indistinto",
+        "modulo": "(OB) Obligatoria Finanzas II (1)",
+        "title": "(A454) Finanzas II",
+        "resumen": "Se pretende lograr que los alumnos:\r\na) después de aprobar Finanzas I, tengan una visión general del campo de las Finanzas de Empresas en su actual desarrollo.\r\nb) adquieran habilidades básicas en el manejo, proceso y análisis de información financiera utilizada en la toma de decisiones.\r\nc) puedan dejar el curso con un conocimiento instrumental fundamentado que les permita, al egresar, poder desarrollar tareas de análisis financiero en emprendimientos, empresas, bancos y otras instituciones con o sin fines de lucro, en la parte inicial de sus carreras.\r\nd) perciban las interrelaciones con otras áreas funcionales de la empresa y se utilicen los conocimientos adquiridos para mejorar la performance administrativa en las mismas, en particular la medición y gestión de los riesgos asociados a todo tipo de emprendimientos.\r\ne) utilicen plenamente las capacidades de funciones financieras y conozcan con claridad las posibilidades de procesarlas mediante una planilla de cálculo, una P.C. o dispositivo similar.\r\nf) adquieran habilidad para el autoaprendizaje: \"aprender a aprender\", y para la toma de decisiones bajo condiciones de mucha presión, especialmente temporal.\r\ng) mejoren la aptitud de autoevaluación y perciban la conveniencia de intentar anticiparse a los hechos, especialmente mediante la lectura de fundamentos teóricos y la consideración de situaciones problemáticas no analizadas con anterioridad, previamente a la clase en que se discutan.\r\nh) se entrenen en la resolución de problemas no repetitivos usando técnicas incorporadas previamente en el curso o bien en cursos anteriores.",
+        "ultima_cursada": "Semestre 2 - 2023",
+        "profesores": "Fermo, German Daniel  Frachi, Javier",
+        "nota": "EN CURSO",
+        "correlativas": [
+            "A354 Finanzas I"
+        ]
+    },
+    "Programación aplicada a Finanzas": {
+        "id": "F210",
+        "periodo": "1er semestre",
+        "modulo": "(OB) ObligatoriasEconomiafinanzas (27)",
+        "title": "(F210) Programación aplicada a Finanzas",
+        "resumen": "",
+        "ultima_cursada": "Semestre 1 - 2023",
+        "profesores": "Basaluzzo, Gabriel Arturo",
+        "nota": "7",
+        "correlativas": [
+            "C029 Introducción al Razonamiento Matemático"
+        ]
+    },
+    "Estadística I": {
+        "id": "C038",
+        "periodo": "Indistinto",
+        "modulo": "(OB) ObligatoriasEconomiafinanzas (27)",
+        "title": "(C038) Estadística I",
+        "resumen": "El objetivo de este curso es que los alumnos incorporen nociones básicas de Probabilidad y comiencen a aplicar esta teoría en temas de Estadística. Se espera que puedan expresar en forma matemática algunos problemas probabilísticos, resolverlos utilizando los contenidos aprendidos y finalmente interpretar los resultados. También que comiencen a obtener información a partir de muestras de datos y a procesar esta información en base a lo aprendido.",
+        "ultima_cursada": "Semestre 2 - 2022",
+        "profesores": "Fraiman, Daniel",
+        "nota": "9",
+        "correlativas": [
+            "C030 Matemática I"
+        ]
+    },
+    "Fundamentos de Contabilidad": {
+        "id": "A024",
+        "periodo": "Indistinto",
+        "modulo": "(OB) ObligatoriasEconomiafinanzas (27)",
+        "title": "(A024) Fundamentos de Contabilidad",
+        "resumen": "OBJETIVOS DE APRENDIZAJE:\r\nQue el estudiante:\r\n Comprenda la importancia de la información económico-financiera y de la in- formación no financiera en las organizaciones privadas y públicas, tanto para la gestión interna como para informar a los terceros interesados.\r\n Valore el rol de la contabilidad como un elemento clave del sistema de informa- ción de los entes para toma de decisiones operativas, gerenciales y estratégicas.\r\n Identifique las cuestiones contables fundamentales, los principales conceptos contables y comprenda la relación entre estas cuestiones y conceptos y las nor- mas contables.\r\n Conozca las características del procesamiento contable y el mecanismo de la partida doble y domine todo lo relacionado con las registraciones contables, en particular los procesos de clasificación, reconocimiento, medición, presentación y revelación.\r\n Prepare los cuatro estados contables fundamentales: estado de situación patri- monial, estado de resultados, estado de evolución del patrimonio y estado de flujo de efectivo.\r\n Analice e interprete la información contenida en los estados contables.\r\n Conozca algunos conceptos básicos de la contabilidad gerencial y se familiarice con su uso.",
+        "ultima_cursada": "Semestre 1 - 2022",
+        "profesores": "Gomez Paz, Gabriel Alejandro",
+        "nota": "6",
+        "correlativas": [
+            "A016 Fundamentos de Administración"
+        ]
+    },
+    "Macroeconomía I": {
+        "id": "E021",
+        "periodo": "2do semestre",
+        "modulo": "(OB) Obligatoria Macroeconomía (1)",
+        "title": "(E021) Macroeconomía I",
+        "resumen": "Es un curso introductorio de macroeconomía que cubre aspectos de corto y largo plazo. El\r\nenfoque analítico busca desarrollar en el alumno la capacidad de explicar las variables y\r\nperspectivas macroeconómicas. Se enfatiza el análisis e interpretación de la realidad\r\nmacroeconómica priorizando los aspectos internacionales.",
+        "ultima_cursada": "Semestre 2 - 2023",
+        "profesores": "Baldrich, Jorge",
+        "nota": "EN CURSO",
+        "correlativas": [
+            "C031 Matemática II"
+        ]
+    },
+    "Microeconomía I": {
+        "id": "E016",
+        "periodo": "Indistinto",
+        "modulo": "(OB) Microeconomía Economistas (1)",
+        "title": "(E016) Microeconomía I",
+        "resumen": "El objetivo del curso es el análisis del proceso de toma de decisiones de los distintos agentes\r\neconómicos a nivel individual, así como la comprensión de las diferentes estructuras de\r\nmercado. Se intentará entender cómo los agentes económicos responden a incentivos,\r\ncomenzando por el consumidor y la firma como unidades básicas, para luego abordar el\r\nestudio del equilibrio competitivo, el cual constituye un escenario base de análisis\r\nfundamental. Luego se considerarán escenarios no competitivos, para que el alumno pueda\r\nidentificar las distintas estructuras de mercado que pueden encontrarse en la vida real.\r\nFinalmente, se abordarán extensiones al modelo de toma de decisiones, incorporando riesgo,\r\nuna dimensión temporal, y analizando interacciones entre los distintos mercados y agentes.",
+        "ultima_cursada": "Semestre 1 - 2023",
+        "profesores": "Acosta, Jorge Alan",
+        "nota": "6",
+        "correlativas": [
+            "C031 Matemática II"
+        ]
+    },
+    "Introducción a las Ciencias: Metodología de la Investigación y Ciencia": {
+        "id": "C094",
+        "periodo": "Indistinto",
+        "modulo": "(EL) Ciencias (1)",
+        "title": "(C094) Introducción a las Ciencias: Metodología de la Investigación y Ciencia",
+        "resumen": "Este curso ofrece una introducción básica a la ciencia moderna, incluyendo la física moderna,\r\nla biología, las neurociencias y las ciencias sociales, desde las múltiples perspectivas que\r\nofrecen las disciplinas metacientíficas que componen el campo de los estudios sobre la\r\nciencia, entre ellas la historia de la ciencia, la lógica y filosofía de la ciencia, la sociología de\r\nla ciencia y la antropología de la ciencia.",
+        "ultima_cursada": "Semestre 2 - 2022",
+        "profesores": "Barberis, Sergio Daniel",
+        "nota": "8",
+        "correlativas": [
+            ""
+        ]
+    },
+    "Matemática aplicada a problemas financieros": {
+        "id": "F310",
+        "periodo": "2do semestre",
+        "modulo": "(OB) ObligatoriasEconomiafinanzas (27)",
+        "title": "(F310) Matemática aplicada a problemas financieros",
+        "resumen": "",
+        "ultima_cursada": "",
+        "profesores": "",
+        "nota": "SIN NOTA",
+        "correlativas": [
+            "F210 Programación aplicada a Finanzas"
+        ]
+    },
+    "Mercado de Capitales": {
+        "id": "A451",
+        "periodo": "1er semestre",
+        "modulo": "(OB) ObligatoriasEconomiafinanzas (27)",
+        "title": "(A451) Mercado de Capitales",
+        "resumen": "",
+        "ultima_cursada": "",
+        "profesores": "",
+        "nota": "SIN NOTA",
+        "correlativas": [
+            "C031 Matemática II",
+            "A454 Finanzas II"
+        ]
+    },
+    "Econometría": {
+        "id": "E137",
+        "periodo": "Indistinto",
+        "modulo": "(OB) ObligatoriasEconomiafinanzas (27)",
+        "title": "(E137) Econometría",
+        "resumen": "Objetivos\r\n1. Discutir las características teóricas de los métodos econométricos disponibles, lo cual es crucial para\r\nelegir óptimamente las técnicas a utilizar en el trabajo propio, y para evaluar críticamente el trabajo\r\nde otros.\r\n2. Presentar herramientas computacionales recientes para la aplicación de los métodos discutidos en\r\nclase.\r\n3. Presentar aplicaciones recientes en distintas áreas de la Economía.\r\n4. Motivar el uso de métodos empíricos en Economía, lo que implica cubrir todas las etapas desde el\r\ndesarrollo y discusión de ideas básicas, la recolección de datos, la elección de técnicas\r\neconométricas adecuadas y la evaluación crítica del trabajo de otros autores, hasta presentación oral\r\ny escrita de los resultados obtenidos.",
+        "ultima_cursada": "Semestre 2 - 2023",
+        "profesores": "García Cicco, Javier  Gibbons, María Amelia",
+        "nota": "EN CURSO",
+        "correlativas": [
+            "C138 Estadística II"
+        ]
+    },
+    "Estadística II": {
+        "id": "C138",
+        "periodo": "Indistinto",
+        "modulo": "(OB) ObligatoriasEconomiafinanzas (27)",
+        "title": "(C138) Estadística II",
+        "resumen": "Se espera que los estudiantes desarrollen un manejo fluido de los métodos probabilísticos (secciones 1, 2, 3 y 4 del programa abajo detallado) y su aplicación a la estadística, siendo capaces de deducir, así como de aplicar, los resultados estadísticos teóricos tratados en el programa (secciones 5 hasta 9 del programa).\r\nAsí mismo, se desea que el estudiante construya correcta “intuición” a la hora de interpretar/analizar los resultados obtenidos al aplicar los métodos estadísticos estudiados.",
+        "ultima_cursada": "Semestre 1 - 2023",
+        "profesores": "Fernandez Piana, Lucas",
+        "nota": "5",
+        "correlativas": [
+            "C038 Estadística I"
+        ]
+    },
+    "Política Macroeconómica": {
+        "id": "F311",
+        "periodo": "1er semestre",
+        "modulo": "(OB) Obligatorias Finanzas 2019 (23)",
+        "title": "(F311) Política Macroeconómica",
+        "resumen": "",
+        "ultima_cursada": "",
+        "profesores": "",
+        "nota": "SIN NOTA",
+        "correlativas": [
+            "E021 Macroeconomía I"
+        ]
+    },
+    "Matemática III": {
+        "id": "C032",
+        "periodo": "Indistinto",
+        "modulo": "(OB) ObligatoriasEconomiafinanzas (27)",
+        "title": "(C032) Matemática III",
+        "resumen": "Objetivos de aprendizaje: Enseñar a pensar y utilizar la matemática correctamente, desarrollando los temas con rigurosidad, motivándolos y destacando la generalidad de los enunciados matemáticos, transmitiendo el lenguaje preciso de la matemática, mostrando las ventajas y limitaciones de las aplicaciones. Se espera que el alumno exprese en forma matemática algunos problemas reales, pueda resolverlos utilizando los contenidos aprendidos y sepa interpretar los resultados. También que sea capaz de razonar con determinados conceptos abstractos y seguir la lógica formal de los argumentos explicados.",
+        "ultima_cursada": "Semestre 1 - 2023",
+        "profesores": "Svarc, Marcela",
+        "nota": "6",
+        "correlativas": [
+            "C031 Matemática II"
+        ]
+    },
+    "Finanzas Internacionales": {
+        "id": "F320",
+        "periodo": "2do semestre",
+        "modulo": "(OB) ObligatoriasEconomiafinanzas (27)",
+        "title": "(F320) Finanzas Internacionales",
+        "resumen": "",
+        "ultima_cursada": "",
+        "profesores": "",
+        "nota": "SIN NOTA",
+        "correlativas": [
+            "A451 Mercado de Capitales",
+            "A454  Finanzas II"
+        ]
+    },
+    "Ingeniería Financiera": {
+        "id": "F414",
+        "periodo": "1er semestre",
+        "modulo": "(OB) ObligatoriasEconomiafinanzas (27)",
+        "title": "(F414) Ingeniería Financiera",
+        "resumen": "",
+        "ultima_cursada": "",
+        "profesores": "",
+        "nota": "SIN NOTA",
+        "correlativas": [
+            "F310 Matemática aplicada a problemas financieros"
+        ]
+    },
+    "Banca de inversión": {
+        "id": "F412",
+        "periodo": "2do semestre",
+        "modulo": "(OB) ObligatoriasEconomiafinanzas (27)",
+        "title": "(F412) Banca de inversión",
+        "resumen": "",
+        "ultima_cursada": "",
+        "profesores": "",
+        "nota": "SIN NOTA",
+        "correlativas": [
+            "F405 Finanzas corporativas avanzadas"
+        ]
+    },
+    "Administración de Riesgos Financieros": {
+        "id": "F410",
+        "periodo": "2do semestre",
+        "modulo": "(OB) ObligatoriasEconomiafinanzas (27)",
+        "title": "(F410) Administración de Riesgos Financieros",
+        "resumen": "",
+        "ultima_cursada": "",
+        "profesores": "",
+        "nota": "SIN NOTA",
+        "correlativas": [
+            "C138 Estadística II"
+        ]
+    },
+    "Portfolio Management y Análisis Técnico": {
+        "id": "F408",
+        "periodo": "2do semestre",
+        "modulo": "(OB) ObligatoriasEconomiafinanzas (27)",
+        "title": "(F408) Portfolio Management y Análisis Técnico",
+        "resumen": "",
+        "ultima_cursada": "",
+        "profesores": "",
+        "nota": "SIN NOTA",
+        "correlativas": [
+            "F400 Instrumentos Financieros"
+        ]
+    },
+    "Administración y Gestión Bancaria": {
+        "id": "F406",
+        "periodo": "2do semestre",
+        "modulo": "(OB) ObligatoriasEconomiafinanzas (27)",
+        "title": "(F406) Administración y Gestión Bancaria",
+        "resumen": "El principal objetivo del curso es que los cuenten con un conocimiento acabado de la estructura organizativa de un banco y de todos los aspectos relevantes que hacen a la gestión del mismo.",
+        "ultima_cursada": "",
+        "profesores": "",
+        "nota": "SIN NOTA",
+        "correlativas": [
+            ""
+        ]
+    },
+    "Instrumentos Financieros": {
+        "id": "F400",
+        "periodo": "1er semestre",
+        "modulo": "(OB) ObligatoriasEconomiafinanzas (27)",
+        "title": "(F400) Instrumentos Financieros",
+        "resumen": "Este es un curso sobre teoría y práctica de valuación de instrumentos financieros.\r\nEl curso abarca interpretación de los diferentes tipos de cláusulas en los prospectos de emisión y los riesgos inherentes a las inversiones en instrumentos de deuda hasta la valuación de bonos con opciones implícitas, por ejemplo callables, convertibles y swaps de tasa de interés.\r\nTambién hay una parte importante del curso dedicada a la descripción y valuación de las distintas formas de instrumentos de deuda respaldados por activos financieros (MBS, ABS). Incluyendo tanto el desarrollo del mercado americano como el argentino.\r\nLa materia se encuentra alineada parcialmente con los contenidos del Programa Chartered Financial Analyst (CFA) por lo que seguiremos los contenidos del libro Fixed Income Analysis for the Chartered Financial Analyst® Program, 2nd edition, Frank J. Fabozzi (Frank J. Fabozzi Associates, 2004) como bibliografía básica y complementaremos con otras lecturas especializadas que se irán entregando en el curso de la materia.",
+        "ultima_cursada": "",
+        "profesores": "",
+        "nota": "SIN NOTA",
+        "correlativas": [
+            "A451 Mercado de Capitales",
+            "F310 Matemática aplicada a problemas financieros"
+        ]
+    },
+    "Pronósticos Financieros": {
+        "id": "F402",
+        "periodo": "1er semestre",
+        "modulo": "(OB) ObligatoriasEconomiafinanzas (27)",
+        "title": "(F402) Pronósticos Financieros",
+        "resumen": "",
+        "ultima_cursada": "",
+        "profesores": "",
+        "nota": "SIN NOTA",
+        "correlativas": [
+            "E137 Econometría"
+        ]
+    },
+    "Finanzas corporativas avanzadas": {
+        "id": "F405",
+        "periodo": "1er semestre",
+        "modulo": "(OB) ObligatoriasEconomiafinanzas (27)",
+        "title": "(F405) Finanzas corporativas avanzadas",
+        "resumen": "",
+        "ultima_cursada": "",
+        "profesores": "",
+        "nota": "SIN NOTA",
+        "correlativas": [
+            "A454 Finanzas II"
+        ]
+    },
+    "Historia Económica I": {
+        "id": "E041",
+        "periodo": "1er semestre",
+        "modulo": "(OB) Historia Económica I (1)",
+        "title": "(E041) Historia Económica I",
+        "resumen": "El pasado es un laboratorio experimental único en ciencias sociales y, en la\r\nmayoría de los casos, la agenda de investigación del historiador económico se superpone\r\ncon la del estudiante de crecimiento, desarrollo y economía aplicada en\r\ngeneral. El programa de este curso está diseñado para proporcionar a los estudiantes\r\nuna perspectiva sobre debates y controversias relacionadas al crecimiento\r\neconómico de occidente en el largo plazo. El curso se apoya en el trabajo\r\nprevio de los estudiantes en economía mediante la aplicación de conocimientos\r\nteóricos básicos y herramientas empíricas a los principales temas históricos, e intenta\r\nal mismo tiempo motivar la relevancia de conceptos, ideas e instrumentos\r\nque se van a profundizar más adelante en su formación. Estos temas se utilizarán\r\npara estudiar las formas en que los historiadores económicos han formulado\r\ny evaluado sus argumentos, cómo esos argumentos han sido criticados por otros\r\nautores, y las formas en que el debate académico ha avanzado el conocimiento. El\r\ncurso no pretende que el estudiante sea capaz de enumerar los principales hechos\r\neconómicos del pasado, sino proveer herramientas para reflexionar sobre estos\r\nhechos. El énfasis estará en reforzar la capacidad de los estudiantes para leer críticamente,\r\ncomprender la aplicabilidad de modelos formales, y evaluar los méritos\r\nde las interpretaciones rivales con respecto a los datos históricos disponibles.",
+        "ultima_cursada": "Semestre 1 - 2022",
+        "profesores": "Murphy, Tomas Eric",
+        "nota": "9",
+        "correlativas": [
+            "E010 Economía I"
+        ]
+    },
+    "Economía Internacional": {
+        "id": "E155",
+        "periodo": "2do semestre",
+        "modulo": "(OB) ObligatoriasEconomiafinanzas (27)",
+        "title": "(E155) Economía Internacional",
+        "resumen": "El curso contiene dos partes. En la primera parte, nos preguntaremos por qué los países comercian entre sí y qué factores determinan sus estructuras de comercio. En esta parte estudiaremos modelos teóricos que enfatizan diferencias tecnológicas y en la dotación de factores para explicar patrones comerciales. También estudiaremos los efectos del comercio internacional en la distribución del ingreso y en el bienestar social. Además estudiaremos por qué algunas firmas exportan y otras no lo hacen, a la vez que estudiaremos los determinantes de la inversión extranjera directa. En la segunda parte, analizaremos los determinantes, instrumentos y efectos de la política comercial. Primero estudiaremos los distintos instrumentos de política comercial. Luego estudiaremos sus efectos sobre el comercio y el desarrollo económico y nos preguntaremos por qué los países implementan tales políticas.",
+        "ultima_cursada": "Semestre 2 - 2023",
+        "profesores": "Albornoz, Facundo",
+        "nota": "EN CURSO",
+        "correlativas": [
+            "Microeconomía Economistas"
+        ]
+    },
+    "Macroeconomía II": {
+        "id": "E120",
+        "periodo": "1er semestre",
+        "modulo": "(OB) ObligatoriasEconomiafinanzas (27)",
+        "title": "(E120) Macroeconomía II",
+        "resumen": "",
+        "ultima_cursada": "",
+        "profesores": "",
+        "nota": "SIN NOTA",
+        "correlativas": [
+            "E021 Macroeconomía I"
+        ]
+    },
+    "Microeconomía II": {
+        "id": "E115",
+        "periodo": "1er semestre",
+        "modulo": "(OB) ObligatoriasEconomiafinanzas (27)",
+        "title": "(E115) Microeconomía II",
+        "resumen": "La idea de este curso es presentar los principales desarrollos existentes en teoría de los juegos (no-cooperativos). El objetivo es proveer los instrumentos requeridos para entender la mayoría de los avances realizados en teoría económica que utilizan el herramental de teoría de los juegos. Las aplicaciones serán principalmente microeconómicas. Contenidos: Decisiones bajo incertidumbre; Juegos Estáticos con información completa; Juegos Dinámicos con Información completa; Juegos Estáticos con información incompleta; Juegos Dinámicos con Información incompleta; Economía de la Información.",
+        "ultima_cursada": "",
+        "profesores": "",
+        "nota": "SIN NOTA",
+        "correlativas": [
+            "E016 Microeconomía"
+        ]
+    },
+    "Hist. Pensamiento Económico": {
+        "id": "E145",
+        "periodo": "2do semestre",
+        "modulo": "(OP) Optativas Economía 2019 (2)",
+        "title": "(E145) Hist. Pensamiento Económico",
+        "resumen": "El objetivo de la materia es que los alumnos conozcan las principales corrientes de pensamiento económico surgidas a lo largo de la historia. A la vez, se espera que los estudiantes adquieran los conocimientos y las herramientas para identificar y relacionar los conceptos y orígenes de las distintas ideas económicas.",
+        "ultima_cursada": "",
+        "profesores": "",
+        "nota": "SIN NOTA",
+        "correlativas": [
+            "E041 Historia Económica I"
+        ]
+    },
+    "Crecimiento Económico": {
+        "id": "E172",
+        "periodo": "1er semestre",
+        "modulo": "(OP) Optativas Economía 2019 (2)",
+        "title": "(E172) Crecimiento Económico",
+        "resumen": "",
+        "ultima_cursada": "",
+        "profesores": "",
+        "nota": "SIN NOTA",
+        "correlativas": [
+            "E137 Econometría"
+        ]
+    },
+    "Economía Internacional Monetaria": {
+        "id": "E182",
+        "periodo": "1er semestre",
+        "modulo": "(OP) Optativas Economía 2019 (2)",
+        "title": "(E182) Economía Internacional Monetaria",
+        "resumen": "Unidad 1-Clase 1: Contabilidad del Balance de Pagos (y del Balance Cambiario)\r\nUnidad 2-Clase 2 y 3: Rudimentos en Economía Abierta sin incertidumbre: dotaciones y producción.\r\nUnidad 3-Clase 4 y 5 : Rudimentos en Economía Abierta con incertidumbre.\r\nUnidad 4-Clases 6 y 7 : Rudimentos en Economía Abierta tiempo infinito.\r\nUnidad 5- Clases 8 y 9 : Política Fiscal\r\nUnidad 6- Clases 10 y 11 : Política Monetaria\r\nUnidad 7- Clase 12 y 13 : Determinantes del tipo de cambio real\r\nUnidad 8- Clase 14 : Crisis de balance de Pagos",
+        "ultima_cursada": "",
+        "profesores": "",
+        "nota": "SIN NOTA",
+        "correlativas": [
+            "E115 Microeconomía II",
+            "E137 Econometría"
+        ]
+    },
+    "Exploraciones sobre Pobreza, Desarrollo Humano y Políticas Sociales": {
+        "id": "E403",
+        "periodo": "2do semestre",
+        "modulo": "(OP) Optativas Economía 2019 (2)",
+        "title": "(E403) Exploraciones sobre Pobreza, Desarrollo Humano y Políticas Sociales",
+        "resumen": "",
+        "ultima_cursada": "",
+        "profesores": "",
+        "nota": "SIN NOTA",
+        "correlativas": [
+            ""
+        ]
+    },
+    "Economía del Comportamiento": {
+        "id": "E410",
+        "periodo": "2do semestre",
+        "modulo": "(OP) Optativas Economía 2019 (2)",
+        "title": "(E410) Economía del Comportamiento",
+        "resumen": "",
+        "ultima_cursada": "",
+        "profesores": "",
+        "nota": "SIN NOTA",
+        "correlativas": [
+            ""
+        ]
+    },
+    "Finanzas Públicas": {
+        "id": "E150",
+        "periodo": "2do semestre",
+        "modulo": "(OB) ObligatoriasEconomiafinanzas (27)",
+        "title": "(E150) Finanzas Públicas",
+        "resumen": "Gastos públicos: Bienes Públicos; Teoría de las Decisiones Colectivas; Fijación de Precios y Reglas de Inversión en Empresas Públicas; Análisis Costo-Beneficio; Distribución del Ingreso. Ingresos Públicos: Teoría de la Imposición Optima; Imposición e incentivos; Incidencia Tributaria. Transferencias: Transferencias Interpersonales y Seguro Social; La Teoría del Federalismo Fiscal.",
+        "ultima_cursada": "",
+        "profesores": "",
+        "nota": "SIN NOTA",
+        "correlativas": [
+            "E115 Microeconomía II"
+        ]
+    },
+    "Economía Argentina": {
+        "id": "E308",
+        "periodo": "1er semestre",
+        "modulo": "(OP) Optativas Economía 2019 (2)",
+        "title": "(E308) Economía Argentina",
+        "resumen": "",
+        "ultima_cursada": "",
+        "profesores": "",
+        "nota": "SIN NOTA",
+        "correlativas": [
+            "E010 Economía I"
+        ]
+    },
+    "Big data": {
+        "id": "E337",
+        "periodo": "2do semestre",
+        "modulo": "(OP) Optativas Economía 2019 (2)",
+        "title": "(E337) Big data",
+        "resumen": "",
+        "ultima_cursada": "",
+        "profesores": "",
+        "nota": "SIN NOTA",
+        "correlativas": [
+            ""
+        ]
+    },
+    "Pobreza, Desarrollo Humano Y Políticas Sociales": {
+        "id": "E402",
+        "periodo": "1er semestre",
+        "modulo": "(OP) Optativas Economía 2019 (2)",
+        "title": "(E402) Pobreza, Desarrollo Humano Y Políticas Sociales",
+        "resumen": "",
+        "ultima_cursada": "",
+        "profesores": "",
+        "nota": "SIN NOTA",
+        "correlativas": [
+            ""
+        ]
+    },
+    "Sistemas Dinámicos": {
+        "id": "E163",
+        "periodo": "2do semestre",
+        "modulo": "(OP) Optativas Economía 2019 (2)",
+        "title": "(E163) Sistemas Dinámicos",
+        "resumen": "El objetivo de este curso es saber predecir el comportamiento futuro de un sistema o modelo\r\nque evoluciona en el tiempo. La interveci´on de la variable tiempo es una de las caracter´ısticas\r\nfundamentales en el an´alisis de este tipo de problemas, por lo que se habla de Sistemas Din´amicos. Estos modelos matem´aticos se clasifican seg´un la intervenci´on del tiempo en continuos\r\n(Ecuaciones Diferenciales Ordinarias) o discretos (Ecuaciones en Diferencias).\r\nEntre los modelos econ´omicos paradigm´aticos encontramos el de Solow (de crecimiento\r\necon´omico), de Samuelson (interacci´on entre el multiplicador y el acelerador), de Leontief, de\r\nHarrod-Domar, de Lorenz y de crecimiento poblacional (modelo log´ıstico).\r\nLos sistemas din´amicos m´as simples, se pueden describir seg´un su comportamiento en tres\r\ngrandes grupos: los que tiene atracci´on a un punto fijo (asisnt´oticamente estables), los que\r\ndivergen a infinito (inestables) y los “c´ıclicos” (modelo predador-presa, por ejemplo). Pero tambi´en hay sistemas de comportamiento m´as complejo, con comportamiento peri´odico y tambi´en\r\nca´otico.",
+        "ultima_cursada": "Semestre 2 - 2023",
+        "profesores": "Lassalle, Silvia",
+        "nota": "EN CURSO",
+        "correlativas": [
+            "C032 Matemática III"
+        ]
+    },
+    "Economía del Comportamiento Avanzado": {
+        "id": "E411",
+        "periodo": "2do semestre",
+        "modulo": "(OP) Optativas Economía 2019 (2)",
+        "title": "(E411) Economía del Comportamiento Avanzado",
+        "resumen": "",
+        "ultima_cursada": "",
+        "profesores": "",
+        "nota": "SIN NOTA",
+        "correlativas": [
+            "E115 Microeconomía II"
+        ]
+    },
+    "Natural Language Processing": {
+        "id": "E404",
+        "periodo": "2do semestre",
+        "modulo": "(OP) Optativas Economía 2019 (2)",
+        "title": "(E404) Natural Language Processing",
+        "resumen": "",
+        "ultima_cursada": "",
+        "profesores": "",
+        "nota": "SIN NOTA",
+        "correlativas": [
+            ""
+        ]
+    },
+    "Economía Aplicada": {
+        "id": "E178",
+        "periodo": "2do semestre",
+        "modulo": "(OP) Optativas Economía 2019 (2)",
+        "title": "(E178) Economía Aplicada",
+        "resumen": "Introducción a las relaciones causales. El modelo lineal (y algunas extensiones). Endogeneidad y variables instrumentales. Datos de panel: modelos estáticos y dinámicos. Evaluación de impacto. Randomization, difference-in-differences, propensity score matching, regression discontinuity. Experimentos en laboratorio. Experimentos en campo. Crimen. Corrupción. Privatizaciones. Educación. Economía política. Derechos de propiedad.",
+        "ultima_cursada": "",
+        "profesores": "",
+        "nota": "SIN NOTA",
+        "correlativas": [
+            "E137 Econometría"
+        ]
+    },
+    "Economía Monetaria": {
+        "id": "E184",
+        "periodo": "1er semestre",
+        "modulo": "(OB) ObligatoriasEconomiafinanzas (27)",
+        "title": "(E184) Economía Monetaria",
+        "resumen": "Modelos monetarios simples. Inflación y estabilización. Instituciones monetarias. Mercados de crédito. Intermediación Financiera.",
+        "ultima_cursada": "",
+        "profesores": "",
+        "nota": "SIN NOTA",
+        "correlativas": [
+            "E115 Microeconomía II"
+        ]
+    }
+}

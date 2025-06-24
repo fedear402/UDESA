@@ -1,0 +1,32 @@
+{\rtf1\fs24
+\trowd\trgaph75\trleft-75\intbl\trqc\clbrdrt\brdrs\cellx2448\clbrdrt\brdrs\cellx4032\clbrdrt\brdrs\cellx5616
+\ql \cell\qc (1)\cell\qc (2)\cell\row
+\trowd\trgaph75\trleft-75\trqc\cellx2448\cellx4032\cellx5616
+\trowd\trgaph75\trleft-75\trqc\clbrdrb\brdrs\cellx2448\clbrdrb\brdrs\cellx4032\clbrdrb\brdrs\cellx5616
+\ql VARIABLES\cell\qc empresas\cell\qc empresas\cell\row
+\trowd\trgaph75\trleft-75\trqc\cellx2448\cellx4032\cellx5616
+\ql \cell\qc \cell\qc \cell\row
+\ql pj\cell\qc -22.06**\cell\qc -29.50***\cell\row
+\ql \cell\qc (8.927)\cell\qc (10.27)\cell\row
+\ql pob\cell\qc 0.00584***\cell\qc 0.00692***\cell\row
+\ql \cell\qc (0.000425)\cell\qc (0.000456)\cell\row
+\ql nbi_pob_perc\cell\qc -128.7***\cell\qc -120.9***\cell\row
+\ql \cell\qc (31.75)\cell\qc (36.80)\cell\row
+\ql dif_sal_avg\cell\qc 0.0179**\cell\qc 0.00354\cell\row
+\ql \cell\qc (0.00805)\cell\qc (0.00900)\cell\row
+\ql delitos_x_hab\cell\qc -2.526\cell\qc -19.06***\cell\row
+\ql \cell\qc (6.179)\cell\qc (6.566)\cell\row
+\ql tasas_p_jur_perc\cell\qc -3.498\cell\qc -11.05\cell\row
+\ql \cell\qc (8.090)\cell\qc (9.291)\cell\row
+\ql autonomia_perc\cell\qc 40.67***\cell\qc \cell\row
+\ql \cell\qc (6.096)\cell\qc \cell\row
+\ql Constant\cell\qc 537.9\cell\qc 3,356***\cell\row
+\ql \cell\qc (759.8)\cell\qc (732.6)\cell\row
+\ql \cell\qc \cell\qc \cell\row
+\ql Observations\cell\qc 133\cell\qc 133\cell\row
+\trowd\trgaph75\trleft-75\trqc\trbrdrb\brdrs\clbrdrb\brdrs\cellx2448\clbrdrb\brdrs\cellx4032\clbrdrb\brdrs\cellx5616
+\ql R-squared\cell\qc 0.762\cell\qc 0.677\cell\row
+\pard\qc
+Standard errors in parentheses\par
+*** p<0.01, ** p<0.05, * p<0.1\par
+}

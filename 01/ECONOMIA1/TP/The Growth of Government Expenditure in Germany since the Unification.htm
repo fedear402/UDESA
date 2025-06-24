@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="bg-light-blue">
+  <head>
+    <meta charset="UTF-8">
+    <title>Acceso remoto a las bases</title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <link href="public/login.css?body=1" media="all" rel="stylesheet" />
+    <link href="/public/favicon.png" rel="shortcut icon" type="image/png">
+    <script src="public/login.js?body=1"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="bg-light-blue">
+    <div class="form-box" id="login-box">
+      <div class="header bg-blue">
+        <img src="public/logoudesa.png" class="img" alt="logo"/>
+        <p></p>
+        <small>Inicio de sesi&oacute;n</small>
+      </div>
+      <form accept-charset="UTF-8" action="/login" class="new_user" id="new_user" method="post">
+        <div class="body bg-gray">
+          <input type="hidden" name="url" value="https://www.jstor.org/stable/pdf/40909774.pdf?ab_segments=0%2Fbasic_search_gsv2%2Fcontrol&#38;refreqid=fastly-default%3Aedb8289ff4705d33b73584318ce84594" />
+          <div class="form-group">
+            <input autofocus="autofocus" class="form-control" name="user" placeholder="email or username" type="text" />
+          </div>
+          <div class="form-group">
+            <input autocomplete="off" class="form-control" name="pass" placeholder="password" type="password" />
+          </div>
+        </div>
+        <div class="footer">
+          <input class="btn btn-primary btn-large btn-block" name="commit" type="submit" value="acceder" />
+          <p class="text-center"><a href="http://gestion.udesa.edu.ar/users/password/new">Olvid&oacute; su contraseña?</a></p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

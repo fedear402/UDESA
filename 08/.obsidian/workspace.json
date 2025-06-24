@@ -1,0 +1,236 @@
+{
+  "main": {
+    "id": "60e541050f9f4b8a",
+    "type": "split",
+    "children": [
+      {
+        "id": "7f9c7fcd1142c61a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2473920ff28dbbf1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MONETARIA/APUNTES-P2/MON-P2.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "MON-P2"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3a25ee36db3d402a",
+    "type": "split",
+    "children": [
+      {
+        "id": "8267d0ce09476b97",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6e37075b657b1eeb",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "4fc59c972452ace2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "aaab5781885eba4c",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "d8fad96e04eb0aca",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "FINANZAS-PUBLICAS/GUIAS/Problem Set Finanzas Publics.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Problem Set Finanzas Publics"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300.50418853759766
+  },
+  "right": {
+    "id": "598ad47b0159f914",
+    "type": "split",
+    "children": [
+      {
+        "id": "e28ac4faca7707eb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d562fb0732b5ff3b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "ea1ec1086f458d0a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "a08270b5821c8177",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "110b3e1a9edbb1df",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {},
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "9f993318abf7106e",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "markdown-table-editor:Open Markdown Table Editor": false
+    }
+  },
+  "active": "2473920ff28dbbf1",
+  "lastOpenFiles": [
+    "MONETARIA/TEORICAS/03 - A Money in the Utility Fuction Model.pdf",
+    "MONETARIA/GUIAS/FINALES/MonetariaUdeSA_Final_2023_sol.pdf",
+    "MONETARIA/GUIAS/01 MON/GUIA-1-Monetaria-sol.pdf",
+    "MONETARIA/GUIAS/02 MON/GUIA-2-Monetaria-sol.pdf",
+    "MONETARIA/GUIAS/03 MON/GUIA-3-Monetaria.pdf",
+    "MONETARIA/GUIAS/04 MON/ParaPracticar04/GUIA-4-Monetaria.pdf",
+    "MONETARIA/GUIAS/05 MON/ParaPracticar05/GUIA-5-Monetaria.pdf",
+    "MONETARIA/APUNTES-P2/MON-P2.md",
+    "APLICADA/PROPUESTA/JURADOS/jurados.md",
+    "APLICADA/PROPUESTA/JURADOS/Propuesta.md",
+    "APLICADA/PROPUESTA/JURADOS/ar-svg.jpg",
+    "APLICADA/PROPUESTA/JURADOS/panel_delitos_sexuales-.xlsx",
+    "APLICADA/PROPUESTA/JURADOS/collapsed.dta",
+    "APLICADA/PROPUESTA/JURADOS/total.dta",
+    "APLICADA/PROPUESTA/JURADOS/Panel_Data.xlsx",
+    "Untitled.md",
+    "APLICADA/PROPUESTA/jurados.md",
+    "MONETARIA/APUNTES-P2/Untitled.md",
+    "FINANZAS-PUBLICAS/APUNTES-P2/Pasted image 20241202203253.png",
+    "FINANZAS-PUBLICAS/APUNTES-P2/Pasted image 20241206175534.png",
+    "FINANZAS-PUBLICAS/APUNTES-P2/Untitled.md",
+    "FINANZAS-PUBLICAS/APUNTES-P2/Pasted image 20241206174352.png",
+    "FINANZAS-PUBLICAS/APUNTES-P2/FIN PUB - PARTE 2.md",
+    "FINANZAS-PUBLICAS/APUNTES-P2/Pasted image 20241206183349.png",
+    "APLICADA/PROPUESTA/Ideas Propuesta.md",
+    "APLICADA/PROPUESTA/Transporte.md",
+    "APLICADA/PROPUESTA/Ideas Propuesta 2.md",
+    "APLICADA/APUNTES/FDA.md",
+    "MONETARIA/MONETARIA TEORICAS.md",
+    "MONETARIA/APUNTES-P2/C5.png",
+    "FINANZAS-PUBLICAS/TP/Modelo.md",
+    "MONETARIA/APUNTES-P2/Clase 4.md",
+    "MONETARIA/APUNTES-P2/Clase 1.md",
+    "MONETARIA/APUNTES-P2/Clase 2.md",
+    "MONETARIA/APUNTES-P2/Clase 3.md",
+    "MONETARIA/APUNTES-P2/Clase 5.md",
+    "MONETARIA/ENTREGAS/Exposición/Pasted image 20241115000631.png",
+    "MONETARIA/ENTREGAS/Exposición/Expo.md",
+    "MONETARIA/ENTREGAS/Exposición/Pasted image 20241115021554.png",
+    "MONETARIA/ENTREGAS/Exposición/Pasted image 20241114235630.png",
+    "MONETARIA/ENTREGAS/Exposición/Pasted image 20241114235428.png",
+    "FINANZAS-PUBLICAS/FIN BIBLIOGRAFIA.md",
+    "MONETARIA/ENTREGAS/03/tp3.md",
+    "APLICADA/APL BIBLIOGRAFIA.md",
+    "APLICADA/TUTORIALES/E178-APLICADA-PS-G1/T08/ConsignasPS8-1/homicides-sp-synth-master/README.md",
+    "APLICADA/TUTORIALES/E178-APLICADA-PS-G1/T08/ConsignasPS8/homicides-sp-synth-master/README.md"
+  ]
+}

@@ -1,0 +1,685 @@
+-------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/federicolopez/Library/CloudStorage/OneDrive-Personal/Documents/UDESA/07
+> /PRONOSTICOS/TUTORIALES/TUT6/out.log
+  log type:  text
+ opened on:  16 Apr 2024, 17:51:31
+
+. 
+end of do-file
+
+. do "/var/folders/fm/4w6xdvfn5lx37kg5cbrn4jnc0000gn/T//SD12709.000000"
+
+. clear all
+
+. cd "/Users/federicolopez/Downloads/"
+/Users/federicolopez/Downloads
+
+. use  "/Users/federicolopez/Downloads/P_TP1_Datos_Ejer2_PyM.dta"
+
+. 
+. *************** EJERCICIO 2
+. 
+. drop in 1/99
+(99 observations deleted)
+
+. 
+. 
+. gen t = _n
+
+. tsset t
+        time variable:  t, 1 to 85
+                delta:  1 unit
+
+. 
+. 
+. gen infla = (D.IPC / L.IPC)
+(1 missing value generated)
+
+. gen base = (D.M / L.M)
+(1 missing value generated)
+
+. 
+. dfgls infla
+ 
+DF-GLS for infla                                         Number of obs =    72
+Maxlag = 11 chosen by Schwert criterion
+ 
+               DF-GLS tau      1% Critical       5% Critical      10% Critical
+  [lags]     Test Statistic        Value             Value             Value
+------------------------------------------------------------------------------
+    11           -2.548           -3.641            -2.745            -2.471
+    10           -2.634           -3.641            -2.783            -2.508
+    9            -2.654           -3.641            -2.822            -2.545
+    8            -2.672           -3.641            -2.859            -2.581
+    7            -2.917           -3.641            -2.896            -2.616
+    6            -3.184           -3.641            -2.932            -2.649
+    5            -2.868           -3.641            -2.966            -2.681
+    4            -3.141           -3.641            -2.998            -2.710
+    3            -3.388           -3.641            -3.027            -2.737
+    2            -3.334           -3.641            -3.054            -2.762
+    1            -3.238           -3.641            -3.077            -2.783
+ 
+Opt Lag (Ng-Perron seq t) = 0 [use maxlag(0)]
+Min SC   = -9.593608 at lag  1 with RMSE    .00778
+Min MAIC = -9.303819 at lag  1 with RMSE    .00778
+
+. * CRITERIO MAIC = 1 rezago
+. dfgls base
+ 
+DF-GLS for base                                          Number of obs =    72
+Maxlag = 11 chosen by Schwert criterion
+ 
+               DF-GLS tau      1% Critical       5% Critical      10% Critical
+  [lags]     Test Statistic        Value             Value             Value
+------------------------------------------------------------------------------
+    11           -1.966           -3.641            -2.745            -2.471
+    10           -3.887           -3.641            -2.783            -2.508
+    9            -5.577           -3.641            -2.822            -2.545
+    8            -3.618           -3.641            -2.859            -2.581
+    7            -3.560           -3.641            -2.896            -2.616
+    6            -3.149           -3.641            -2.932            -2.649
+    5            -3.683           -3.641            -2.966            -2.681
+    4            -4.902           -3.641            -2.998            -2.710
+    3            -6.622           -3.641            -3.027            -2.737
+    2            -5.841           -3.641            -3.054            -2.762
+    1            -7.709           -3.641            -3.077            -2.783
+ 
+Opt Lag (Ng-Perron seq t) = 11 with RMSE  .0202829
+Min SC   =  -7.08318 at lag 11 with RMSE  .0202829
+Min MAIC = -4.036854 at lag  1 with RMSE  .0294423
+
+. * CRITERIO MAIC = 1 rezago
+. 
+. 
+. * Test de dickey fuller
+. dfuller infla, lag(1) noconstant
+
+Augmented Dickey-Fuller test for unit root         Number of obs   =        82
+
+                               ---------- Interpolated Dickey-Fuller ---------
+                  Test         1% Critical       5% Critical      10% Critical
+               Statistic           Value             Value             Value
+------------------------------------------------------------------------------
+ Z(t)             -0.968            -2.607            -1.950            -1.610
+
+. * no rechaza hipotesis nula de que tiene raiz unitaria
+. 
+. dfuller base, lag(1) noconstant
+
+Augmented Dickey-Fuller test for unit root         Number of obs   =        82
+
+                               ---------- Interpolated Dickey-Fuller ---------
+                  Test         1% Critical       5% Critical      10% Critical
+               Statistic           Value             Value             Value
+------------------------------------------------------------------------------
+ Z(t)             -5.211            -2.607            -1.950            -1.610
+
+. * rechaza hipotesis nula de que tiene raiz unitaria
+. 
+. 
+. 
+. *** b)
+. reg infla L1.base L2.base L3.base L4.base L5.base L6.base
+
+      Source |       SS           df       MS      Number of obs   =        78
+-------------+----------------------------------   F(6, 71)        =      0.65
+       Model |  .000347062         6  .000057844   Prob > F        =    0.6912
+    Residual |  .006334339        71  .000089216   R-squared       =    0.0519
+-------------+----------------------------------   Adj R-squared   =   -0.0282
+       Total |  .006681401        77  .000086771   Root MSE        =    .00945
+
+------------------------------------------------------------------------------
+       infla |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+        base |
+         L1. |  -.0357578   .0375728    -0.95   0.344    -.1106758    .0391601
+         L2. |  -.0214065   .0378058    -0.57   0.573    -.0967892    .0539762
+         L3. |  -.0364901   .0394973    -0.92   0.359    -.1152456    .0422653
+         L4. |   .0414243   .0393393     1.05   0.296     -.037016    .1198646
+         L5. |  -.0302164   .0385268    -0.78   0.435    -.1070366    .0466038
+         L6. |   .0174243   .0384011     0.45   0.651    -.0591452    .0939939
+             |
+       _cons |   .0238907   .0028852     8.28   0.000     .0181379    .0296436
+------------------------------------------------------------------------------
+
+. testparm L1.base L2.base L3.base L4.base L5.base L6.base
+
+ ( 1)  L.base = 0
+ ( 2)  L2.base = 0
+ ( 3)  L3.base = 0
+ ( 4)  L4.base = 0
+ ( 5)  L5.base = 0
+ ( 6)  L6.base = 0
+
+       F(  6,    71) =    0.65
+            Prob > F =    0.6912
+
+. 
+. 
+. *** c)
+. predict reisduals
+(option xb assumed; fitted values)
+(7 missing values generated)
+
+. estat dwatson
+
+Durbin-Watson d-statistic(  7,    78) =  .8562638
+
+. 
+. log using out.log, replace
+log file already open
+r(604);
+
+end of do-file
+
+r(604);
+
+. do "/var/folders/fm/4w6xdvfn5lx37kg5cbrn4jnc0000gn/T//SD12709.000000"
+
+. clear all
+
+. cd "/Users/federicolopez/Downloads/"
+/Users/federicolopez/Downloads
+
+. use  "/Users/federicolopez/Downloads/P_TP1_Datos_Ejer2_PyM.dta"
+
+. 
+. *************** EJERCICIO 2
+. 
+. drop in 1/99
+(99 observations deleted)
+
+. 
+. 
+. gen t = _n
+
+. tsset t
+        time variable:  t, 1 to 85
+                delta:  1 unit
+
+. 
+. 
+. gen infla = (D.IPC / L.IPC)
+(1 missing value generated)
+
+. gen base = (D.M / L.M)
+(1 missing value generated)
+
+. 
+. dfgls infla
+ 
+DF-GLS for infla                                         Number of obs =    72
+Maxlag = 11 chosen by Schwert criterion
+ 
+               DF-GLS tau      1% Critical       5% Critical      10% Critical
+  [lags]     Test Statistic        Value             Value             Value
+------------------------------------------------------------------------------
+    11           -2.548           -3.641            -2.745            -2.471
+    10           -2.634           -3.641            -2.783            -2.508
+    9            -2.654           -3.641            -2.822            -2.545
+    8            -2.672           -3.641            -2.859            -2.581
+    7            -2.917           -3.641            -2.896            -2.616
+    6            -3.184           -3.641            -2.932            -2.649
+    5            -2.868           -3.641            -2.966            -2.681
+    4            -3.141           -3.641            -2.998            -2.710
+    3            -3.388           -3.641            -3.027            -2.737
+    2            -3.334           -3.641            -3.054            -2.762
+    1            -3.238           -3.641            -3.077            -2.783
+ 
+Opt Lag (Ng-Perron seq t) = 0 [use maxlag(0)]
+Min SC   = -9.593608 at lag  1 with RMSE    .00778
+Min MAIC = -9.303819 at lag  1 with RMSE    .00778
+
+. * CRITERIO MAIC = 1 rezago
+. dfgls base
+ 
+DF-GLS for base                                          Number of obs =    72
+Maxlag = 11 chosen by Schwert criterion
+ 
+               DF-GLS tau      1% Critical       5% Critical      10% Critical
+  [lags]     Test Statistic        Value             Value             Value
+------------------------------------------------------------------------------
+    11           -1.966           -3.641            -2.745            -2.471
+    10           -3.887           -3.641            -2.783            -2.508
+    9            -5.577           -3.641            -2.822            -2.545
+    8            -3.618           -3.641            -2.859            -2.581
+    7            -3.560           -3.641            -2.896            -2.616
+    6            -3.149           -3.641            -2.932            -2.649
+    5            -3.683           -3.641            -2.966            -2.681
+    4            -4.902           -3.641            -2.998            -2.710
+    3            -6.622           -3.641            -3.027            -2.737
+    2            -5.841           -3.641            -3.054            -2.762
+    1            -7.709           -3.641            -3.077            -2.783
+ 
+Opt Lag (Ng-Perron seq t) = 11 with RMSE  .0202829
+Min SC   =  -7.08318 at lag 11 with RMSE  .0202829
+Min MAIC = -4.036854 at lag  1 with RMSE  .0294423
+
+. * CRITERIO MAIC = 1 rezago
+. 
+. 
+. * Test de dickey fuller
+. dfuller infla, lag(1) noconstant
+
+Augmented Dickey-Fuller test for unit root         Number of obs   =        82
+
+                               ---------- Interpolated Dickey-Fuller ---------
+                  Test         1% Critical       5% Critical      10% Critical
+               Statistic           Value             Value             Value
+------------------------------------------------------------------------------
+ Z(t)             -0.968            -2.607            -1.950            -1.610
+
+. * no rechaza hipotesis nula de que tiene raiz unitaria
+. 
+. dfuller base, lag(1) noconstant
+
+Augmented Dickey-Fuller test for unit root         Number of obs   =        82
+
+                               ---------- Interpolated Dickey-Fuller ---------
+                  Test         1% Critical       5% Critical      10% Critical
+               Statistic           Value             Value             Value
+------------------------------------------------------------------------------
+ Z(t)             -5.211            -2.607            -1.950            -1.610
+
+. * rechaza hipotesis nula de que tiene raiz unitaria
+. 
+. 
+. 
+. *** b)
+. reg infla L1.base L2.base L3.base L4.base L5.base L6.base
+
+      Source |       SS           df       MS      Number of obs   =        78
+-------------+----------------------------------   F(6, 71)        =      0.65
+       Model |  .000347062         6  .000057844   Prob > F        =    0.6912
+    Residual |  .006334339        71  .000089216   R-squared       =    0.0519
+-------------+----------------------------------   Adj R-squared   =   -0.0282
+       Total |  .006681401        77  .000086771   Root MSE        =    .00945
+
+------------------------------------------------------------------------------
+       infla |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+        base |
+         L1. |  -.0357578   .0375728    -0.95   0.344    -.1106758    .0391601
+         L2. |  -.0214065   .0378058    -0.57   0.573    -.0967892    .0539762
+         L3. |  -.0364901   .0394973    -0.92   0.359    -.1152456    .0422653
+         L4. |   .0414243   .0393393     1.05   0.296     -.037016    .1198646
+         L5. |  -.0302164   .0385268    -0.78   0.435    -.1070366    .0466038
+         L6. |   .0174243   .0384011     0.45   0.651    -.0591452    .0939939
+             |
+       _cons |   .0238907   .0028852     8.28   0.000     .0181379    .0296436
+------------------------------------------------------------------------------
+
+. testparm L1.base L2.base L3.base L4.base L5.base L6.base
+
+ ( 1)  L.base = 0
+ ( 2)  L2.base = 0
+ ( 3)  L3.base = 0
+ ( 4)  L4.base = 0
+ ( 5)  L5.base = 0
+ ( 6)  L6.base = 0
+
+       F(  6,    71) =    0.65
+            Prob > F =    0.6912
+
+. 
+. 
+. *** c)
+. predict reisduals
+(option xb assumed; fitted values)
+(7 missing values generated)
+
+. estat dwatson
+
+Durbin-Watson d-statistic(  7,    78) =  .8562638
+
+. 
+. log using out.log, replace
+log file already open
+r(604);
+
+end of do-file
+
+r(604);
+
+. do "/var/folders/fm/4w6xdvfn5lx37kg5cbrn4jnc0000gn/T//SD12709.000000"
+
+. clear all
+
+. cd "/Users/federicolopez/Downloads/"
+/Users/federicolopez/Downloads
+
+. use  "/Users/federicolopez/Downloads/P_TP1_Datos_Ejer2_PyM.dta"
+
+. 
+. *************** EJERCICIO 2
+. 
+. drop in 1/99
+(99 observations deleted)
+
+. 
+. 
+. gen t = _n
+
+. tsset t
+        time variable:  t, 1 to 85
+                delta:  1 unit
+
+. 
+. 
+. gen infla = (D.IPC / L.IPC)
+(1 missing value generated)
+
+. gen base = (D.M / L.M)
+(1 missing value generated)
+
+. 
+. dfgls infla
+ 
+DF-GLS for infla                                         Number of obs =    72
+Maxlag = 11 chosen by Schwert criterion
+ 
+               DF-GLS tau      1% Critical       5% Critical      10% Critical
+  [lags]     Test Statistic        Value             Value             Value
+------------------------------------------------------------------------------
+    11           -2.548           -3.641            -2.745            -2.471
+    10           -2.634           -3.641            -2.783            -2.508
+    9            -2.654           -3.641            -2.822            -2.545
+    8            -2.672           -3.641            -2.859            -2.581
+    7            -2.917           -3.641            -2.896            -2.616
+    6            -3.184           -3.641            -2.932            -2.649
+    5            -2.868           -3.641            -2.966            -2.681
+    4            -3.141           -3.641            -2.998            -2.710
+    3            -3.388           -3.641            -3.027            -2.737
+    2            -3.334           -3.641            -3.054            -2.762
+    1            -3.238           -3.641            -3.077            -2.783
+ 
+Opt Lag (Ng-Perron seq t) = 0 [use maxlag(0)]
+Min SC   = -9.593608 at lag  1 with RMSE    .00778
+Min MAIC = -9.303819 at lag  1 with RMSE    .00778
+
+. * CRITERIO MAIC = 1 rezago
+. dfgls base
+ 
+DF-GLS for base                                          Number of obs =    72
+Maxlag = 11 chosen by Schwert criterion
+ 
+               DF-GLS tau      1% Critical       5% Critical      10% Critical
+  [lags]     Test Statistic        Value             Value             Value
+------------------------------------------------------------------------------
+    11           -1.966           -3.641            -2.745            -2.471
+    10           -3.887           -3.641            -2.783            -2.508
+    9            -5.577           -3.641            -2.822            -2.545
+    8            -3.618           -3.641            -2.859            -2.581
+    7            -3.560           -3.641            -2.896            -2.616
+    6            -3.149           -3.641            -2.932            -2.649
+    5            -3.683           -3.641            -2.966            -2.681
+    4            -4.902           -3.641            -2.998            -2.710
+    3            -6.622           -3.641            -3.027            -2.737
+    2            -5.841           -3.641            -3.054            -2.762
+    1            -7.709           -3.641            -3.077            -2.783
+ 
+Opt Lag (Ng-Perron seq t) = 11 with RMSE  .0202829
+Min SC   =  -7.08318 at lag 11 with RMSE  .0202829
+Min MAIC = -4.036854 at lag  1 with RMSE  .0294423
+
+. * CRITERIO MAIC = 1 rezago
+. 
+. 
+. * Test de dickey fuller
+. dfuller infla, lag(1) noconstant
+
+Augmented Dickey-Fuller test for unit root         Number of obs   =        82
+
+                               ---------- Interpolated Dickey-Fuller ---------
+                  Test         1% Critical       5% Critical      10% Critical
+               Statistic           Value             Value             Value
+------------------------------------------------------------------------------
+ Z(t)             -0.968            -2.607            -1.950            -1.610
+
+. * no rechaza hipotesis nula de que tiene raiz unitaria
+. 
+. dfuller base, lag(1) noconstant
+
+Augmented Dickey-Fuller test for unit root         Number of obs   =        82
+
+                               ---------- Interpolated Dickey-Fuller ---------
+                  Test         1% Critical       5% Critical      10% Critical
+               Statistic           Value             Value             Value
+------------------------------------------------------------------------------
+ Z(t)             -5.211            -2.607            -1.950            -1.610
+
+. * rechaza hipotesis nula de que tiene raiz unitaria
+. 
+. 
+. 
+. *** b)
+. reg infla L1.base L2.base L3.base L4.base L5.base L6.base
+
+      Source |       SS           df       MS      Number of obs   =        78
+-------------+----------------------------------   F(6, 71)        =      0.65
+       Model |  .000347062         6  .000057844   Prob > F        =    0.6912
+    Residual |  .006334339        71  .000089216   R-squared       =    0.0519
+-------------+----------------------------------   Adj R-squared   =   -0.0282
+       Total |  .006681401        77  .000086771   Root MSE        =    .00945
+
+------------------------------------------------------------------------------
+       infla |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+        base |
+         L1. |  -.0357578   .0375728    -0.95   0.344    -.1106758    .0391601
+         L2. |  -.0214065   .0378058    -0.57   0.573    -.0967892    .0539762
+         L3. |  -.0364901   .0394973    -0.92   0.359    -.1152456    .0422653
+         L4. |   .0414243   .0393393     1.05   0.296     -.037016    .1198646
+         L5. |  -.0302164   .0385268    -0.78   0.435    -.1070366    .0466038
+         L6. |   .0174243   .0384011     0.45   0.651    -.0591452    .0939939
+             |
+       _cons |   .0238907   .0028852     8.28   0.000     .0181379    .0296436
+------------------------------------------------------------------------------
+
+. testparm L1.base L2.base L3.base L4.base L5.base L6.base
+
+ ( 1)  L.base = 0
+ ( 2)  L2.base = 0
+ ( 3)  L3.base = 0
+ ( 4)  L4.base = 0
+ ( 5)  L5.base = 0
+ ( 6)  L6.base = 0
+
+       F(  6,    71) =    0.65
+            Prob > F =    0.6912
+
+. 
+. 
+. *** c)
+. predict reisduals
+(option xb assumed; fitted values)
+(7 missing values generated)
+
+. estat dwatson
+
+Durbin-Watson d-statistic(  7,    78) =  .8562638
+
+. 
+. log using out1.log, replace
+log file already open
+r(604);
+
+end of do-file
+
+r(604);
+
+. do "/var/folders/fm/4w6xdvfn5lx37kg5cbrn4jnc0000gn/T//SD12709.000000"
+
+. clear all
+
+. cd "/Users/federicolopez/Downloads/"
+/Users/federicolopez/Downloads
+
+. use  "/Users/federicolopez/Downloads/P_TP1_Datos_Ejer2_PyM.dta"
+
+. 
+. *************** EJERCICIO 2
+. 
+. drop in 1/99
+(99 observations deleted)
+
+. 
+. 
+. gen t = _n
+
+. tsset t
+        time variable:  t, 1 to 85
+                delta:  1 unit
+
+. 
+. 
+. gen infla = (D.IPC / L.IPC)
+(1 missing value generated)
+
+. gen base = (D.M / L.M)
+(1 missing value generated)
+
+. 
+. dfgls infla
+ 
+DF-GLS for infla                                         Number of obs =    72
+Maxlag = 11 chosen by Schwert criterion
+ 
+               DF-GLS tau      1% Critical       5% Critical      10% Critical
+  [lags]     Test Statistic        Value             Value             Value
+------------------------------------------------------------------------------
+    11           -2.548           -3.641            -2.745            -2.471
+    10           -2.634           -3.641            -2.783            -2.508
+    9            -2.654           -3.641            -2.822            -2.545
+    8            -2.672           -3.641            -2.859            -2.581
+    7            -2.917           -3.641            -2.896            -2.616
+    6            -3.184           -3.641            -2.932            -2.649
+    5            -2.868           -3.641            -2.966            -2.681
+    4            -3.141           -3.641            -2.998            -2.710
+    3            -3.388           -3.641            -3.027            -2.737
+    2            -3.334           -3.641            -3.054            -2.762
+    1            -3.238           -3.641            -3.077            -2.783
+ 
+Opt Lag (Ng-Perron seq t) = 0 [use maxlag(0)]
+Min SC   = -9.593608 at lag  1 with RMSE    .00778
+Min MAIC = -9.303819 at lag  1 with RMSE    .00778
+
+. * CRITERIO MAIC = 1 rezago
+. dfgls base
+ 
+DF-GLS for base                                          Number of obs =    72
+Maxlag = 11 chosen by Schwert criterion
+ 
+               DF-GLS tau      1% Critical       5% Critical      10% Critical
+  [lags]     Test Statistic        Value             Value             Value
+------------------------------------------------------------------------------
+    11           -1.966           -3.641            -2.745            -2.471
+    10           -3.887           -3.641            -2.783            -2.508
+    9            -5.577           -3.641            -2.822            -2.545
+    8            -3.618           -3.641            -2.859            -2.581
+    7            -3.560           -3.641            -2.896            -2.616
+    6            -3.149           -3.641            -2.932            -2.649
+    5            -3.683           -3.641            -2.966            -2.681
+    4            -4.902           -3.641            -2.998            -2.710
+    3            -6.622           -3.641            -3.027            -2.737
+    2            -5.841           -3.641            -3.054            -2.762
+    1            -7.709           -3.641            -3.077            -2.783
+ 
+Opt Lag (Ng-Perron seq t) = 11 with RMSE  .0202829
+Min SC   =  -7.08318 at lag 11 with RMSE  .0202829
+Min MAIC = -4.036854 at lag  1 with RMSE  .0294423
+
+. * CRITERIO MAIC = 1 rezago
+. 
+. 
+. * Test de dickey fuller
+. dfuller infla, lag(1) noconstant
+
+Augmented Dickey-Fuller test for unit root         Number of obs   =        82
+
+                               ---------- Interpolated Dickey-Fuller ---------
+                  Test         1% Critical       5% Critical      10% Critical
+               Statistic           Value             Value             Value
+------------------------------------------------------------------------------
+ Z(t)             -0.968            -2.607            -1.950            -1.610
+
+. * no rechaza hipotesis nula de que tiene raiz unitaria
+. 
+. dfuller base, lag(1) noconstant
+
+Augmented Dickey-Fuller test for unit root         Number of obs   =        82
+
+                               ---------- Interpolated Dickey-Fuller ---------
+                  Test         1% Critical       5% Critical      10% Critical
+               Statistic           Value             Value             Value
+------------------------------------------------------------------------------
+ Z(t)             -5.211            -2.607            -1.950            -1.610
+
+. * rechaza hipotesis nula de que tiene raiz unitaria
+. 
+. 
+. 
+. *** b)
+. reg infla L1.base L2.base L3.base L4.base L5.base L6.base
+
+      Source |       SS           df       MS      Number of obs   =        78
+-------------+----------------------------------   F(6, 71)        =      0.65
+       Model |  .000347062         6  .000057844   Prob > F        =    0.6912
+    Residual |  .006334339        71  .000089216   R-squared       =    0.0519
+-------------+----------------------------------   Adj R-squared   =   -0.0282
+       Total |  .006681401        77  .000086771   Root MSE        =    .00945
+
+------------------------------------------------------------------------------
+       infla |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+        base |
+         L1. |  -.0357578   .0375728    -0.95   0.344    -.1106758    .0391601
+         L2. |  -.0214065   .0378058    -0.57   0.573    -.0967892    .0539762
+         L3. |  -.0364901   .0394973    -0.92   0.359    -.1152456    .0422653
+         L4. |   .0414243   .0393393     1.05   0.296     -.037016    .1198646
+         L5. |  -.0302164   .0385268    -0.78   0.435    -.1070366    .0466038
+         L6. |   .0174243   .0384011     0.45   0.651    -.0591452    .0939939
+             |
+       _cons |   .0238907   .0028852     8.28   0.000     .0181379    .0296436
+------------------------------------------------------------------------------
+
+. testparm L1.base L2.base L3.base L4.base L5.base L6.base
+
+ ( 1)  L.base = 0
+ ( 2)  L2.base = 0
+ ( 3)  L3.base = 0
+ ( 4)  L4.base = 0
+ ( 5)  L5.base = 0
+ ( 6)  L6.base = 0
+
+       F(  6,    71) =    0.65
+            Prob > F =    0.6912
+
+. 
+. 
+. *** c)
+. predict reisduals
+(option xb assumed; fitted values)
+(7 missing values generated)
+
+. estat dwatson
+
+Durbin-Watson d-statistic(  7,    78) =  .8562638
+
+. 
+. log using out1.log, replace
+log file already open
+r(604);
+
+end of do-file
+
+r(604);
+
+. log close
+      name:  <unnamed>
+       log:  /Users/federicolopez/Library/CloudStorage/OneDrive-Personal/Documents/UDESA/07
+> /PRONOSTICOS/TUTORIALES/TUT6/out.log
+  log type:  text
+ closed on:  16 Apr 2024, 17:52:20
+-------------------------------------------------------------------------------------------

@@ -1,0 +1,34 @@
+{\rtf1\fs24
+\trowd\trgaph75\trleft-75\intbl\trqc\clbrdrt\brdrs\cellx2448\clbrdrt\brdrs\cellx4032\clbrdrt\brdrs\cellx5760\clbrdrt\brdrs\cellx7344\clbrdrt\brdrs\cellx9216\clbrdrt\brdrs\cellx10944\clbrdrt\brdrs\cellx12960\clbrdrt\brdrs\cellx15408\clbrdrt\brdrs\cellx17568
+\ql \cell\qc (1)\cell\qc (2)\cell\qc (3)\cell\qc (4)\cell\qc (5)\cell\qc (6)\cell\qc (7)\cell\qc (8)\cell\row
+\trowd\trgaph75\trleft-75\trqc\cellx2448\cellx4032\cellx5760\cellx7344\cellx9216\cellx10944\cellx12960\cellx15408\cellx17568
+\trowd\trgaph75\trleft-75\trqc\clbrdrb\brdrs\cellx2448\clbrdrb\brdrs\cellx4032\clbrdrb\brdrs\cellx5760\clbrdrb\brdrs\cellx7344\clbrdrb\brdrs\cellx9216\clbrdrb\brdrs\cellx10944\clbrdrb\brdrs\cellx12960\clbrdrb\brdrs\cellx15408\clbrdrb\brdrs\cellx17568
+\ql VARIABLES\cell\qc pj\cell\qc pob\cell\qc densidad\cell\qc nbi_pob_perc\cell\qc dif_sal_avg\cell\qc delitos_x_hab\cell\qc tasas_p_jur_perc\cell\qc autonomia_perc\cell\row
+\trowd\trgaph75\trleft-75\trqc\cellx2448\cellx4032\cellx5760\cellx7344\cellx9216\cellx10944\cellx12960\cellx15408\cellx17568
+\ql \cell\qc \cell\qc \cell\qc \cell\qc \cell\qc \cell\qc \cell\qc \cell\qc \cell\row
+\ql pob\cell\qc 7.08e-06\cell\qc \cell\qc 0.00381***\cell\qc 4.23e-06**\cell\qc 0.0109**\cell\qc 1.10e-05**\cell\qc 2.09e-06\cell\qc 1.48e-05**\cell\row
+\ql \cell\qc (4.73e-06)\cell\qc \cell\qc (0.00141)\cell\qc (2.02e-06)\cell\qc (0.00523)\cell\qc (5.49e-06)\cell\qc (5.27e-06)\cell\qc (6.63e-06)\cell\row
+\ql densidad\cell\qc 0.000756\cell\qc 56.11***\cell\qc \cell\qc -0.000190\cell\qc 0.339\cell\qc -0.000296\cell\qc -0.000655\cell\qc 0.00253***\cell\row
+\ql \cell\qc (0.000574)\cell\qc (18.12)\cell\qc \cell\qc (0.000168)\cell\qc (0.644)\cell\qc (0.000453)\cell\qc (0.000637)\cell\qc (0.000788)\cell\row
+\ql nbi_pob_perc\cell\qc 1.024***\cell\qc 18,794***\cell\qc -57.24\cell\qc \cell\qc -87.83\cell\qc -0.812*\cell\qc -0.219\cell\qc 0.322\cell\row
+\ql \cell\qc (0.304)\cell\qc (5,642)\cell\qc (55.97)\cell\qc \cell\qc (354.3)\cell\qc (0.437)\cell\qc (0.351)\cell\qc (0.449)\cell\row
+\ql dif_sal_avg\cell\qc -3.74e-06\cell\qc 3.075**\cell\qc 0.00652\cell\qc -5.60e-06\cell\qc \cell\qc -0.000181*\cell\qc -5.16e-05\cell\qc -0.000342***\cell\row
+\ql \cell\qc (8.02e-05)\cell\qc (1.363)\cell\qc (0.0108)\cell\qc (2.43e-05)\cell\qc \cell\qc (0.000107)\cell\qc (8.86e-05)\cell\qc (0.000109)\cell\row
+\ql delitos_x_hab\cell\qc -0.0326\cell\qc 1,834***\cell\qc -3.350\cell\qc -0.0305**\cell\qc -106.5\cell\qc \cell\qc 0.0792\cell\qc -0.367***\cell\row
+\ql \cell\qc (0.0615)\cell\qc (614.0)\cell\qc (5.098)\cell\qc (0.0137)\cell\qc (67.96)\cell\qc \cell\qc (0.0677)\cell\qc (0.0808)\cell\row
+\ql tasas_p_jur_perc\cell\qc -0.0768\cell\qc 600.2\cell\qc -12.80\cell\qc -0.0142\cell\qc -52.40\cell\qc 0.137\cell\qc \cell\qc -0.139\cell\row
+\ql \cell\qc (0.0806)\cell\qc (814.1)\cell\qc (9.424)\cell\qc (0.0244)\cell\qc (90.05)\cell\qc (0.116)\cell\qc \cell\qc (0.114)\cell\row
+\ql autonomia_perc\cell\qc -0.107*\cell\qc 2,597**\cell\qc 30.18**\cell\qc 0.0127\cell\qc -212.1***\cell\qc -0.386***\cell\qc -0.0847\cell\qc \cell\row
+\ql \cell\qc (0.0624)\cell\qc (1,161)\cell\qc (13.05)\cell\qc (0.0196)\cell\qc (67.80)\cell\qc (0.0724)\cell\qc (0.0694)\cell\qc \cell\row
+\ql pj\cell\qc \cell\qc 2,493*\cell\qc 18.08\cell\qc 0.0812***\cell\qc -4.654\cell\qc -0.0690\cell\qc -0.0940\cell\qc -0.215*\cell\row
+\ql \cell\qc \cell\qc (1,486)\cell\qc (17.84)\cell\qc (0.0270)\cell\qc (99.76)\cell\qc (0.126)\cell\qc (0.0986)\cell\qc (0.125)\cell\row
+\ql Constant\cell\qc 21.70***\cell\qc -349,376***\cell\qc 158.8\cell\qc 7.159***\cell\qc 22,963***\cell\qc 54.46***\cell\qc 68.83***\cell\qc 63.59***\cell\row
+\ql \cell\qc (7.309)\cell\qc (99,731)\cell\qc (1,033)\cell\qc (2.156)\cell\qc (8,181)\cell\qc (9.442)\cell\qc (5.665)\cell\qc (9.081)\cell\row
+\ql \cell\qc \cell\qc \cell\qc \cell\qc \cell\qc \cell\qc \cell\qc \cell\qc \cell\row
+\ql Observations\cell\qc 133\cell\qc 133\cell\qc 133\cell\qc 133\cell\qc 133\cell\qc 133\cell\qc 133\cell\qc 133\cell\row
+\trowd\trgaph75\trleft-75\trqc\trbrdrb\brdrs\clbrdrb\brdrs\cellx2448\clbrdrb\brdrs\cellx4032\clbrdrb\brdrs\cellx5760\clbrdrb\brdrs\cellx7344\clbrdrb\brdrs\cellx9216\clbrdrb\brdrs\cellx10944\clbrdrb\brdrs\cellx12960\clbrdrb\brdrs\cellx15408\clbrdrb\brdrs\cellx17568
+\ql R-squared\cell\qc 0.207\cell\qc 0.470\cell\qc 0.435\cell\qc 0.272\cell\qc 0.102\cell\qc 0.239\cell\qc 0.100\cell\qc 0.406\cell\row
+\pard\qc
+Standard errors in parentheses\par
+*** p<0.01, ** p<0.05, * p<0.1\par
+}

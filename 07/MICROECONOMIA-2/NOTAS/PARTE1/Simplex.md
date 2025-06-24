@@ -1,0 +1,1 @@
+Es un conjunto de de distribuciones de probabilidad sobre otro conjunto. Por ejemplo para una [[Estrategia mixta]] es un elemento $\sigma_{i}$ del simplex $\Delta S_{i}$ que define las probabilidades de cada estrategia $s_{i}$ en $S_{i}$.

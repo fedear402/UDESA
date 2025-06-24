@@ -1,0 +1,3 @@
+Conjetura del jugador $i$ es una función $\theta_{j}\in\Delta S_{j}$. Para cada estrategia de $j$ en $s_{j}\in S_{j}$, se llama $\theta_{j}(s_{j})$ a la probabilidad de que $j$ juegue $s_{j }$, (es la idea que tiene $i$ de lo probable que es que $j$ juegue $s_{j}$). 
+
+No es lo mismo que una [[Estrategia mixta]], las cuales refieren a la distribución de probabilidades sobre las _propias_ estrategias en vez de las de todos los otros jugadores.

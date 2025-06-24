@@ -1,0 +1,234 @@
+{
+  "main": {
+    "id": "9e50645af8a6ab18",
+    "type": "split",
+    "children": [
+      {
+        "id": "8f1035269dd3c06c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bb8a643a1bc25831",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "MACRO2/TUTORIALES/ProblemSet1_SolowSwan.pdf"
+              }
+            }
+          },
+          {
+            "id": "a8b26247d09bb8f9",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "MACRO2/TEXTOS/David Romer - Advanced Macroeconomics-McGraw-Hill Education (2018).pdf"
+              }
+            }
+          },
+          {
+            "id": "dbc3bbf312a1a7e6",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "MACRO2/TEXTOS/David Romer - Advanced Macroeconomics-McGraw-Hill Education (2018).pdf"
+              }
+            }
+          },
+          {
+            "id": "5f33ea194b644ecb",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "MACRO2/TEXTOS/Campante, Stuzenegger-Advanced Macroeconomics.pdf"
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ac48862a813599f0",
+    "type": "split",
+    "children": [
+      {
+        "id": "c9c3c82d11e512a8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "635d033f0e23c25d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "72e4ed71fd656c56",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "70dbc684130aa194",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "98f88121e8386b0e",
+    "type": "split",
+    "children": [
+      {
+        "id": "7f23d78ea4a9dab9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "05b84eb68849f721",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "MACRO2/TEXTOS/David Romer - Advanced Macroeconomics-McGraw-Hill Education (2018).pdf",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "31af4d658ffeb885",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "MACRO2/TEXTOS/David Romer - Advanced Macroeconomics-McGraw-Hill Education (2018).pdf",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "edcefbb01e0cf85a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "e29ac7cc59bac8a8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "MACRO2/TEXTOS/David Romer - Advanced Macroeconomics-McGraw-Hill Education (2018).pdf"
+              }
+            }
+          },
+          {
+            "id": "9c3c3df46d272f11",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "zk-prefixer:Create new unique note": false
+    }
+  },
+  "active": "dbc3bbf312a1a7e6",
+  "lastOpenFiles": [
+    "BIGDATA/TUTORIALES/E337-BD-TPS-G1/README.md",
+    "MACRO2/TEXTOS/Campante, Stuzenegger-Advanced Macroeconomics.pdf",
+    "MACRO2/TEXTOS/David Romer - Advanced Macroeconomics-McGraw-Hill Education (2018).pdf",
+    "MACRO2/TEORICAS/Notas_Ramsey_I_UdeSA.pdf",
+    "MACRO2/TEORICAS/Notas_Solow_I_UdeSA (1).pdf",
+    "MACRO2/Programa_Macro2_UdeSA_2024.pdf",
+    "BIGDATA/BIBLIOGRAFIA/LIBROS/ISLP_website.pdf",
+    "BIGDATA/TUTORIALES/E337-BD-TPS-G1/TP1/TP1 - Parte 2.ipynb",
+    "BIGDATA/NOTAS/BIG DATA MAIN.md",
+    "MACRO2/NOTAS/MACRO MAIN.md",
+    "MACRO2/TEXTOS/Acemoglu Introduction to Modern Economic Growth.pdf",
+    "MACRO2/TEXTOS/Ramsey/Hamiltonians.pdf",
+    "MACRO2/TEXTOS/Ramsey",
+    "MICRO2/NOTAS/GUIAS-RESOL/GUIA 2.md",
+    "0-misc/Pasted image 20240316202555.png",
+    "0-misc/Pasted image 20240316202339.png",
+    "0-misc/Pasted image 20240316201838.png",
+    "0-misc/Pasted image 20240316201720.png",
+    "MICRO2/NOTAS/TEORIA/Dominación iterada.md",
+    "0-misc/Pasted image 20240316200933.png",
+    "0-misc/Pasted image 20240316194249.png",
+    "0-misc/Pasted image 20240316191625.png",
+    "0-misc/Pasted image 20240316183835.png",
+    "MICRO2/NOTAS/TEORIA/0-MICRO MAIN.md",
+    "MICRO2/NOTAS/TEORIA/Incertidumbre estratégica.md",
+    "MICRO2/NOTAS/TEORIA/Estrategias racionalizables.md",
+    "MICRO2/NOTAS/TEORIA/Conjunto de mejores respuestas.md",
+    "MICRO2/NOTAS/TEORIA/Conjunto de Mejores respuestas.md",
+    "MICRO2/NOTAS/TODO.md",
+    "MICRO2/NOTAS/TEORIA/Mejor Respuesta.md",
+    "MICRO2/NOTAS/TEORIA/Dominación Iterada.md",
+    "MICRO2/NOTAS/TEORIA/Estrategias no dominadas.md",
+    "MICRO2/NOTAS/TEORIA/mejores respuestas.md",
+    "202403160020.md",
+    "MICRO2/NOTAS/TEORIA/Infinitos sets de informacion.md",
+    "MICRO2/NOTAS/TEORIA/Tamaño del set de estrategias.md",
+    "MICRO2/NOTAS/TEORIA/Dominación.md",
+    "0-misc/Pasted image 20240315160446.png",
+    "MICRO2/NOTAS/GUIAS-RESOL/GUIA 1.md",
+    "MICRO2/NOTAS/TEORIA/Set de información.md",
+    "MICRO2/NOTAS/TEORIA/Pago esperado.md",
+    "Untitled.md"
+  ]
+}
