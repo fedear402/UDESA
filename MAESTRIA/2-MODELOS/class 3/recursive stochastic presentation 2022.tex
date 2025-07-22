@@ -1,0 +1,1244 @@
+
+\documentclass[notes=show]{beamer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{mathpazo}
+\usepackage{hyperref}
+\usepackage{multimedia}
+
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2953}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{Created=Monday, September 29, 2008 11:10:36}
+%TCIDATA{LastRevised=Tuesday, June 21, 2022 18:25:45}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Other Documents\SW\Slides - Beamer">}
+%TCIDATA{CSTFile=beamer.cst}
+
+\newenvironment{stepenumerate}{\begin{enumerate}[<+->]}{\end{enumerate}}
+\newenvironment{stepitemize}{\begin{itemize}[<+->]}{\end{itemize} }
+\newenvironment{stepenumeratewithalert}{\begin{enumerate}[<+-| alert@+>]}{\end{enumerate}}
+\newenvironment{stepitemizewithalert}{\begin{itemize}[<+-| alert@+>]}{\end{itemize} }
+\usetheme{Madrid}
+\input{tcilatex}
+\begin{document}
+
+\title{Macroeconomics II\\
+Stochastic Recursive Models}
+\author{Prof. McCandless}
+\maketitle
+
+\section{Stochastic Recursive Models}
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{Probability}
+
+\begin{itemize}
+\item A probability space is a triplet:%
+\[
+\left( \Omega ,\tciFourier ,P\right) 
+\]
+
+\item Where
+
+\begin{itemize}
+\item $\Omega $ is a set of all states of nature that can occur
+
+\item $\tciFourier $ is a collection of subsets of $\Omega $, each subset is
+called an "event"
+
+\item $P$ is a probability measure over events, i.e. $\tciFourier $
+\end{itemize}
+
+\item Note that I said a probability \textbf{measure}. \ Measures tell you
+how big or far apart (in some mathematical sense) points or sets are.
+
+\item These can be used in integration, for example, let p(x) be the
+probability of event x, in this case with elements of x taken from a line
+between 0 and 10, then \ 
+\[
+\int_{0}^{10}p(x)dx=1
+\]
+\end{itemize}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{Probability for finite states of nature}
+
+\begin{itemize}
+\item Suppose that $\Omega $ is a finite set
+
+\item We can sometimes impose the probability measure directly on elements
+of $\Omega $
+
+\begin{itemize}
+\item if each state of nature can be considered an event
+\end{itemize}
+
+\item Define $p_{i}=$ probability that event $A_{i}$ will occur
+
+\item If the probabilities are independent ($A_{i}$ and $A_{j}$ do not
+intersect, have no states in common)
+
+\begin{itemize}
+\item $p\left( A_{i},A_{j}\right) =p_{i}+p_{j}$
+\end{itemize}
+
+\item We can have non-independent events (where events share possible states)
+
+\begin{itemize}
+\item $E_{1}=\left( A_{1},A_{2}\right) $
+
+\item $E_{2}=\left( A_{2},A_{3}\right) $
+
+\item Then $p(E_{1}\cup E_{2})=p_{1}+p_{2}+p_{3}<p(E_{1})+p(E_{2})$
+\end{itemize}
+\end{itemize}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{Probability for finite states of nature}
+
+\begin{itemize}
+\item Let $\Omega =\left\{ A_{1},A_{2}\right\} $
+
+\item Then the largest possible $\tciFourier $ is
+
+\begin{itemize}
+\item $[]$, $[A_{1}]$, $[A_{2}]$, $[A_{1},A_{2}]$
+\end{itemize}
+
+\item A possible probability measure is
+
+\begin{itemize}
+\item $p\left( []\right) =0$, $p\left( [A_{1}]\right) =\overline{p}$, $%
+p\left( [A_{2}]\right) =1-\overline{p}$, and $p\left( [A_{1},A_{2}]\right)
+=1 $
+\end{itemize}
+
+\item Another possible is
+
+\begin{itemize}
+\item $p\left( []\right) =\widehat{p}_{1}$, $p\left( [A_{1}]\right) =%
+\overline{p}$, $p\left( [A_{2}]\right) =1-\widehat{p}_{1}-\overline{p}$, and 
+$p\left( [A_{1},A_{2}]\right) =1-\widehat{p}_{1}$
+\end{itemize}
+\end{itemize}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{Probability for continuous states of nature}
+
+\begin{itemize}
+\item Let $\Omega =\left[ 0,300\right] $, all the points on the line from $0$
+to $300$ (inclusive)
+
+\item Let $\tciFourier $ be all measureable sets of $\Omega $
+
+\item $P$ assigns probabilities to these measurable sets
+
+\item $p(\left[ 45,46.1\right] )$ is the probability of the value falling
+between $45$ and $46.1$
+
+\item $p\left( \pi ,4\right) $ is the probability of the value falling
+between $\pi $\ and $4$
+
+\item In general, $p\left( x\right) =0$, where $x$ is a specific number
+
+\begin{itemize}
+\item Not always the case
+
+\begin{itemize}
+\item $p\left( x\right) $, where $x$ is the daily rainfall in Buenos Aries
+
+\item $p\left( 0\right) $ is the probability it won't rain
+
+\item $p\left( 0\right) >0$
+\end{itemize}
+\end{itemize}
+\end{itemize}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{A simple stochastic model}
+
+\begin{itemize}
+\item Robinson Crusoe model with stochastic technology
+
+\item Production function%
+\[
+y_{t}=A^{t}f(k_{t}), 
+\]%
+with the technology $A^{t}$ determined by 
+\[
+A^{t}=\left\{ 
+\begin{array}{c}
+A_{1}\text{ with probability }p_{1} \\ 
+A_{2}\text{ with probability }p_{2}%
+\end{array}%
+\right. 
+\]%
+and we assume that $A_{1}>A_{2}$ and that $p_{2}=1-p_{1}$
+
+\item RC's utility function is%
+\[
+E_{0}\sum_{t=0}^{\infty }\beta ^{t}u(c_{t}) 
+\]%
+subject to the budget constraint%
+\[
+k_{t+1}=A^{t}f(k_{t})+(1-\delta )k_{t}-c_{t}. 
+\]
+
+\item This is an \textbf{expected} utility function: that is what $E_{0}$
+means
+\end{itemize}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{Stochastic Value function}
+
+\begin{itemize}
+\item The value of discounted expected utility at time $0$ when the realized
+technology shock is $A_{1}$\ is%
+\[
+V(k_{0},A_{1})=\max_{\left\{ c_{t}\right\} _{t=0}^{\infty
+}}E_{0}\sum_{t=0}^{\infty }\beta ^{t}u(c_{t}),
+\]%
+subject to the budget constraint for $t=0$,%
+\[
+k_{1}=A_{1}f(k_{0})+(1-\delta )k_{0}-c_{0},
+\]%
+and those for $t\geq 1,$%
+\[
+k_{t+1}=A^{t}f(k_{t})+(1-\delta )k_{t}-c_{t},
+\]%
+and the independent realizations of $A^{t}=\left[ A_{1},A_{2}\right] $ with
+probabilities $\left[ p_{1},p_{2}\right] $
+
+\item There is a similar expression for $V(k_{0},A_{2})$
+\end{itemize}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{Stochastic Value function: recursive format}
+
+\begin{itemize}
+\item The value function is%
+\[
+V(k_{0},A^{0})=\max_{c_{0}}u(c_{0})+\beta E_{0}V\left( k_{1},A^{1}\right) 
+\]%
+subject to the budget constraint%
+\[
+k_{1}=A^{0}f(k_{0})+(1-\delta )k_{0}-c_{0}. 
+\]
+
+\item Here we are taking $c_{0}$ as the control
+
+\item The states are $k_{0}$ and $A^{0}$
+
+\item Notice the expectations operator
+
+\begin{itemize}
+\item In the second part of the value function
+
+\item $E_{0}$ operator says we don't know the value of time 1 variables, but
+we know their probabilities
+
+\item we do not know the realization of $A^{1}$ but we know their possible
+values
+\end{itemize}
+\end{itemize}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{Stochastic Value function: with k(t+1)\ as control}
+
+\begin{itemize}
+\item The value function is%
+\[
+V(k_{t},A^{t})=\max_{k_{t+1}}u(A^{t}f(k_{t})+(1-\delta )k_{t}-k_{t+1})+\beta
+E_{t}V\left( k_{t+1},A^{t+1}\right) 
+\]%
+and the budget constraint is%
+\[
+k_{t+1}=G(x_{t},y_{t})=k_{t+1} 
+\]
+
+\item The control at time $t$ is the state at time $t+1$
+
+\item We solve for a \textbf{plan}, a function such that 
+\[
+k_{t+1}=H(k_{t},A^{t}) 
+\]
+
+\item A plan solves (without maximization)%
+\begin{eqnarray*}
+V(k_{t},A^{t}) &=&u(A^{t}f(k_{t})+(1-\delta )k_{t}-H(k_{t},A^{t})) \\
+&&+\beta E_{t}V\left( H(k_{t},A^{t}),A^{t+1}\right)
+\end{eqnarray*}
+\end{itemize}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{General version of the problem}
+
+\begin{itemize}
+\item Write the value function as%
+\[
+V(x_{t},z_{t})=\max_{\left\{ y_{s}\right\} _{s=t}^{\infty
+}}E_{t}\sum_{s=t}^{\infty }\beta ^{s-t}F(x_{s},y_{s},z_{s}), 
+\]%
+subject to 
+\[
+x_{s+1}=G(x_{s},y_{s},z_{s})\text{for }s\geq t 
+\]
+
+\item $x_{t}$ is the set of "regular", predetermined, state variables
+
+\item $z_{t}$ is the set of state variables determined by nature
+
+\begin{itemize}
+\item these are the stochastic state variables.
+\end{itemize}
+
+\item $y_{t}$ are the control variables \ 
+
+\item Both $F(x_{s},y_{s},z_{s})$ and $G(x_{s},y_{s},z_{s})$ can contain the
+stochastic state variables.
+\end{itemize}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{General version of the problem}
+
+\begin{itemize}
+\item The recrusive version of this problem is%
+\[
+V(x_{t},z_{t})=\max_{y_{t}}\left[ F(x_{t},y_{t},z_{t})+\beta
+E_{t}V(x_{t+1},z_{t+1})\right] 
+\]%
+subject to 
+\[
+x_{t+1}=G(x_{t},y_{t},z_{t}) 
+\]
+
+\item A solution is a plan,%
+\[
+y_{t}=H(x_{t},z_{t}) 
+\]%
+where%
+\begin{eqnarray*}
+V(x_{t},z_{t}) &=&F(x_{t},H(x_{t},z_{t}),z_{t}) \\
+&&+\beta E_{t}V(G(x_{t},H(x_{t},z_{t}),z_{t}),z_{t+1})
+\end{eqnarray*}
+\end{itemize}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{General version of the problem: first order conditions}
+
+\begin{itemize}
+\item The first order conditions are%
+\[
+0=F_{y}(x_{t},y_{t},z_{t})+\beta E_{t}\left[
+V_{x}(G(x_{t},y_{t},z_{t}),z_{t+1})G_{y}(x_{t},y_{t},z_{t})\right] 
+\]
+
+\item The Benveniste-Scheinkman condition is%
+\[
+V_{x}(x_{t},z_{t})=F_{x}(x_{t},y_{t},z_{t})+\beta E_{t}\left[
+V_{x}(G(x_{t},y_{t},z_{t}),z_{t+1})G_{x}(x_{t},y_{t},z_{t})\right] 
+\]
+
+\item If we can choose the controls so that $G_{x}(x_{t},y_{t},z_{t})=0$,
+this becomes%
+\[
+V_{x}(x_{t},z_{t})=F_{x}(x_{t},y_{t},z_{t}) 
+\]
+
+\item One can write the \textbf{stochastic Euler equation} as%
+\[
+0=F_{y}(x_{t},y_{t},z_{t})+\beta E_{t}\left[
+F_{x}(G(x_{t},y_{t},z_{t}),y_{t+1},z_{t+1})G_{y}(x_{t},y_{t},z_{t})\right] 
+\]
+\end{itemize}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{Solving for the value function}
+
+\begin{itemize}
+\item One can find an approximation of the value function from%
+\[
+V_{j+1}(x_{t},z_{t})=\max_{y_{t}}\left[ F(x_{t},y_{t},z_{t})+\beta
+E_{t}V_{j}(G(x_{t},y_{t},z_{t}),z_{t+1})\right] 
+\]
+
+\item Beginning with some function $V_{0}(\cdot )$ (frequently a constant)
+
+\item Need to solve over sufficiently dense set of $X\times Z$
+
+\begin{itemize}
+\item where $X$ is the domain of the state variables, $x_{t}$
+
+\item $Z$ is the domain of the states of nature, $z_{t}$
+
+\item sufficient depends on the level of precision we need
+\end{itemize}
+\end{itemize}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{Problem of dimensionality}
+
+\begin{itemize}
+\item Problem of dimensionality is worse than in the deterministic case
+
+\item In the deterministic case is based on
+
+\begin{itemize}
+\item the number of predetermined state variables
+
+\item the size of the sufficiently dense subset of each state variable we use
+\end{itemize}
+
+\item In the stochastic state
+
+\begin{itemize}
+\item these two problems continue
+
+\item add
+
+\begin{itemize}
+\item the dimension of the shocks (if finite)
+
+\item the sufficiently dense subset of the shocks (if continuous)
+\end{itemize}
+\end{itemize}
+\end{itemize}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{Finding the value function for our simple economy}
+
+\begin{itemize}
+\item In the growth economy, the technology level can be $\left[ A_{1},A_{2}%
+\right] $
+
+\item This gives two values functions of the form%
+\begin{eqnarray*}
+V(k_{t},A_{1}) &=&\max_{k_{t+1}}u(A_{1}f(k_{t})+(1-\delta )k_{t}-k_{t+1}) \\
+&&+\beta \left[ p_{1}V\left( k_{t+1},A_{1}\right) +p_{2}V\left(
+k_{t+1},A_{2}\right) \right]
+\end{eqnarray*}%
+and%
+\begin{eqnarray*}
+V(k_{t},A_{2}) &=&\max_{k_{t+1}}u(A_{2}f(k_{t})+(1-\delta )k_{t}-k_{t+1}) \\
+&&+\beta \left[ p_{1}V\left( k_{t+1},A_{1}\right) +p_{2}V\left(
+k_{t+1},A_{2}\right) \right]
+\end{eqnarray*}
+
+\item Notice how the probabilities enter
+
+\item because the shocks have oen of two values, we need to find two
+functions, $V(\cdot ,A_{1})$ and $V(\cdot ,A_{2})$
+\end{itemize}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{The recursive approximation}
+
+\begin{itemize}
+\item Same recursive approximation as before (as in the deterministic
+version)
+
+\item Difference is that we need to find two equations at each iteration
+
+\item Given $V_{0}(\cdot ,A_{1})$ and $V_{0}(\cdot ,A_{2})$, we find%
+\begin{eqnarray*}
+V_{1}(k_{t},A_{1}) &=&\max_{k_{t+1}}u(A_{1}f(k_{t})+(1-\delta )k_{t}-k_{t+1})
+\\
+&&+\beta \left[ p_{1}V_{0}\left( k_{t+1},A_{1}\right) +p_{2}V_{0}\left(
+k_{t+1},A_{2}\right) \right] ,
+\end{eqnarray*}%
+and%
+\begin{eqnarray*}
+V_{1}(k_{t},A_{2}) &=&\max_{k_{t+1}}u(A_{2}f(k_{t})+(1-\delta )k_{t}-k_{t+1})
+\\
+&&+\beta \left[ p_{1}V_{0}\left( k_{t+1},A_{1}\right) +p_{2}V_{0}\left(
+k_{t+1},A_{2}\right) \right] ,
+\end{eqnarray*}
+
+\item Repeat, finding $V_{N}(\cdot ,A_{1})$ and $V_{N}(\cdot ,A_{2})$ until
+sufficiently close
+\end{itemize}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{Example}
+
+\begin{itemize}
+\item Used $\delta =.1$, $\beta =.98$, $A_{1}=1.75$, $p_{1}=.8$, $A_{2}=.75$,
+
+\item and $p_{2}=.2$, $V_{0}(\cdot ,A_{1})=20$ and $V_{0}(\cdot ,A_{2})=20$
+
+\item Graph of iterations\FRAME{ftbpFU}{3.039in}{2.2857in}{0pt}{\Qcb{%
+Iterations on the value function}}{}{value fun sto.jpg}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "F";width 3.039in;height 2.2857in;depth
+0pt;original-width 5.8332in;original-height 4.3751in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";filename 'C:/macro 2 2022/class 3/value fun
+sto.jpg';file-properties "XNPEU";}}
+\end{itemize}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{The two policy functions (the plans)}
+
+\FRAME{ftbpFU}{3.039in}{2.2857in}{0pt}{\Qcb{The plans}}{}{policy function
+sto.jpg}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "F";width
+3.039in;height 2.2857in;depth 0pt;original-width 5.8332in;original-height
+4.3751in;cropleft "0";croptop "1";cropright "1";cropbottom "0";filename
+'C:/macro 2 2022/class 3/policy function sto.jpg';file-properties "XNPEU";}}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{A simulation of the economy}
+
+\FRAME{ftbpFU}{3.039in}{2.2857in}{0pt}{\Qcb{A simulated time path}}{}{%
+storun1 exp.jpg}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "F";width
+3.039in;height 2.2857in;depth 0pt;original-width 5.8332in;original-height
+4.3751in;cropleft "0";croptop "1";cropright "1";cropbottom "0";filename
+'C:/macro 2 2022/class 3/storun1 exp.jpg';file-properties "XNPEU";}}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{Markov chains}
+
+\begin{itemize}
+\item The above simulation shows relatively little persistence
+
+\item Markov chains are a way of adding persistence to the shocks
+
+\begin{itemize}
+\item Note that the presistence is in the stochastic variable
+
+\item The \textbf{economic} model is not generating this persistence
+\end{itemize}
+
+\item Structure of a Markov chain: conditional probabilities
+
+\begin{itemize}
+\item The probabilities at time $t$ of the time $t+1$ states of nature
+
+\item depend on the state of nature at time $t$
+\end{itemize}
+
+\item Consider our example with two states of nature $\left[ A_{1},A_{2}%
+\right] $
+
+\item Let the probabilities be%
+\[
+P=\left[ 
+\begin{array}{cc}
+p_{11} & p_{12} \\ 
+p_{21} & p_{22}%
+\end{array}%
+\right] 
+\]%
+where $p_{ij}$ is the probability of going to state $j$ given you are in
+state $i$
+\end{itemize}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+Probabilities in Markov chains
+
+\begin{itemize}
+\item These are \textbf{conditional probabilities}
+
+\item If one is in state of nature $1$ at time $t$
+
+\begin{itemize}
+\item The probabilities for time $t+1$ are 
+\[
+\left[ 
+\begin{array}{cc}
+p_{11} & p_{12}%
+\end{array}%
+\right] 
+\]
+\end{itemize}
+
+\item If one is in state of nature $2$ at time $t$
+
+\begin{itemize}
+\item The probabilities for time $t+1$ are 
+\[
+\left[ 
+\begin{array}{cc}
+p_{21} & p_{22}%
+\end{array}%
+\right] 
+\]
+\end{itemize}
+
+\item Example with a lot of persistence%
+\[
+P=\left[ 
+\begin{array}{cc}
+.97 & .03 \\ 
+.1 & .9%
+\end{array}%
+\right] 
+\]
+\end{itemize}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{Unconditional probabilites}
+
+\begin{itemize}
+\item What is the probability that one will be in state of nature $j$ at
+some far distant date
+
+\item Does this depend on the current state of nature
+
+\item Given the state at time $0$, the distributiion for period $1$ is $%
+p_{0}=\left[ 
+\begin{array}{cc}
+p_{01} & p_{02}%
+\end{array}%
+\right] $
+
+\item Then the distribution for period $2$ is 
+\[
+p_{0}P=\left[ 
+\begin{array}{cc}
+p_{01} & p_{02}%
+\end{array}%
+\right] \left[ 
+\begin{array}{cc}
+p_{11} & p_{12} \\ 
+p_{21} & p_{22}%
+\end{array}%
+\right] 
+\]
+
+\item The distribution for period $3$ is 
+\[
+p_{0}PP=\left[ 
+\begin{array}{cc}
+p_{01} & p_{02}%
+\end{array}%
+\right] \left[ 
+\begin{array}{cc}
+p_{11} & p_{12} \\ 
+p_{21} & p_{22}%
+\end{array}%
+\right] \left[ 
+\begin{array}{cc}
+p_{11} & p_{12} \\ 
+p_{21} & p_{22}%
+\end{array}%
+\right] 
+\]
+
+\item The distribution for period $N$ is%
+\[
+p_{0}P^{N-1}
+\]
+\end{itemize}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{Converge to an unconditional probability}
+
+\begin{itemize}
+\item What happens as $N$ gets large
+
+\item Use our example probability matrix (leave $p_{0}$ out for the moment)
+
+\item Start with%
+\[
+P=\left[ 
+\begin{array}{cc}
+.97 & .03 \\ 
+.1 & .9%
+\end{array}%
+\right] 
+\]
+
+\item $PP=P^{2}$ is
+
+\item 
+\[
+P^{2}=\left[ 
+\begin{array}{cc}
+.97 & .03 \\ 
+.1 & .9%
+\end{array}%
+\right] \left[ 
+\begin{array}{cc}
+.97 & .03 \\ 
+.1 & .9%
+\end{array}%
+\right] =\left[ 
+\begin{array}{cc}
+0.9439 & 0.0561 \\ 
+0.1870 & 0.8130%
+\end{array}%
+\right] 
+\]
+\end{itemize}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{Using a doubling algorythm (which saves time)}%
+\[
+P^{4}=P^{2}P^{2}=\left[ 
+\begin{array}{cc}
+0.944 & 0.056 \\ 
+0.187 & 0.813%
+\end{array}%
+\right] \left[ 
+\begin{array}{cc}
+0.944 & 0.056 \\ 
+0.187 & 0.813%
+\end{array}%
+\right] =\left[ 
+\begin{array}{cc}
+0.901 & 0.099 \\ 
+0.328 & 0.672%
+\end{array}%
+\right] 
+\]%
+\[
+P^{8}=P^{4}P^{4}=\left[ 
+\begin{array}{cc}
+0.8450 & 0.1550 \\ 
+0.5168 & 0.4832%
+\end{array}%
+\right] 
+\]%
+\[
+P^{16}=P^{8}P^{8}=\left[ 
+\begin{array}{cc}
+0.7941 & 0.2059 \\ 
+0.6864 & 0.3136%
+\end{array}%
+\right] 
+\]%
+\[
+P^{32}=P^{16}P^{16}=\left[ 
+\begin{array}{cc}
+0.7719 & 0.2281 \\ 
+0.7603 & 0.2397%
+\end{array}%
+\right] 
+\]%
+\[
+P^{64}=P^{32}P^{32}=\left[ 
+\begin{array}{cc}
+0.7693 & 0.2307 \\ 
+0.7691 & 0.2309%
+\end{array}%
+\right] 
+\]%
+\[
+P^{128}=P^{64}P^{64}=\left[ 
+\begin{array}{cc}
+0.7692 & 0.2308 \\ 
+0.7692 & 0.2308%
+\end{array}%
+\right] 
+\]
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{Why the initial distribution does not matter}
+
+\begin{itemize}
+\item Notice the rows of $P^{128}$,%
+\[
+P^{128}=P^{64}P^{64}=\left[ 
+\begin{array}{cc}
+0.7692 & 0.2308 \\ 
+0.7692 & 0.2308%
+\end{array}%
+\right] 
+\]
+
+\item They are identical
+
+\item Let $p_{0}=\left[ 
+\begin{array}{cc}
+p_{01} & p_{02}%
+\end{array}%
+\right] $
+
+\item Then, since $p_{01}+p_{02}=1$ 
+\begin{eqnarray*}
+p_{0}P^{128} &=&\left[ 
+\begin{array}{cc}
+p_{01} & p_{02}%
+\end{array}%
+\right] \left[ 
+\begin{array}{cc}
+0.7692 & 0.2308 \\ 
+0.7692 & 0.2308%
+\end{array}%
+\right] \\
+&=&\left[ 
+\begin{array}{cc}
+0.7692 & 0.2308%
+\end{array}%
+\right]
+\end{eqnarray*}
+
+\item Initial distribution does not matter in the long run
+
+\begin{itemize}
+\item for the unconditional distribution
+\end{itemize}
+\end{itemize}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{Value functions with markov chains}
+
+\begin{itemize}
+\item The value functions for our economy can be written as%
+\begin{eqnarray*}
+V(k_{t},A_{1}) &=&\max_{k_{t+1}}\left[ u(A_{1}f(k_{t})+(1-\delta
+)k_{t}-k_{t+1})\right. \\
+&&\left. +\beta \left[ p_{11}V\left( k_{t+1},A_{1}\right) +p_{12}V\left(
+k_{t+1},A_{2}\right) \right] \right] ,
+\end{eqnarray*}%
+and%
+\begin{eqnarray*}
+V(k_{t},A_{2}) &=&\max_{k_{t+1}}\left[ u(A_{2}f(k_{t})+(1-\delta
+)k_{t}-k_{t+1})\right. \\
+&&\left. +\beta \left[ p_{21}V\left( k_{t+1},A_{1}\right) +p_{22}V\left(
+k_{t+1},A_{2}\right) \right] \right] ,
+\end{eqnarray*}
+
+\item Note the probabilities in each equation
+
+\item These can be solved recursively
+
+\begin{itemize}
+\item beginning with some $V_{0}(\cdot ,A_{1})$ and $V_{0}(\cdot ,A_{2})$
+
+\item just need to keep track of which probabilities to use
+\end{itemize}
+\end{itemize}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{Example economy }
+
+\begin{itemize}
+\item We use a markov chain of 
+\[
+P=\left[ 
+\begin{array}{cc}
+.9 & .1 \\ 
+.4 & .6%
+\end{array}%
+\right] 
+\]
+
+\item Get the plans of (similar but not identical to the last problem)\FRAME{%
+ftbpFU}{3.039in}{2.2857in}{0pt}{\Qcb{The plans with Markov chains}}{}{policy
+function sto2.jpg}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "F";width
+3.039in;height 2.2857in;depth 0pt;original-width 5.8332in;original-height
+4.3751in;cropleft "0";croptop "1";cropright "1";cropbottom "0";filename
+'C:/macro 2 2022/class 3/policy function sto2.jpg';file-properties "XNPEU";}}
+\end{itemize}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{Simulated economy with markov chain (same shocks as in
+other)}
+
+\FRAME{ftbpFU}{3.039in}{2.2857in}{0pt}{\Qcb{A simulation with Markov chains}%
+}{}{storun2 exp.jpg}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "F";width
+3.039in;height 2.2857in;depth 0pt;original-width 5.8332in;original-height
+4.3751in;cropleft "0";croptop "1";cropright "1";cropbottom "0";filename
+'C:/macro 2 2022/class 3/storun2 exp.jpg';file-properties "XNPEU";}}
+
+\begin{itemize}
+\item Note the increased presistence
+\end{itemize}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{Computer program for Markov chains}
+
+\texttt{global vlast1 vlast2 beta delta theta k0 kt At p1 p2}
+
+\texttt{hold off}
+
+\texttt{hold all}
+
+\texttt{vlast1=20*ones(1,40);}
+
+\texttt{vlast2=vlast1;}
+
+\texttt{k0=0.4:0.4:16;}
+
+\texttt{kt11=k0;}
+
+\texttt{kt12=k0;}
+
+\texttt{beta=.98;}
+
+\texttt{delta=.1;}
+
+\texttt{theta=.36;}
+
+\texttt{A1=1.75;}
+
+\texttt{p11=.9;}
+
+\texttt{p12=1-p11;}
+
+\texttt{p21=.4;}
+
+\texttt{p22=1-p21;}
+
+\texttt{A2=.75;}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\texttt{numits=250;}
+
+\texttt{for k=1:numits}
+
+\texttt{\ \qquad for j=1:40}
+
+\texttt{\ \qquad \qquad kt=k0(j);}
+
+\texttt{\ \qquad \qquad At=A1;}
+
+\qquad \qquad \texttt{p1=p11;}
+
+\texttt{\ \qquad \qquad p2=p12;}
+
+\texttt{\qquad \qquad\ z=fminbnd(@valfunsto,.41,15.99);}
+
+\qquad \qquad \texttt{v1(j)=-valfunsto(z);}
+
+\qquad \qquad \texttt{kt11(j)=z;}
+
+\texttt{\ \qquad \qquad At=A2;}
+
+\texttt{\ \qquad \qquad p1=p21;}
+
+\texttt{\ \qquad \qquad p2=p22;}
+
+\qquad \qquad \texttt{z=fminbnd(@valfunsto,.41,15.99);}
+
+\texttt{\ \qquad \qquad v2(j)=-valfunsto(z);}
+
+\texttt{\ \qquad \qquad kt12(j)=z;}
+
+\texttt{\ \qquad end}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\texttt{\ \qquad if k/50==round(k/50)}
+
+\texttt{\ \qquad \qquad plot(k0,v1,k0,v2)}
+
+\texttt{\ \qquad \qquad drawnow}
+
+\texttt{\ \qquad end}
+
+\texttt{\ \qquad vlast1=v1;}
+
+\texttt{\ \qquad vlast2=v2;}
+
+\texttt{end}
+
+\texttt{hold off}
+
+\texttt{\%plot(k0,kt11,k0,kt12)}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{Subroutine valfunsto}
+
+Note that interpolation of the previous value function is linear.
+
+\texttt{function val=valfunsto2(x)}
+
+\texttt{global vlast1 vlast2 beta delta theta k0 kt At p1 p2}
+
+\texttt{k=x;}
+
+\texttt{g1=interp1(k0,vlast1,k,'linear');}
+
+\texttt{g2=interp1(k0,vlast2,k,'linear');}
+
+\texttt{kk=At*kt\symbol{94}theta-k+(1-delta)*kt;}
+
+\texttt{val=log(kk)+beta*(p1*g1+p2*g2);}
+
+\texttt{val=-val;}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+\end{document}

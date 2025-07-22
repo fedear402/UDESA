@@ -1,0 +1,666 @@
+
+\documentclass[notes=show]{beamer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{mathpazo}
+\usepackage{hyperref}
+\usepackage{multimedia}
+
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2953}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{Created=Friday, September 08, 2006 10:49:35}
+%TCIDATA{LastRevised=Tuesday, June 21, 2022 17:45:03}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Other Documents\SW\Slides - Beamer">}
+%TCIDATA{CSTFile=beamer.cst}
+
+\newenvironment{stepenumerate}{\begin{enumerate}[<+->]}{\end{enumerate}}
+\newenvironment{stepitemize}{\begin{itemize}[<+->]}{\end{itemize} }
+\newenvironment{stepenumeratewithalert}{\begin{enumerate}[<+-| alert@+>]}{\end{enumerate}}
+\newenvironment{stepitemizewithalert}{\begin{itemize}[<+-| alert@+>]}{\end{itemize} }
+\usetheme{Madrid}
+\input{tcilatex}
+\begin{document}
+
+\title{Macroeconomics II\\
+Variational methods (Soviet)}
+\author{Prof. George McCandless}
+\maketitle
+
+\section{Variational methods}
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{Synthisis \ of Variational methods}
+
+\begin{itemize}
+\item Method of optimal control developed by the Soviets in the 1950's
+
+\item Breaks infinite horizon problem into one involving three periods
+
+\begin{itemize}
+\item a function in time t-1, t, and t+1
+\end{itemize}
+
+\item Assume you \ know what the values were at time t-1
+
+\item Assume you know what you want the value to be at time t+1
+
+\item solve for optimal behavior at time t
+
+\item if you want a stationary state, let $x_{t-1}=x_{t}=x_{t+1}=x$ and
+solve for the $x$'s that work
+
+\item Non-stationary states can be found
+
+\item Have beginning t=0 values and final t=N values (N is number of periods
+you are going to have (years, days, minutes, depends on the problem)
+
+\item Choose some initial path between start = $x_{0}$ and finish = $x_{N}$
+
+\item Use $x_{0}$ and $x_{2}$ to find a new $x_{1}^{\ast }$, then use $%
+x_{1}^{\ast }$ and $x_{3}$ to find a new $x_{2}^{\ast }$, continue to $x_{N}$
+
+\item repeat backwards \ (from $x_{N}$\ to $x_{0}$) and forwards until path
+converges
+\end{itemize}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{Robinson Crusoe economy}
+
+\begin{itemize}
+\item Only one agent (who we call Robinson Crusoe) with utility%
+\[
+\sum_{i=0}^{\infty }\beta ^{i}u(c_{t+i}) 
+\]
+
+\item Notice that it is a discounted infinite horizon utility (and here no
+labor decision, could be)
+
+\item Budget constaints%
+\[
+k_{t+1}=(1-\delta )k_{t}+i_{t} 
+\]%
+and%
+\[
+y_{t}=f(k_{t})\geq c_{t}+i_{t} 
+\]
+\end{itemize}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{Variational methods}
+
+\QTR{framesubtitle}{Solving for a stationary state}
+
+\begin{enumerate}
+\item Assume that values for endogenous variables for periods $s-1$ and $s+1$
+are known
+
+\item Solve for values in period $s$
+
+\item For a stationary state, use solution for $s$ to find
+
+\begin{itemize}
+\item Find equilibrium where values for $s-1$, $s$, and $s+1$ are the same
+
+\item This is a stationary state that meets the equilibrium conditions in
+every period
+\end{itemize}
+
+\item Stationary states are not the only use of Variational methods, we use
+it to get first order conditions for approximate models that we will use
+later
+
+\item Also, if the values at starting and end points are known, variational
+methods can be used to solve for the optimal path between those points by
+choosing an initial (probably wrong) path and then start from that path to
+successively find better ones (which converge to the optimal path
+\end{enumerate}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{General framework}
+
+\begin{itemize}
+\item Optimization problem: ($F\left( x_{t+i},x_{t+1+i}\right) $ is the
+objective function)%
+\[
+\max_{\left\{ x_{x}\right\} _{s=t}^{\infty }}\sum_{i=0}^{\infty }\beta
+^{i}F\left( x_{t+i},x_{t+1+i}\right) . 
+\]
+
+\item The Euler condition (a necessary condition) 
+\[
+0=F_{2}\left( x_{s-1},x_{s}\right) +\beta F_{1}\left( x_{s},x_{s+1}\right) 
+\]
+
+\item Note that the Euler condition has $x_{s-1}$, $x_{s}$ and $x_{s+1}$ as
+variables. \ Can solve for $x_{s}$ as a function of $x_{s-1}$ and $x_{s+1}$.
+
+\item Transversality condition 
+\[
+\lim_{s\rightarrow \infty }\beta ^{s}F_{1}\left( x_{s},x_{s+1}\right)
+x_{s}=0. 
+\]
+\end{itemize}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{Example RC\ economy}
+
+\begin{enumerate}
+\item Substitute budget constraints into utility function. \ Get:%
+\[
+\sum_{i=0}^{\infty }\beta ^{i}u(f(k_{t+i})-k_{t+i+1}+(1-\delta )k_{t+i}) 
+\]
+
+\item Note each objective function is a function of $k_{t+i}$ and $k_{t+i+1}$
+
+\item First order conditions are%
+\begin{eqnarray*}
+0 &=&\beta ^{s-t}u^{\prime }(f(k_{s})-k_{s+1}+(1-\delta )k_{s})\left(
+f^{\prime }(k_{s})+(1-\delta )\right) \\
+&&-\beta ^{s-t-1}u^{\prime }(f(k_{s-1})-k_{s}+(1-\delta )k_{s-1}).
+\end{eqnarray*}
+
+\item Notice that the first order conditions are functions of $k$ at times $%
+s-1$, $s$, and $s+1$.
+\end{enumerate}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{Example economy (continued)}
+
+\begin{enumerate}
+\item Which can be written as the Euler equation (a necessary condition)%
+\[
+f^{\prime }(k_{s})+(1-\delta )=\frac{u^{\prime }(f(k_{s-1})-k_{s}+(1-\delta
+)k_{s-1})}{\beta u^{\prime }(f(k_{s})-k_{s+1}+(1-\delta )k_{s})}. 
+\]
+
+\item In a stationary state, $k_{s+1}=k_{s}=k_{s-1}=\overline{k}$, so the
+above becomes%
+\[
+f^{\prime }(\overline{k})=\frac{1}{\beta }-1+\delta 
+\]%
+The value of $\overline{k}$ is implicitly defined
+
+\item Savings in a stationary state is $\overline{s}=\delta \overline{k}$
+\end{enumerate}
+
+\begin{itemize}
+\item See book for Robinson Crusoe with labor decision included
+\end{itemize}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{Transversality condition}
+
+\begin{itemize}
+\item Transversality condition for example economy%
+\[
+\lim_{i\rightarrow \infty }\beta ^{i}u^{\prime }\left(
+f(k_{t+i})-k_{t+i+1}+(1-\delta )k_{t+i}\right) \left( f^{\prime
+}(k_{t+i})+(1-\delta )\right) k_{t+i}=0. 
+\]
+
+\item In a stationary state with $\overline{k}>0$ 
+\begin{eqnarray*}
+&&\lim_{i\rightarrow \infty }\beta ^{i}u^{\prime }\left( f(\overline{k}%
+)-\delta \overline{k}\right) \left( f^{\prime }(\overline{k})+(1-\delta
+)\right) \overline{k} \\
+&=&\lim_{i\rightarrow \infty }\beta ^{i}u^{\prime }\left( f(\overline{k}%
+)-\delta \overline{k}\right) \left( \frac{1}{\beta }-1+\delta +(1-\delta
+)\right) \overline{k} \\
+&=&\lim_{i\rightarrow \infty }\beta ^{i-1}u^{\prime }\left( f(\overline{k}%
+)-\delta \overline{k}\right) \overline{k}\rightarrow 0
+\end{eqnarray*}
+
+\item because $u^{\prime }\left( f(\overline{k})-\delta \overline{k}\right) 
+\overline{k}$ is a finite constant for $\overline{k}>0$
+\end{itemize}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+\subsection{Market economy}
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{Competitive market economy}
+
+\begin{itemize}
+\item Many agents
+
+\begin{itemize}
+\item Households
+
+\item Firms
+\end{itemize}
+
+\item Markets for goods, labor, and rental of capital
+
+\item Individual take aggregate values as given
+
+\item Decentralized decision making
+\end{itemize}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{Competitive market economy}
+
+\begin{itemize}
+\item Unit mass of agents
+
+\begin{itemize}
+\item indexed from $0$ to $1$ continuously
+\end{itemize}
+\end{itemize}
+
+\[
+H_t=\int_0^1h_t^idi\text{ and }K_t=\int_0^1k_t^idi 
+\]
+
+\begin{itemize}
+\item Include individual labor supply decision%
+\[
+u\left( c_{t}^{i},l_{t}^{i}\right) =u\left( c_{t}^{i},1-h_{t}^{i}\right) 
+\]
+
+\item subject to the budget constaints 
+\[
+c_{t}^{i}=w_{t}h_{t}^{i}+r_{t}k_{t}^{i}+i_{t}^{i} 
+\]%
+\[
+k_{t+1}^{i}=\left( 1-\delta \right) k_{t}^{i}+i_{t}^{i} 
+\]%
+\[
+w_{t}=f_{h}\left( K_{t},H_{t}\right) 
+\]%
+\[
+r_{t}=f_{h}\left( K_{t},H_{t}\right) 
+\]
+\end{itemize}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{Set up problem as Legrange problem }
+
+\begin{eqnarray*}
+L &=&\sum_{t=0}^{\infty }\beta ^{t}\left[ u\left(
+c_{t}^{i},1-h_{t}^{i}\right) -\lambda _{t}^{1}\left( k_{t+1}^{i}-\left(
+1-\delta \right) k_{t}^{i}-i_{t}^{i}\right) \right. \\
+&&\left. -\lambda _{t}^{2}\left( f_{h}\left( K_{t},H_{t}\right)
+h_{t}^{i}+f_{k}\left( K_{t},H_{t}\right)
+k_{t}^{i}-c_{t}^{i}-i_{t}^{i}\right) \right]
+\end{eqnarray*}
+
+\begin{itemize}
+\item Difference between $h_{t}^{i}$ and $H_{t}$ and $k_{t}^{i}$ and $K_{t}$
+
+\item $H_{t}$ and $K_{t}$ are the economy wide (aggregate) values \ of labor
+and capital
+
+\item In optimization, $H_{t}$ and $K_{t}$ are considered given
+
+\item Equilibrium conditions are applied after optimization
+\end{itemize}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{First order conditions}
+
+\begin{eqnarray*}
+\frac{\partial L}{\partial c_{t}^{i}} &=&u_{c}\left(
+c_{t}^{i},1-h_{t}^{i}\right) +\lambda _{t}^{2}=0 \\
+\frac{\partial L}{\partial h_{t}^{i}} &=&-u_{h}\left(
+c_{t}^{i},1-h_{t}^{i}\right) -\lambda _{t}^{2}f_{h}\left( K_{t},H_{t}\right)
+=0 \\
+\frac{\partial L}{\partial k_{t+1}^{i}} &=&-\lambda _{t}^{1}+\beta \lambda
+_{t+1}^{1}\left( 1-\delta \right) -\beta \lambda _{t+1}^{2}f_{k}\left(
+K_{t+1},H_{t+1}\right) =0 \\
+\frac{\partial L}{\partial i_{t}^{i}} &=&\lambda _{t}^{1}+\lambda _{t}^{2}=0
+\end{eqnarray*}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{First order conditions (continued)}
+
+These simplify to 
+\begin{eqnarray*}
+u_{c}\left( c_{t}^{i},1-h_{t}^{i}\right) &=&\lambda _{t}^{1}=-\lambda
+_{t}^{2} \\
+\frac{u_{h}\left( c_{t}^{i},1-h_{t}^{i}\right) }{u_{c}\left(
+c_{t}^{i},1-h_{t}^{i}\right) } &=&f_{h}\left( K_{t},H_{t}\right) \\
+\frac{u_{c}\left( c_{t}^{i},1-h_{t}^{i}\right) }{u_{c}\left(
+c_{t+1}^{i},1-h_{t+1}^{i}\right) } &=&\beta \left[ f_{k}\left(
+K_{t+1},H_{t+1}\right) +\left( 1-\delta \right) \right]
+\end{eqnarray*}%
+For the individual decisions we need to include the budget constraint 
+\[
+k_{t+1}^{i}=\left( 1-\delta \right) k_{t}^{i}+f_{h}\left( K_{t},H_{t}\right)
+h_{t}^{i}+f_{k}\left( K_{t},H_{t}\right) k_{t}^{i}-c_{t}^{i} 
+\]
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{Solving the model }
+
+\begin{itemize}
+\item \textbf{After and only after} the individual decision rules are found,
+can one aggregate across individuals
+
+\begin{itemize}
+\item Because the $K_{t}$ and $H_{t}$ are not controled by individuals
+\end{itemize}
+
+\item These are found from the equilibrium conditions%
+\[
+K_{t}=\int_{0}^{1}k_{t}^{i}di 
+\]%
+\[
+H_{t}=\int_{0}^{1}h_{t}^{i}di 
+\]
+
+\item Aggregation condition for consumption%
+\[
+C_{t}=\int_{0}^{1}c_{t}^{i}di 
+\]
+\end{itemize}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{Solving the model}
+
+\begin{itemize}
+\item Given that production is homogenous of degree 1 
+\[
+f_{h}\left( K_{t},H_{t}\right) H_{t}+f_{k}\left( K_{t},H_{t}\right)
+K_{t}=f\left( K_{t},H_{t}\right) 
+\]
+
+\item The conditions for equilibrium are%
+\begin{eqnarray*}
+\frac{u_{h}\left( C_{t},1-H_{t}\right) }{u_{c}\left( C_{t},1-H_{t}\right) }
+&=&f_{h}\left( K_{t},H_{t}\right) \\
+\frac{u_{c}\left( C_{t},1-H_{t}\right) }{u_{c}\left(
+C_{t+1},1-H_{t+1}\right) } &=&\beta \left[ f_{k}\left(
+K_{t+1},H_{t+1}\right) +\left( 1-\delta \right) \right]
+\end{eqnarray*}%
+and the budget constraint is 
+\[
+K_{t+1}=\left( 1-\delta \right) K_{t}+f\left( K_{t},H_{t}\right) -C_{t} 
+\]
+\end{itemize}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{The stationary states }
+
+\begin{itemize}
+\item Solving for the stationary states, one gets
+\end{itemize}
+
+\begin{eqnarray*}
+\frac{u_{h}\left( \overline{C},1-\overline{H}\right) }{u_{c}\left( \overline{%
+C},1-\overline{H}\right) } &=&f_{h}\left( \overline{K},\overline{H}\right) \\
+\frac{1}{\beta }-\left( 1-\delta \right) &=&f_{k}\left( \overline{K},%
+\overline{H}\right)
+\end{eqnarray*}%
+and the budget constraint is 
+\[
+f\left( \overline{K},\overline{H}\right) -\delta \overline{K}=\overline{C} 
+\]
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{The stationary states}
+
+\begin{itemize}
+\item Or, the two equations in $H$ and $K$ of%
+\begin{eqnarray*}
+\frac{u_{h}\left( f\left( \overline{K},\overline{H}\right) -\delta \overline{%
+K},1-\overline{H}\right) }{u_{c}\left( f\left( \overline{K},\overline{H}%
+\right) -\delta \overline{K},1-\overline{H}\right) } &=&f_{h}\left( 
+\overline{K},\overline{H}\right) \\
+\frac{1}{\beta }-\left( 1-\delta \right) &=&f_{k}\left( \overline{K},%
+\overline{H}\right)
+\end{eqnarray*}
+
+\item These are the same two conditions one gets for the Robinson Crusoe
+economy (when done with labor decision)
+\end{itemize}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{The second welfare theorem}
+
+\begin{quotation}
+"The Second Fundamental Welfare Theorem. \ If household preferences and firm
+productions sets are convex, there is a complete set of markets with
+publicly known prices, and every agent acts as a price taker, then \textit{%
+any Pareto optimal outcome can be achieved as a competitive equilibrium if
+appropriate lump-sum transfers of wealth are arranged}."
+\end{quotation}
+
+\begin{itemize}
+\item What does the Second Fundamental Welfare Theorem mean?
+
+\begin{itemize}
+\item A perfectly competitive economy can be solved as a social planner (one
+person) problem
+
+\item This need not work if the economy is not perfectly competitive
+\end{itemize}
+
+\item The above statement is for a finite dimension economy. \ Infinite
+dimensioned economies are a bit more complicated. \ More assumptions are
+needed to get competitive equilibrium. \ In particular, a transversality
+condition. \ We simply assume a competitive equilibrium exists
+\end{itemize}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{Solving for time paths (non-stationary)}
+
+\begin{itemize}
+\item Knowing (or guessing) starting and ending points
+
+\item One can often approximate the optimal path between these points
+
+\item Using the Euler equation and an initial guess for the time path (even
+a pretty bad one)
+
+\item the $x$ axis of the problem is time (N time periods)
+
+\begin{itemize}
+\item $x_{0}$ is the starting point chosen, $x_{N}$ the ending point
+\end{itemize}
+
+\item the $y$ axis is the value of the state variables of interest
+
+\item start by using the initial $y$'s at points $x_{0}$ and $x_{2}$ and the
+Euler equation to find $y_{1}^{1}$ at point $x_{1}$
+
+\item use $y_{1}^{1}$ and $y_{3}^{0}$ and the Euler equations to find $%
+y_{2}^{1}$
+
+\item repeat until using $y_{N-2}^{1}$ and $y_{N}^{0}$ to find $y_{N-1}^{1}$
+
+\item then go backwards from $x_{N}$ to $x_{0}$
+
+\item repeat until the results don't change much between interations
+\end{itemize}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\QTR{frametitle}{Homework}
+
+\begin{itemize}
+\item Exercise: \ Find the stationary state equilibrium for an economy with 
+\[
+u\left( c_{t}^{i},1-h_{t}^{i}\right) =\log c_{t}^{i}+A\log \left(
+1-h_{t}^{i}\right) , 
+\]%
+$A=1.72$, and%
+\[
+f\left( K_{t},H_{t}\right) =\gamma K_{t}^{\theta }H_{t}^{1-\theta } 
+\]%
+with $\gamma =3$ and $\theta =.56$. \ Use $\beta =.98$ and $\delta =.06.$ \
+Find the numerical values of output, consumption, the capital stock, and
+labor supply in the stationary state using Matlab. \ 
+\end{itemize}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+\end{document}

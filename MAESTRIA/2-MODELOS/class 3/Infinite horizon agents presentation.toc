@@ -1,0 +1,3 @@
+\beamer@endinputifotherversion {3.06pt}
+\beamer@sectionintoc {1}{Variational methods}{2}{0}{1}
+\beamer@subsectionintoc {1}{1}{Market economy}{9}{0}{1}
