@@ -1,9 +1,9 @@
 {
-  "textFontFamily": "Linux Libertine,Palatino,Linux Libertine Display,CMU Serif",
+  "textFontFamily": "CMU Serif,Linux Libertine Display,Linux Libertine,Palatino",
   "accentColor": "#36ceec",
   "cssTheme": "",
   "baseFontSizeAction": true,
-  "baseFontSize": 19,
+  "baseFontSize": 20,
   "theme": "obsidian",
   "enabledCssSnippets": [
     "headers"

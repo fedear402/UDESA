@@ -4,11 +4,55 @@
     "type": "split",
     "children": [
       {
-        "id": "6e2f7510b2a30b59",
+        "id": "d7e0916eba83587b",
         "type": "tabs",
         "children": [
           {
-            "id": "cac384fae642c237",
+            "id": "420efa854ccbc297",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2-MODELOS/TRABAJOS/07-Staggered Pricing/tp7.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "tp7"
+            }
+          }
+        ]
+      },
+      {
+        "id": "3fe698ced04947b3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "726375ff0bbca5b1",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "2-MODELOS/ABCs of RBCs/CAPITULOS/10. Staggered Pricing Models.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "10. Staggered Pricing Models"
+            }
+          },
+          {
+            "id": "ccf55360138442df",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "2-MODELOS/TEORICAS/6. staggered prices 2.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "6. staggered prices 2"
+            }
+          },
+          {
+            "id": "22d98bc5767ae2eb",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -17,7 +61,8 @@
               "title": "New tab"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -49,7 +94,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Firmas",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +130,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 259.50418853759766
+    "width": 200
   },
   "right": {
     "id": "ddbe56180fb1556d",
@@ -188,54 +233,55 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "cac384fae642c237",
+  "active": "420efa854ccbc297",
   "lastOpenFiles": [
-    "2-MODELOS/TEORICAS/3.1 variational methods introduction.pdf",
-    "0-JUEGOS/TAU-Otoño2024/APUNTES/Ejercicio15-Guia5.md",
-    "0-JUEGOS/TAU-Otoño2024/GUIAS/Guía 5.pdf",
-    "0-JUEGOS/TAU-Otoño2024/APUNTES/Ejercicio8-Guia5.md",
-    "2-MODELOS/TEORICAS/3.3 recursive stochastic equations.pdf",
-    "0-JUEGOS/TAU-Otoño2024/GUIAS/Guía 3.pdf",
-    "2-MODELOS/TEORICAS/2.1 OLG.pdf",
-    "2-MODELOS/TEORICAS/2.2 Recursive.pdf",
-    "2-MODELOS/TEORICAS/3.2 Euler equation.pdf",
-    "0-JUEGOS/TAU-Otoño2024/GUIAS/Guía 4.pdf",
-    "2-MODELOS/TEORICAS/md/2.2 Recursive.md",
-    "2-MODELOS/TEORICAS/md/2.1 OLG.md",
-    "2-MODELOS/TEORICAS/md/1. Solow.md",
-    "2-MODELOS/TEORICAS/md",
-    "2-MODELOS/TEORICAS/untitled folder",
+    "2-MODELOS/TRABAJOS/07-Staggered Pricing/tp7.pdf",
+    "2-MODELOS/TEORICAS/6. staggered prices 2.pdf",
+    "2-MODELOS/TRABAJOS/07-Staggered Pricing/tp7.md",
+    "2-MODELOS/TRABAJOS/07-Staggered Pricing/sds.md",
+    "2-MODELOS/TEORICAS/md/7. Staggered Pricing.md",
+    "2-MODELOS/TRABAJOS/07-Staggered Pricing/dd.md",
+    "2-MODELOS/ABCs of RBCs/CAPITULOS/10. Staggered Pricing Models.pdf",
+    "2-MODELOS/ABCs of RBCs/10. Staggered Pricing model.md",
+    "2-COMERCIO/GUIAS/EJERCICIOS.md",
+    "2-COMERCIO/TEORICAS/markdown/02. Ricardo.md",
+    "2-COMERCIO/TEORICAS/markdown/03. Heckscher Ohlin.md",
+    "2-COMERCIO/TEORICAS/02. Ricardian and DFS models.pdf",
+    "2-COMERCIO/GUIAS/Ejercicio3.pdf",
+    "2-COMERCIO/TEORICAS/04. Krugman.pdf",
+    "2-COMERCIO/TEORICAS/05. Melitz.pdf",
+    "2-COMERCIO/TEORICAS/01. Topics International Trade Introduction.pdf",
+    "2-COMERCIO/TEORICAS/03. Modelo de Heckscher-Ohlin.pdf",
+    "2-MODELOS/TEORICAS/6. staggered prices 1.pdf",
+    "2-COMERCIO/TEORICAS/8. Lecture on Eaton and Kortum (2002).pdf",
+    "2-COMERCIO/APUNTES/C1.19.06 - Ricardo.md",
+    "2-COMERCIO/TEORICAS/markdown/06. Political Economy.md",
+    "2-COMERCIO/TEORICAS/markdown/06. Trade and Unemployment.md",
+    "2-COMERCIO/TEORICAS/markdown/05. Learning By Exporting.md",
+    "2-COMERCIO/TEORICAS/markdown/05. Home Market.md",
+    "2-COMERCIO/TEORICAS/markdown/05. Melitz.md",
+    "2-COMERCIO/TEORICAS/markdown/04. Krugman.md",
+    "2-COMERCIO/APUNTES/0-MATERIA.md",
+    "2-MACROECONOMETRIA/TEORICAS/markdown/3. SVAR.md",
+    "2-MACROECONOMETRIA/TEORICAS/markdown/4. Local Projections.md",
+    "2-MACROECONOMETRIA/TEORICAS/markdown/2. VAR.md",
+    "2-MACROECONOMETRIA/TUTORIALES/PS3/PS3.md",
+    "2-MACROECONOMETRIA/APUNTES/C5.11.07.md",
+    "2-MACROECONOMETRIA/APUNTES/C4.04.07.md",
+    "00000000/00-misc/Pasted image 20250725143142.png",
     "2-MODELOS/TRABAJOS/02-OLG/02.md",
-    "2-COMERCIO/APUNTES/C1.19.06.md",
-    "0-JUEGOS/TAU-Otoño2024/APUNTES/Ejercicio9-Guia4.md",
-    "0-JUEGOS/TAU-Otoño2024/APUNTES/Ejercicio7-Guia5.md",
-    "1-MACRO/APUNTES/C10.28.04 - Neo Keyensianos.md",
-    "1-MACRO/APUNTES/C12.12.05 - Monetaria.md",
-    "0-JUEGOS/TAU-Otoño2024/APUNTES/Ejercicio13-Guia4.md",
-    "0-JUEGOS/TAU-Otoño2024/APUNTES/Ejercicio12-Guia4.md",
-    "0-JUEGOS/0-MICROECONOMIA-2/GUIAS/GUIAS-RESOL/GUIA 6.md",
-    "0-JUEGOS/0-MICROECONOMIA-2/GUIAS/GUIAS-RESOL/GUIA 5.md",
-    "0-JUEGOS/0-MICROECONOMIA-2/GUIAS/GUIAS-RESOL/GUIA 4.md",
-    "0-JUEGOS/0-MICROECONOMIA-2/GUIAS/GUIAS-RESOL/GUIA 3.md",
-    "2-MODELOS/TEORICAS/2.1 OLG.md",
-    "2-MODELOS/APUNTES/C2.17.06.md",
-    "2-MODELOS/TEORICAS/2.2 Recursive.md",
-    "2-MODELOS/TEORICAS/1. Solow.md",
-    "2-MODELOS/TRABAJOS/01-Solow/01.png",
-    "2-MODELOS/TRABAJOS/01-Solow/01-original.md",
-    "2-MODELOS/TRABAJOS/01-Solow/01-cc2.md",
-    "2-MODELOS/TRABAJOS/01-Solow/01-cc.md",
-    "2-MODELOS/TRABAJOS/01/01.png",
-    "2-MODELOS/TRABAJOS/01/01-original.md",
-    "2-MODELOS/TRABAJOS/01.png",
-    "00000000/00-misc/Pasted image 20250527231328.png",
-    "00000000/00-misc/Pasted image 20250527230604.png",
-    "00000000/00-misc/Pasted image 20250526160913.png",
-    "00000000/00-misc/Pasted image 20250526155021.png",
+    "0-JUEGOS/TAU-Otoño2024/Cronograma.md",
+    "2-MACROECONOMETRIA/TPS/TP1/TP1.md",
+    "2-MODELOS/CODIGO/class 3/value fun sto2.jpg",
+    "2-MODELOS/CODIGO/class 3/value fun sto.jpg",
+    "2-MODELOS/CODIGO/class 3/storun2 exp.jpg",
+    "2-MODELOS/CODIGO/class 3/storun1 exp.jpg",
+    "2-MODELOS/CODIGO/class 3/policy function sto2.jpg",
+    "2-MODELOS/CODIGO/class 3/policy function sto.jpg",
+    "00000000/00-misc/Screenshot 2025-07-01 at 18.24.30.png",
+    "2-MODELOS/TRABAJOS/03-Variational/03.png",
+    "2-MACROECONOMETRIA/TUTORIALES/01/PS 1/scatter_plot.png",
     "1.MACRO/APUNTES/MACRO.canvas",
-    "00000000/00-misc/Pasted image 20250525200913.png",
-    "00000000/00-misc/Pasted image 20250525172439.png",
-    "00000000/00-misc/Pasted image 20250525133249.png",
     "MACRO/APUNTES/MACRO.canvas",
     "MACRO/APUNTES-2/MACRO.canvas"
   ]

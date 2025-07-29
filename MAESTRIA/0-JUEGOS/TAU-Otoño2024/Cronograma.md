@@ -32,7 +32,6 @@ G2.6,7,8,9,10
 
 ---
 
-
 PARCIALES  (lu 21 abril - vie 2 mayo)
 
 ---
@@ -63,3 +62,10 @@ TUTORIAL 13/06:
 FINALES  (lu 23 junio - vie 4 jul)
 
 ---
+
+
+## Tasa de
+KSndkasdçsad
+$$
+
+\int _{\eta}^{1}Y^{m}(k)^{\frac{\phi-1}{\phi}}$$
