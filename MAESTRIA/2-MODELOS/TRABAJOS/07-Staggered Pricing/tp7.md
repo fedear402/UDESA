@@ -118,6 +118,7 @@ $$
 Y_t = \left[\alpha \left[ \left[\int_0^1 \left[   \left(  Y_{t} ^{\frac{1}{\sigma}} \alpha \frac{P_{t}}{P_{t}^{d}(k)} \right)^{\psi-1} \right]  dk\right]^{  \frac{\sigma}{\psi-1}} \right] ^{\frac{\sigma-1}{\sigma}} + (1-\alpha) \left[  Y_{t} \left[ \frac{P_{t}}{P_{t}^{f}} (1-\alpha) \right] ^{\sigma} \right] ^{\frac{\sigma-1}{\sigma}}\right]^{\frac{\sigma}{\sigma-1}}
 $$
 
+
 $$
 Y_t = \left[\alpha \left[ \left[ Y_{t} ^{\frac{\psi-1}{\sigma}} \int_0^1 \left(   \alpha \frac{P_{t}}{P_{t}^{d}(k)} \right)^{\psi-1}  dk\right]^{  \frac{\sigma}{\psi-1}} \right] ^{\frac{\sigma-1}{\sigma}} + (1-\alpha) Y_{t}^{\frac{\sigma-1}{\sigma}} \left[ \frac{P_{t}}{P_{t}^{f}} (1-\alpha) \right] ^{\sigma-1}  \right]^{\frac{\sigma}{\sigma-1}}
 $$
@@ -196,14 +197,45 @@ $$\max_{P_t^d(k)} \Pi_t(k) = P_t^d(k) Y_t^d(k) - MC_t \cdot Y_t^d(k)$$
 Subject to the demand function we derived:
 $$Y_{t}^{d}(k) = (Y_{t}^{d} )^{1-\frac{\psi}{\sigma}}   \left(  Y_{t} ^{\frac{1}{\sigma}} \alpha \frac{P_{t}}{P_{t}^{d}(k)} \right)^{\psi}$$
 
+$$
+Y_{t}^{d}(k)=(Y_{t}^{d})^{1-\frac{\psi}{\sigma}} \left( Y_{t}^{\frac{1}{\sigma}} \frac{\alpha P_{t}}{P_{t}^{d}(k)} \right)^{\psi}
+$$
+
+$$
+\begin{pmatrix}
+0 & 0 & 0 & 9 \\
+s_{k}jd & skdj \\
+ \\
+
+\end{pmatrix}
+$$
+
+
 Substituting the demand function into the profit function:
+
+$$
+x+1=2^{2}
+$$
+
+$$
+
+$$
+
+$
+
 $$\Pi_t(k) = P_t^d(k) \cdot (Y_{t}^{d} )^{1-\frac{\psi}{\sigma}}   \left(  Y_{t} ^{\frac{1}{\sigma}} \alpha \frac{P_{t}}{P_{t}^{d}(k)} \right)^{\psi} - MC_t \cdot (Y_{t}^{d} )^{1-\frac{\psi}{\sigma}}   \left(  Y_{t} ^{\frac{1}{\sigma}} \alpha \frac{P_{t}}{P_{t}^{d}(k)} \right)^{\psi}$$
 
 Factor out the common terms:
 $$\Pi_t(k) = (Y_{t}^{d} )^{1-\frac{\psi}{\sigma}} \left(  Y_{t} ^{\frac{1}{\sigma}} \alpha P_{t} \right)^{\psi} \left(P_{t}^{d}(k)\right)^{-\psi} \left[P_t^d(k) - MC_t\right]$$
 
 Taking the first-order condition with respect to $P_t^d(k)$:
-$$\frac{\partial \Pi_t(k)}{\partial P_t^d(k)} = (Y_{t}^{d} )^{1-\frac{\psi}{\sigma}} \left(  Y_{t} ^{\frac{1}{\sigma}} \alpha P_{t} \right)^{\psi} \left[(-\psi)(P_{t}^{d}(k))^{-\psi-1}(P_t^d(k) - MC_t) + (P_{t}^{d}(k))^{-\psi}\right] = 0$$
+$$
+\frac{\partial \Pi_t(k)}{\partial P_t^d(k)} = (Y_{t}^{d} )^{1-\frac{\psi}{\sigma}} \left(  Y_{t} ^{\frac{1}{\sigma}} \alpha P_{t} \right)^{\psi} \left[(-\psi)(P_{t}^{d}(k))^{-\psi-1}(P_t^d(k) - MC_t) + (P_{t}^{d}(k))^{-\psi}\right] = 0
+$$
+
+$$
+\frac{ \partial \Pi }{ \partial P_{t} } = \int _{0}^{\infty}  \, dt
+$$
 
 Simplifying:
 $$(-\psi)(P_t^d(k) - MC_t) + P_t^d(k) = 0$$
@@ -461,6 +493,7 @@ $$0 = E_t[Fx_{t+1} + Gx_t + Hx_{t-1} + Jy_{t+1} + Ky_t + Lz_{t+1} + Mz_t]$$
 $$z_{t+1} = Nz_t + \varepsilon_{t+1}$$
 
 where all variables are in log-deviations from steady state (tildes). The matrices are
+
 $$A = \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix}$$
 $$B = \begin{bmatrix} 0 & 0 \\ 0 & -1 \end{bmatrix}$$
 
