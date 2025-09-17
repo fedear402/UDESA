@@ -114,7 +114,3 @@ $$M = \begin{bmatrix} 0 & \beta\bar{r}^* \\ 0 & 0 \end{bmatrix}$$
 **Matrix N** (stochastic process evolution): 
 $$N = \begin{bmatrix} \gamma & 0 \\ 0 & 1-\phi \end{bmatrix}$$
 
-**Important Note:** There's a timing issue with the foreign interest rate term $\tilde{r}^*_{t-1}$ in the budget constraint that doesn't fit neatly into this matrix structure. You may need to either:
-
-1. Include $\tilde{r}^*_t$ as a third state variable in $x_t$, or
-2. Handle the lagged foreign rate term separately in the solution algorithm.
